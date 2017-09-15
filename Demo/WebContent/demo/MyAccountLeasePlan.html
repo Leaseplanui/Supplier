@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+function show() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'text');
+}
+
+function hide() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'password');
+}
+
+var pwShown = 0;
+
+document.getElementById("eye").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+    } else {
+        pwShown = 0;
+        hide();
+    }
+}, false);
+</script>
+<meta charset="ISO-8859-1">
+<title>My Account Lease Plan</title>
+</head>
+<h1>My Account Lease Plan</h1>
+<p>An account is useful.You can easily store and buy assembled cars. <br> 
+Moreover, you always view the status of your ordered list.
+<form>
+<div>
+<input type="email" id="email" placeholder="E-mail Address">
+</div>
+<br>
+<div>
+<input type="password" placeholder="Password" id="pwd" class="masked;color:orange" name="password" />
+</div>
+</form>
+
+</body>
+</html>
