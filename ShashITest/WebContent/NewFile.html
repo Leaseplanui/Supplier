@@ -1,0 +1,221 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html>
+<head>
+    <title>
+        Ebbon LeaseLink</title>
+    <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+    <meta name="CODE_LANGUAGE" content="C#">
+    <meta name="vs_defaultClientScript" content="JavaScript">
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+    
+    <script type="text/javascript" src="../Jscript/common.js"></script>
+    <script type="text/javascript" src="../Jscript/jquery1.js"></script>
+    <script type="text/javascript" src="../Jscript/lock.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+        function() {
+            $("#main").load(
+            function() {
+              window.top.$(window.top).trigger("REFRESHSP");           
+              var LHMW = 105;
+              var SPFW = 400;
+              var SPNW = SPFW / 12; // 1 boostrap column 
+              
+              var colStr = LHMW + ',';
+              
+              colStr += '*';
+              
+              $("#frsmain").attr("cols", colStr);
+            });
+        });
+        
+        onTrigger("DELVHUNACK",function(){
+            $("#main").attr('src', "../common/DeliveredVehicles.asp?ShowUnackAction=1&OrderType=1");
+        });
+
+        onTrigger("DEMOREQ",function(){
+            $("#main").attr('src', "../Customer/BrochureDemoList.aspx?Demo");
+        });    
+        
+        onTrigger("NEWDEMOREQ",function(){
+            $("#main").attr('src', "../messaging/Request.aspx");
+        });
+        onTrigger("BROCHREQ",  function(){
+            $("#main").attr('src', "brochureDemoList.aspx?Brochure");
+        });
+        onTrigger("NEWBROCHREQ",function(){
+            $("#main").attr('src', "../messaging/Request.aspx");
+        });
+        
+        onTrigger("FULLMSG",function(){
+       
+            $("#main").attr('src', "../messaging/messaging.aspx");
+            ;
+        });
+        
+        onTrigger("NAVIGATE-REQUESTS",function(){ 
+            $("#main").attr('src', "../messaging/messaging.aspx");
+        });
+        
+        onTrigger("SIMPLEENQ",function(){
+            $("#main").attr('src', "brochureDemoList.aspx?SimpleEnquiry");
+        });
+        
+        onTrigger("NAVIGATEHOME",function(){
+            $("#main").attr('src', "FleetHome.asp");
+        });
+        
+        onTrigger("NAVIGATEENQUIRY",function(){
+            $("#main").attr('src', "new_enquiry_check.asp");
+        });
+        
+        onTrigger("NAVIGATESTATUSUPDATE",function(){
+            
+                $("#main").attr('src', "NewStatusUpdate2.asp");
+            
+        });
+        
+        onTrigger("NAVIGATEVEHICLEINFO",function(){
+            $("#main").attr('src', "../common/DeliveredVehicles.asp");
+        });
+        
+        onTrigger("NAVIGATEREPORTS",function(){
+            $("#main").attr('src', "../aspReports/ReportRedirector.asp");
+        });
+        
+        onTrigger("NAVIGATEMAINTENANCE",function(){
+         
+            $("#main").attr('src', "MaintainenceMenu.asp");
+            
+        });
+        
+        onTrigger("NAVIGATEMAINTENANCEOPT2",function(){
+            $("#main").attr('src', "../maintenance/Operators.asp?LoginType=C");
+        });
+        
+        onTrigger("NAVIGATEARCHIVE",function(){
+            $("#main").attr('src', "../Leaselink2/Tcards/ArchivedOrders.aspx");
+        });
+        
+        onTrigger("NAVIGATEDELIVEREDDEBTS",function(){
+            $("#main").attr('src', "../common/DeliveredVehicles.asp");
+        });
+        
+        onTrigger("NAVIGATEMODEL",function(){
+            $("#main").attr('src', "../common/browseModels.aspx");
+        });
+        
+        onTrigger("NAVIGATEVEHICLE",function(){
+            $("#main").attr('src', "../availability/main.asp");
+        }); 
+        
+        onTrigger("NAVIGATECUT",function(){
+            $("#main").attr('src', "../common/contactus.aspx");
+        }); 
+        
+        onTrigger("NAVIGATERELEASENOTES",function(){
+            $("#main").attr('src', "../ReleaseNotes.asp");
+        }); 
+        
+        onTrigger("NAVIGATEHELPFAQ",function(){
+            $("#main").attr('src', "../common/manuals.aspx");
+        }); 
+        
+        onTrigger("NAVIGATESTOCKDB",function(){
+            $("#main").attr('src', "../Leaselink2/PreOrders/PreOrdersList.aspx");
+        });
+        
+        onTrigger("NAVIGATELOGOUT",function(){
+           navigateLogout();
+        });
+
+		onTrigger("CLEARALLFILTER", function() {
+            //var callFunction = document.getElementsByTagName('frame')['main'].contentWindow.document.getElementsByTagName('iframe')['TCardGrid'].contentWindow.ClearFiltersAll();
+            var callClearFilter = $("frame")[2].contentWindow.$("iframe")[0].contentWindow.ClearFiltersAll();
+            callClearFilter;
+
+        });
+        
+        onTrigger("NAVIGATEBULKUPDATE", function() {
+            $("#main").attr('src', "TCard.asp?nav-action=bulk-update");
+        });
+    </script>
+
+</head>
+<input type='hidden' name='MessagingUnread' value='1'>
+<input type='hidden' name='MessagingUnacknowledged' value='1'>
+<input type='hidden' name='MessagingUncompleted' value='1'>
+<input type='hidden' name='MessagingProgressNotes' value='1'>
+<input type='hidden' name='fAccountExec' value=''>
+<input type='hidden' name='fNewDealerNotes' value='0'>
+<input type='hidden' name='fNewDealerNotesO' value='0'>
+<input type='hidden' name='fADTC' value='0'>
+<input type='hidden' name='fChassisNo' value=''>
+<input type='hidden' name='fContactName' value=''>
+<input type='hidden' name='fCustomerRef' value=''>
+<input type='hidden' name='fDriver' value=''>
+<input type='hidden' name='fDealership' value=''>
+<input type='hidden' name='fDeliveryOffered' value='0'>
+<input type='hidden' name='fFactoryOrdering' value=''>
+<input type='hidden' name='fMake' value=''>
+<input type='hidden' name='fModel' value=''>
+<input type='hidden' name='fEnquiryOperator' value=''>
+<input type='hidden' name='fCustomerOrderNo' value=''>
+<input type='hidden' name='fRegNo' value=''>
+<input type='hidden' name='fNominated' value='0'>
+<input type='hidden' name='fEndUser' value=''>
+<input type='hidden' name='fEndUserRef' value=''>
+<input type='hidden' name='fDateConfirmed1' value='1-1-1995'>
+<input type='hidden' name='fDateConfirmed2' value='10-1-1910'>
+<input type='hidden' name='fDateRequired1' value='1-1-1995'>
+<input type='hidden' name='fDateRequired2' value='10-1-1910'>
+<input type='hidden' name='fFollowUp' value='0'>
+<input type='hidden' name='fFollowUp1' value='10-3-1974'>
+<input type='hidden' name='fFollowUp2' value='10-3-2020'>
+<input type='hidden' name='fOverdueADTC' value='10-3-2020'>
+<input type='hidden' name='fProcessStage' value='0'>
+<input type='hidden' name='fDeleteRequest' value='0'>
+<input type='hidden' name='MyFilter' value=''>
+<input type='hidden' name='MySource' value='Lease'>
+<input type='hidden' name='Linker' value='Off'>
+<input type="hidden" name="FilterString" value="">
+<input type="hidden" name="UserFilterString" value="">
+<input type="hidden" name="NewFilterString" value="">
+<input type="hidden" name="LastUpdated" value="">
+<input type="hidden" name="bIsMakes" value="0">
+<input type='hidden' name='LimitedDisplay' value='0'>
+<input type='hidden' name='fFilterDelivery' value='0'>
+<input type='hidden' name='fEnquiryRef' value=''>
+<input type='hidden' name='fNewNotes' value='0'>
+<input type='hidden' name='fNewNotesO' value='0'>
+<input type='hidden' name='fCustomerName' value=''>
+<input type='hidden' name='fRejected' value='0'>
+<input type='hidden' name='fLCV' value='0'>
+<input type='hidden' name='fStockNo' value=''>
+<input type='hidden' name='fOfflineEnquiry' value='0'>
+<input type='hidden' name='fOnlineEnquiry' value='0'>
+<input type='hidden' name='fInTheQueue' value='0'>
+<frameset framespacing="0" border="false" frameborder="0" rows="78,*,0">
+   
+  <frame name="banner"  rows="300" scrolling="no" noresize target="contents" src="bg_heading.asp" id='MyHeader' marginwidth="0" marginheight="0">
+  
+  <frameset name="frsmain" id ="frsmain" cols="0,*,0">
+    
+    <frame name="contents" id="contents" target="main" src="contentmodify.asp" scrolling="no" marginwidth="0" marginheight="0"> 
+   
+    <frame name="main" id="main" style='border:2px silver solid;' src="FleetHome.asp" scrolling="auto" marginwidth="0" marginheight="0">
+    
+  </frameset>
+  <frame name="helpme" scrolling="no" noresize target="" src="../screenhelper.asp" id='helpme' marginwidth="0" marginheight="0">
+  <noframes>
+  </frameset>                          
+  <body>
+  <p>Deze pagina gebruikt frames, maar deze worden niet door uw browser ondersteund.</p>
+  
+  
+  </body>
+  </noframes>
+</frameset>
+</html>

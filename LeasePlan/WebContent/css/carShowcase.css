@@ -1,0 +1,80 @@
+.carShowcaseUl {
+  height: 90%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.carShowcaseLi {
+  width: 31%;
+  height: 400px;
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.carShowcaseContentMain {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.carShowcaseContentMain:hover {
+   box-shadow: 0 0 20px #bfbfbf;
+}
+
+
+
+.carShowcaseImage {
+  float: none;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.carShowcaseBlockHeaderText {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  color: black;
+  float: left;
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.carShowcaseBlockTextDescription {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  color: gray;
+  float: left;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+  text-align: left;
+}
+
+.carShowcaseBlockTextPrice {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  color: #FE5A00;
+  font-weight: 600;
+  float: left;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+  text-align: left;
+}
+
+.carShowcaseBlockTextPriceDetails {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  color: gray;
+  float: left;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+  text-align: left;
+}
