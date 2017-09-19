@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+<title>Dash Board</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/loginDialog.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/ddMenu.css">
+<link rel="stylesheet" href="css/carShowcase.css">
+<link rel="stylesheet" href="css/loginDialog.css">
+<link rel="stylesheet" href="css/menuLinkTab.css">
+<link rel="stylesheet" href="content.css">
 <style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-div.tab {
-    float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 30%;
-    height: 300px;
-}
-
-/* Style the buttons inside the tab */
-div.tab button {
-    display: block;
-    background-color: #FFA500;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 12px;
-}
-
-/* Change background color of buttons on hover */
-div.tab button:hover {
-    background-color: #add;
-}
-
-/* Create an active/current "tab button" class */
-div.tab button.active {
-    background-color: #FF8C00;
-}
-
-/* Style the tab content */
-.tabcontent {
-    float: left;
-    padding: 0px 12px;
-    border: 1px solid #ccc;
-    width: 70%;
-    border-left: none;
-    height: 300px;
-}
 </style>
+
 </head>
 <body>
-
+  <!-- The Login Dialog Ends -->
+  <div class="headerBar">
+      <div class="logoContainer">
+        <img src="images/logo.png" height="100%" width="100%"></img>
+      </div>
+      <div class="headerBarTop">
+        <ul class="headerBarTopMenu">
+          <li><a class="topMenuActive" href="#corporate-lease">Corporate Lease</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+        <div class="headerBarTopRightMenuDiv">
+          <ul class="headerBarTopRightMenu">
+            <li><a class="topRightMenuActive" href="#corporate-lease">Customer Support</a></li>
+            <li><img src="images/user-32x32.png" class="topRightMenuIcon"><a href="javascript:doSomething();">Login</a></li>
+          </ul>
+        </div>
+    </div>
+      <div class="headerBarBottom">
+        <div class="headerBarBottomMenuDiv">
+          <ul class="ddMenuUl">
+            <li class="ddMenuActive ddMenuLi"><a href="#home">Top 5 leaseauto's</a></li>
+            <li class="ddMenuLi"><a href="#news">Auto zoeken</a></li>
+            <li class="ddMenuLi ddMenuLiDropdown">
+              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Lease Info</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="ddMenuLi ddMenuLiDropdown">
+              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Over ons</a>
+              <div class="dropdown-content">
+                <a href="#">Link 21</a>
+                <a href="#">Link 22</a>
+                <a href="#">Link 23</a>
+              </div>
+            </li>
+            <li class="ddMenuLi ddMenuLiDropdown">
+              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Uw leaseauto</a>
+              <div class="dropdown-content">
+                <a href="#">Link 21</a>
+                <a href="#">Link 22</a>
+                <a href="#">Link 23</a>
+              </div>
+            </li>
+          </ul>
+      </div>
+      </div>
+  </div>
 
 <div class="tab">
   <button class="tablinks" onclick="menuLink(event, 'Home')" id="defaultOpen">Home</button>
@@ -68,9 +83,10 @@ div.tab button.active {
 </div>
 
 <div id="Home" class="tabcontent">
-  <h3>Home</h3>
-   
+<style>
+  
   <p>Home Page</p>
+ 
 </div>
 
 <div id="Order aanvraag" class="tabcontent">
