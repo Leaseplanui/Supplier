@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+<title>Title of the document</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/loginDialog.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/ddMenu.css">
+<link rel="stylesheet" href="css/carShowcase.css">
+<link rel="stylesheet" href="css/loginDialog.css">
+
+<!-- Start bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+<script src="js/popper.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/leaseScript.js" type="text/javascript"></script>
+<!-- End bootstrap  -->
+
+<!-- Include the plugin's CSS and JS: -->
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="css/bootstrap-multiselect.css"	type="text/css"/>
+<link href="css/leaseStyle.css" rel="stylesheet">
+<link rel="stylesheet" href="css/registerDialog.css">
+
+</head>
+<body>
+<div class="bodyDiv">
+    <!-- The Login Dialog Starts -->
+    <div class="loginDialog" id="idLoginDialog">
+      <!-- Modal content -->
+      <div class="loginDialog-content">
+        <span class="loginDialog-close">&times;</span>
+        <a class="loginDialogHeaderText">Login op Mijn LeasePlan</a>
+        <a class="loginDialogTopDescriptionText">Om uw auto te kunnen bestellen, logt u eerst in op Mijn LeasePlan. | Nog geen account? Maak dan een nieuw account aan. Ruim 85.000 mensen gingen u voor.</a>
+        <a class="loginDialogLabel">Email Address</a>
+        <input type="text" name="email" class="loginDialogInput">
+        <a class="loginDialogLabel">Password</a>
+        <input type="password" name="password" class="loginDialogInput">
+        <button type="button" class="blackButton button loginDialogLoginBtn">Logon</button>
+        <a class="forgotPassword" href="#forgot-password">Forgot Password</a>
+        <a class="loginDialogDontHaveanAccountText">Do not have an Account yet? Create new account.</a>
+        <button type="button" class="orangeButton button loginDialogRegisterBtn" onclick="javascript:doRegister();">Register</button>
+      </div>
+    </div>
+    <!-- The Login Dialog Ends -->
+  <div class="headerBar">
+      <div class="logoContainer">
+        <img src="images/logo.png" height="100%" width="100%"></img>
+      </div>
+      <div class="headerBarTop">
+        <ul class="headerBarTopMenu">
+          <li><a class="topMenuActive" href="#corporate-lease">Corporate Lease</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+        <div class="headerBarTopRightMenuDiv">
+          <ul class="headerBarTopRightMenu">
+            <li><a class="topRightMenuActive" href="#corporate-lease">Customer Support</a></li>
+            <li><img src="images/user-32x32.png" class="topRightMenuIcon"><a href="javascript:doSomething();">Login</a></li>
+          <!-- <li><img src="images/user-32x32.png" class="topRightMenuIcon"><a href="RegisterPage1.html">Login</a></li> -->
+          <!-- onclick="document.location.href='/RegisterPage1.html'" -->
+          </ul>
+        </div>
+    </div>
+      <div class="headerBarBottom">
+        <div class="headerBarBottomMenuDiv">
+          <ul class="ddMenuUl">
+            <li class="ddMenuActive ddMenuLi"><a href="#home">Top 5 leaseauto's</a></li>
+            <li class="ddMenuLi"><a href="#news">Auto zoeken</a></li>
+            <li class="ddMenuLi ddMenuLiDropdown">
+              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Lease Info</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="ddMenuLi ddMenuLiDropdown">
+              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Over ons</a>
+              <div class="dropdown-content">
+                <a href="#">Link 21</a>
+                <a href="/over-leaseplandirect/waarom-leaseplan/">Waarom LeasePlan?</a>
+                <a href="#">Link 22</a>
+                <a href="#">Link 23</a>
+              </div>
+            </li>
+            <li class="ddMenuLi ddMenuLiDropdown">
+              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Uw leaseauto</a>
+              <div class="dropdown-content">
+                <a href="#">Link 21</a>
+                <a href="#">Link 22</a>
+                <a href="#">Link 23</a>
+              </div>
+            </li>
+          </ul>
+      </div>
+      </div>
+  </div>
+  
+  <!-- Start Content -->
+  <div class="contentDiv">
+
+   <div class="registerDialog" id="idregisterDialog">
+     <div class="registerDialog-content">
+        <span class="registerDialog-close">&times;</span>
+	<a class="registerDialogHeaderText">My account LeasePlan.</a>
+        <a class="registerDialogTopDescriptionText">An account is useful. You can easily store and buy assembled cars. Moreover, you always view the status of your ordered lease.</a>
+        <a class="registerDialogLabel">E-mail address</a>
+        <input type="text" name="email" class="registerDialogInput">
+        <a class="registerDialogLabel">Password</a>
+        <input type="password" name="password" class="registerDialogInput">
+        <a class="registerDialogLabel">Repeat Password</a>
+        <input type="password" name="repeatpassword" class="registerDialogInput">
+        <div class="checkbox">
+	  <input type="checkbox" name="registerAcceptConditionsCB" id="registerAcceptConditionsCB">
+          <label for="registerAcceptConditionsCB">I accept the LeasePlan <a href="#AcceptConditions">conditions</a></label>
+	</div>
+	<div class="checkbox">
+	  <input type="checkbox" name="registerMarketingCommsCB" id="registerMarketingCommsCB">
+	  <label for="registerMarketingCommsCB">I opt-in for Marketing <a href="#MarketingComms">communications</a></label>
+	</div>
+	<button type="button" class="blackButton button registerDialogRegisterBtn">Register</button>
+	<a class="registerDialogAlreadyHaveanAccountText">I already have an account:</a>
+	<button type="button" class="orangeButton button registerDialogLogonBtn" onclick="javascript:doRelogin();"> &lt Log on</button>
+     </div>
+   </div>
+  
+  <div class="container">
+  	<div class="row">
+  		<div class="col-4">
+  		
+  			<div class="row">
+  				<div class="searchbox-filters-unit-header">
+					<h2>Welke leaseauto zoekt u?</h2>
+					<a class="searchbox-vertical-mobile-switch fixed"
+						id="searchbox-vertical-mobile-switch"></a> <a
+						class="balloon-info balloon-info-right"
+						data-info="Selecteer hier uw leaseauto op basis van gewenste kenmerken. Onder 'Toon meer filters' vindt u nog meer filters.">i</a>
+				</div>
+  			</div>
+  			
+  			<div class="row">
+  				<div class="searchbox-filters-container"
+					id="searchbox-filters-container">
+					<div class="searchbox-filters-unit" id="brand">
+						<div class="form-select-field">
+
+							<select id="brands" name="selectBrand" class="search-filter"
+								data-filter-name="Merk">
+								<option value="">Merk</option>
+
+								<option name="Abarth" value="0361">Abarth (16)</option>
+
+								<option name="Alfa Romeo" value="0004">Alfa Romeo (39)</option>
+
+								<option name="Audi" value="0015">Audi (799)</option>
+
+								<option name="BMW" value="0028">BMW (377)</option>
+
+								<option name="Citroën" value="0056">Citroën (165)</option>
+
+								<option name="Dacia" value="0063">Dacia (42)</option>
+
+								<option name="DS" value="0502">DS (64)</option>
+
+								<option name="Fiat" value="0388">Fiat (147)</option>
+
+								<option name="Ford" value="0093">Ford (229)</option>
+
+								<option name="Honda" value="0125">Honda (62)</option>
+
+								<option name="Hyundai" value="0134">Hyundai (104)</option>
+
+								<option name="Infiniti" value="0136">Infiniti (93)</option>
+
+								<option name="Jaguar" value="0142">Jaguar (259)</option>
+
+								<option name="Jeep" value="0145">Jeep (54)</option>
+
+								<option name="KIA" value="0160">KIA (143)</option>
+
+								<option name="Land Rover" value="0181">Land Rover (274)</option>
+
+								<option name="Lexus" value="0185">Lexus (38)</option>
+
+								<option name="Maserati" value="0196">Maserati (15)</option>
+
+								<option name="Mazda" value="0200">Mazda (143)</option>
+
+								<option name="Mercedes-Benz" value="0204">Mercedes-Benz
+									(503)</option>
+
+								<option name="MINI" value="0212">MINI (71)</option>
+
+								<option name="Mitsubishi" value="0213">Mitsubishi (34)</option>
+
+								<option name="Nissan" value="0234">Nissan (279)</option>
+
+								<option name="Opel" value="0245">Opel (283)</option>
+
+								<option name="Peugeot" value="0250">Peugeot (206)</option>
+
+								<option name="Porsche" value="0257">Porsche (59)</option>
+
+								<option name="Renault" value="0266">Renault (329)</option>
+
+								<option name="SEAT" value="0284">SEAT (202)</option>
+
+								<option name="Skoda" value="0288">Skoda (203)</option>
+
+								<option name="smart" value="0289">smart (46)</option>
+
+								<option name="SsangYong" value="0295">SsangYong (7)</option>
+
+								<option name="Subaru" value="0301">Subaru (16)</option>
+
+								<option name="Suzuki" value="0303">Suzuki (71)</option>
+
+								<option name="Tesla" value="0404">Tesla (7)</option>
+
+								<option name="Toyota" value="0316">Toyota (239)</option>
+
+								<option name="Volkswagen" value="0338">Volkswagen (531)</option>
+
+								<option name="Volvo" value="0339">Volvo (312)</option>
+
+							</select>
+
+						</div>
+					</div>
+					</div>
+  			</div>
+  			
+  			<div class="row">
+  					<div class="searchbox-filters-container">
+						<div class="form-select-field">
+
+							<select id="models" name="models" class="search-filter"
+								data-filter-name="Model">
+								<option value>Model</option>
+							</select>
+
+						</div>
+					</div>
+  			</div>
+  			
+  			<div class="row">
+  					<div class="searchbox-filters-container multipleSelect">
+						<div class="form-select-field">
+							<select id="example-getting-started" multiple="multiple"
+								class="search-filter">
+								<option value="Aardgas">Aardgas
+								<span>62</span>
+								</option>
+								<option value="Benzine">Benzine 
+								<span>(2974)</span>
+								</option>
+								<option value="Benzine Hybrid">Benzine Hybrid 
+								<span>(109)</span>
+								</option>
+								<option value="Benzine plug-in hybrid">Benzine plug-in hybrid 
+								<span>(3206)</span>
+								</option>
+								<option value="Diesel">Diesel</option>
+								<option value="diesel-plug-in-hybrid" disable=true>diesel-plug-in-hybrid 
+								<span>(4)</span>
+								</option>
+								<option value="lpg)">lpg(4)</option>
+								<option value="Volledig elektrisch">Volledig elektrisch(53)</option>
+								<option value="waterstof">waterstof</option>
+
+							</select>
+						</div>
+					</div>
+  			</div>
+  			
+  			<div class="row">
+  					<div class="searchbox-filters-container">
+						<div class="form-select-field">
+							<select id="example-getting-started1" multiple="multiple"
+								class="search-filter">
+								<option value="Cabriolet">Cabriolet
+								<span>(214)</span>
+								</option>
+								<option value="Coupé">Coupé
+								<span>(164)</span>
+								</option>
+								<option value="Hatchback">Hatchback
+								<span>(1876)</span>
+								</option>
+								<option value="MPV">MPV
+								<span>(653)</span>
+								</option>
+								<option value="Personenbus">Personenbus
+								<span>(521)</span>
+								</option>
+								<option value="Sedan">Sedan
+								<span>(787)</span>
+								</option>
+								<option value="Stationwagon">Stationwagon
+								<span>(995)</span>
+								</option>
+								<option value="SUV">SUV
+								<span>(1290)</span>
+								</option>
+								<option value="Bestelwagen">Bestelwagen
+								<span>(0)</span>
+								</option>
+								<option value="Bestelwagen dubbele cabine">Bestelwagen dubbele cabine
+								<span>(0)</span>
+								</option>
+								<option value="Chassis-Cabine">Chassis-Cabine
+								<span>(0)</span>
+								</option>
+								<option value="Pick-up">Pick-up
+								<span>(0)</span>
+								</option>
+								<option value="Pick-up">Pick-up dubbele cabine
+								<span>(0)</span>
+								</option>
+								<option value="Stationwagon grijs kenteken">Stationwagon grijs kenteken
+								<span>(0)</span>
+								</option>
+							</select>
+						</div>
+					</div>
+  			</div>
+  			
+  			<div class="row">
+  				<a id="hide" class="accordeon-trigger" data-label-close="toon meer filters"
+					 data-label-open="toon minder filters" href="javascript:void(0);">toon minder filters</a>
+  			</div>
+  			
+  			<div class="row">
+  				<div id="uniquename" class="searchbox-filters-container">
+    				<div class="form-select-field">
+							<select id="example-getting-started2" multiple="multiple"
+								class="search-filter">
+								<option value="4">4%
+								<span>(53)</span>
+								</option>
+								<option value="22">22%
+								<span>(6447)</span>
+								</option>
+								<option value="7">7%
+								<span>(0)</span>
+								</option>
+								<option value="14">14%
+								<span>(0)</span>
+								</option>
+								<option value="20">20%
+								<span>(0)</span>
+								</option>
+								<option value="21">21%
+								<span>(0)</span>
+								</option>
+								<option value="25">25%
+								<span>(0)</span>
+								</option>
+														
+
+							</select>
+						</div>
+						<div class="searchbox-filters-container">
+						<label>Transmissie</label>
+						<div class="form-checkbox-bar search-filter" id="gearboxTypes" data-filter-name="Transmissie">
+						<!-- <label class="checkbox-inline">
+      					<input type="checkbox" value="">Automaat
+   						 </label>
+    					<label class="checkbox-inline">
+     						 <input type="checkbox" value="">Handgeschakeld
+   						 </label> -->
+						<label for="automaat" class="form-checkbox-bar-item">
+						<input type="checkbox" name="Automaat" id="automaat">Automaat
+						</label>
+						<label for="handgeschakeld" class="form-checkbox-bar-item">
+						<input type="checkbox" name="Handgeschakeld" id="handgeschakeld">
+						Handgeschakeld</label>
+						
+						</div>
+						</div>
+						
+					</div>
+  			</div>
+  			<div class="row">
+  			
+					
+					
+				<div class="searchbox-filters-unit-header searchbox-filters-unit-header-subheader">
+				
+					<h2 class="txtTitle">Kies uw leasevoorwaarden</h2>
+					<a class="searchbox-vertical-mobile-switch fixed"
+						id="searchbox-vertical-mobile-switch"></a>
+						<a class="balloon-info balloon-info-right"
+						data-info="Met het aanpassen van uw leasevoorwaarden bepaalt u het leasetarief dat het best bij u past.">i</a>
+						<div class="searchbox-filters-container">
+				
+					<label>Looptijd:
+					 <span class="term-mileage">
+					<output name="term" class="term-mileage" id="Looptijd">60</output>"mnd
+					</span>
+					<!-- <output class="term-all">filter inactief</output> -->
+					</label>
+					<!-- <span class="term-mileage" id="Looptijd">60</span> -->
+					<input type="range" class="search-filter" min="12" max="60" value="60" step="6"
+					data-default-value="60" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+					 onchange="showValue(this.value)" />
+					</div>
+				
+				</div>	
+					
+  			</div> 
+  			
+  			<div class="row">
+  				<div class="searchbox-filters-container">
+					<!-- <div class="checkbox-field">
+					<input type="checkbox" class="no-filter" id="toggle-term" name="toggle-term">
+					</div> -->
+					<label>Aantal km:
+					<span class="term-mileage">
+					<output name="term" class="term-mileage" id="aantalId">10.000</output>"p/j"
+					</span>
+					<!-- <output class="term-all">filter inactief</output> -->
+					</label>
+					<!-- <span class="term-mileage" id="aantalId">0</span> -->
+					<input type="range" class="search-filter" min="12" max="60" value="60" step="6"
+					data-default-value="60" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+					 onchange="showValueforAantal(this.value)" />
+					
+				</div>
+  			</div>
+  			<div class="row">
+  			<div class="searchbox-filters-container">
+					
+					<label>Maximaal Leasetarief p/m:
+					<span class="term-mileage">
+					<output name="term" class="term-mileage" id="maximaalId">100</output>
+					</span>
+					
+					</label>
+					<!-- <span class="term-mileage" id="maximaalId">0</span> -->
+					<input type="range" class="search-filter" min="12" max="60" value="60" step="6"
+					data-default-value="60" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+					 onchange="showValueforMaximaal(this.value)" />
+				</div>
+  			</div>
+  			
+  			<div class="row">
+  				<a id="hide1" class="accordeon-trigger listening" data-label-close="toon meer filters"
+					 data-label-open="toon minder filters" href="javascript:void(0);">toon minder filters</a>
+  			</div>
+  			<div class="row">
+  				
+  				<div id="uniquename1" class="searchbox-filters-container">
+  				<label>Belastingschaal</label>
+  				<div class="form-radio-bar" id="taxBracketPercentage">
+  				<label for="taxBracket36_5" class="form-checkbox-bar-item">
+  				<input type="radio" id="taxBracket36_5" name="taxBracketPercentage" data-val="36.55" class="enable-toggle" value="Jaarinkomen tot €19.922">
+  				36,55%</label>
+  				<label for="taxBracket42" class="form-checkbox-bar-item">
+  				<input type="radio" id="taxBracket42" name="taxBracketPercentage" data-val="40.4" class="enable-toggle" value="Jaarinkomen van €19.922 t/m €66.421">
+  				40,4%</label>
+  				<label for="taxBracket52" class="form-checkbox-bar-item">
+  				<input type="radio" id="taxBracket52" name="taxBracketPercentage" data-val="52" class="enable-toggle" value="Jaarinkomen meer dan €66.421">
+  				52%</label>
+  				</div>
+  				
+  				</div>
+  				
+  			</div>
+  			
+  			
+  		</div>
+  		
+  		<div class="col-7">
+  			<div class="row">
+					        
+					        <div class="col-3">
+					        <div><label>Honda</label></div>
+					        <div><img src="images/honda.png"></div>
+					        <div><label>Price:</label></div>
+					        </div>
+					        <div class="col-3">
+					        <div><label>Fiat</label></div>
+					        <div><img src="images/Fiat.png"></div>
+					        <div><label>Price:</label></div>
+					        </div>
+					        <div class="col-3">
+					        <div><label>Ford</label></div>
+					        <div><img src="images/Ford.png"></div>
+					        <div><label>Price:</label></div>
+					        </div>
+      			</div>
+      			
+  		</div>
+  	</div>
+  </div>
+  
+  </div>
+ 	
+  <!-- End Content -->
+  
+  <!-- The Footer Starts -->
+   <div class="footer">
+      <img src="images/logo.png" width="250px" height="125px" class="footerLogo"></img>
+      <ul class="footerMenuUl">Zakelijk
+        <li class="footerMenuLi"><a href="#home">Bekijk personenwagens</a></li>
+        <li class="footerMenuLi"><a href="#news">Bekijk bestelwagens</a></li>
+        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
+        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
+        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
+        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
+      </ul>
+      <ul class="footerMenuUl">Particulars
+        <li class="footerMenuLi"><a href="#home">Bekijk personenwagens</a></li>
+        <li class="footerMenuLi"><a href="#news">Bekijk bestelwagens</a></li>
+        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
+        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
+        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
+        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
+      </ul>
+      <ul class="footerMenuUl">Particulars
+        <li class="footerMenuLi"><a href="#home">Bekijk personenwagens</a></li>
+        <li class="footerMenuLi"><a href="#news">Bekijk bestelwagens</a></li>
+        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
+        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
+        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
+        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
+      </ul>
+      <ul class="footerMenuUl">Particulars
+        <li class="footerMenuLi"><a href="#home">Bekijk personenwagens</a></li>
+        <li class="footerMenuLi"><a href="#news">Bekijk bestelwagens</a></li>
+        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
+        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
+        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
+        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
+      </ul>
+      <ul class="footerDisclaimerUl">
+        <li class="footerDisclaimerLi"><a href="#home">Voorwarden</a></li>
+        <li class="footerDisclaimerLi"><a href="#news">Privacy Statement</a></li>
+        <li class="footerDisclaimerLi"><a href="#news">Cookies policy</a></li>
+        <li class="footerDisclaimerLi"><a href="#news">Sitemap</a></li>
+      </ul>
+  </div>
+  <!-- The Footer Ends -->
+</body>
+</html>

@@ -41,7 +41,76 @@ div.tab button.active {
     float: left;
     padding: 0px 12px;
     border: 1px solid #ccc;
-    width: 80%;
+    width: 100%;
     border-left: none;
     height: 600px;
+}
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.ddMenuUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ddMenuLink {
+    float: left;
+}
+
+.ddMenuLink a, .ddMenuLiDropdownBtn {
+    display: inline-block;
+    text-align: center;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-family: LeasePlan,Arial,Helvetica,sans-serif;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.ddMenuLink a:hover, .ddMenuLiDropdown:hover .ddMenuLiDropdownBtn {
+  border-bottom: 3px solid #FE5A00;
+}
+
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-top: 5px;
+    overflow: hidden;
+    background-color: #add;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 18px 18px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #FF8C00;}
+
+ul.topnav li a.active {background-color: #FF8C00;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
 }

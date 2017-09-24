@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/ddMenu.css">
 <link rel="stylesheet" href="css/carShowcase.css">
 <link rel="stylesheet" href="css/loginDialog.css">
+<link rel="stylesheet" href="css/registerDialog.css">
 </head>
 <body>
 <div class="bodyDiv">
@@ -80,38 +81,30 @@
       </div>
       </div>
   </div>
+  <!-- Page Content Starts -->
   <div class="contentDiv">
-    <a class="contentHeaderText">We think you will love these electric cars</a>
-    <ul class="carShowcaseUl">
-      <li class="carShowcaseLi">
-        <div class="carShowcaseContentMain">
-          <img src="images/red_car.jpg" width="350px" height="160px" class="carShowcaseImage"></img>
-          <a class="carShowcaseBlockHeaderText">Tesla Model s</a>
-          <a class="carShowcaseBlockTextDescription">Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden.</a>
-          <a class="carShowcaseBlockTextPrice">€ 350</a>
-          <a class="carShowcaseBlockTextPriceDetails">Ideal Voor Lange afstanden.</a>
-        </div>
-      </li>
-      <li class="carShowcaseLi">
-        <div class="carShowcaseContentMain">
-          <img src="images/gray_car.jpg" width="350px" height="160px" class="carShowcaseImage"></img>
-          <a class="carShowcaseBlockHeaderText">BMW i3</a>
-          <a class="carShowcaseBlockTextDescription">Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden.</a>
-          <a class="carShowcaseBlockTextPrice">€ 250</a>
-          <a class="carShowcaseBlockTextPriceDetails">Ideal Voor Lange afstanden.</a>
-        </div>
-      </li>
-      <li class="carShowcaseLi">
-        <div class="carShowcaseContentMain">
-          <img src="images/blue_car.jpg" width="350px" height="160px" class="carShowcaseImage"></img>
-          <a class="carShowcaseBlockHeaderText">Mercedes Benz B Electric</a>
-          <a class="carShowcaseBlockTextDescription">Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden.</a>
-          <a class="carShowcaseBlockTextPrice">€ 150</a>
-          <a class="carShowcaseBlockTextPriceDetails">Ideal Voor Lange afstanden.</a>
-        </div>
-      </li>
-    </ul>
-  </div>
+     <div class="registerDialog" id="idregisterDialog">  
+	<a class="registerDialogHeaderText">My account LeasePlan.</a>
+        <a class="registerDialogTopDescriptionText">An account is useful. You can easily store and buy assembled cars. Moreover, you always view the status of your ordered lease.</a>
+        <a class="registerDialogLabel">E-mail address</a>
+        <input type="text" name="email" class="registerDialogInput">
+        <a class="registerDialogLabel">Password</a>
+        <input type="password" name="password" class="registerDialogInput">
+        <a class="registerDialogLabel">Repeat Password</a>
+        <input type="password" name="repeatpassword" class="registerDialogInput">
+        <div class="checkbox">
+	  <input type="checkbox" name="registerAcceptConditionsCB" id="registerAcceptConditionsCB">
+          <label for="registerAcceptConditionsCB">I accept the LeasePlan <a href="#AcceptConditions">conditions</a></label>
+	</div>
+	<div class="checkbox">
+	  <input type="checkbox" name="registerMarketingCommsCB" id="registerMarketingCommsCB">
+	  <label for="registerMarketingCommsCB">I opt-in for Marketing <a href="#MarketingComms">communications</a></label>
+	</div>
+	<button type="button" class="blackButton button registerDialogRegisterBtn">Register</button>
+	<a class="registerDialogAlreadyHaveanAccountText">I already have an account:</a>
+	<button type="button" class="orangeButton button registerDialogLogonBtn" onclick="javascript:doSomething();">&lt Log on</button>
+     </div>
+   </div>
   <!-- The Footer Starts -->
   <div class="footer">
       <img src="images/logo.png" width="250px" height="125px" class="footerLogo"></img>

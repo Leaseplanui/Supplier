@@ -1,8 +1,8 @@
-.loginDialog {
+.registerDialog {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 999; /* Sit on top */
-    padding-top: 200px; /* Location of the box */
+    padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -13,7 +13,7 @@
 }
 
 /* Modal Content */
-.loginDialog-content {
+.registerDialog-content {
     background-color: #fefefe;
     margin: auto;
     padding-left: 40px;
@@ -22,44 +22,47 @@
     padding-bottom: 10px;
     border: 1px solid #888;
     width: 360px; /* Full width */
-    height: 575px; /* Full height */
+    height: 650px; /* Full height */
     text-align: left;
 }
 
 /* The Close Button */
-.loginDialog-close {
+.registerDialog-close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
 }
 
-.loginDialog-close:hover,
-.loginDialog-close:focus {
+.registerDialog-close:hover,
+.registerDialog-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
 
-.loginDialogHeaderText {
+.registerDialogHeaderText {
+  width: 100%;
+  float: left;
+  text-align: left;
   font-family: LeasePlan,Arial,Helvetica,sans-serif;
   font-size: 22px;
-  text-align: left;
-  float: left;
+  color: #004a5d;
+  font-weight: bold;
   letter-spacing: 1px;
 }
 
-.loginDialogTopDescriptionText {
+.registerDialogTopDescriptionText {
   font-family: LeasePlan,Arial,Helvetica,sans-serif;
   font-size: 16px;
   text-align: left;
   float: left;
-  padding-top: 20px;
+  padding-top: 10px;
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
-.loginDialogLabel {
+.registerDialogLabel {
   font-family: LeasePlan,Arial,Helvetica,sans-serif;
   font-size: 16px;
   float: left;
@@ -69,7 +72,7 @@
   padding-top: 15px;
 }
 
-.loginDialogInput {
+.registerDialogInput {
   float: left;
   text-align: left;
   width: 100%;
@@ -80,12 +83,24 @@
   border-top: 1px solid #e0e0e0;
 }
 
-.loginDialogCB {
-  float: left;
-  text-align: left;
-  width: 100%;
-  margin-top: 20px;
-  height: 30px;
+.checkbox {
+  float:left;
+  display:block;
+  padding:5px;
+}
+
+.checkbox input {
+      float:left;
+      width:auto;
+      height:13px;
+}
+
+.checkbox label {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  float:left;
+  display: inline-block;
+  width:auto;
 }
 
 .button {
@@ -97,7 +112,6 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 25px;
-  min-width: 150px;
 }
 
 .blackButton {
@@ -114,27 +128,17 @@
   color: white;
 }
 
-.loginDialogLoginBtn {
-  margin-top: 30px;
-  float: left;
-}
-
-.loginDialogRegisterBtn {
+.registerDialogRegisterBtn {
   margin-top: 10px;
   float: left;
 }
 
-.forgotPassword {
-  font-family: LeasePlan,Arial,Helvetica,sans-serif;
-  color: black;
-  padding-top: 25px;
-  font-size: 14px;
-  width: 100%;
+.registerDialogLogonBtn {
+  margin-top: 10px;
   float: left;
-  text-align: left;
 }
 
-.loginDialogDontHaveanAccountText {
+.registerDialogAlreadyHaveanAccountText {
   font-family: LeasePlan,Arial,Helvetica,sans-serif;
   padding-top: 10px;
   font-size: 16px;

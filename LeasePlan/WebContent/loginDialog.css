@@ -1,8 +1,8 @@
 .loginDialog {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
-    padding-top: 200px; /* Location of the box */
+     z-index: 999; /* Sit on top */
+   /* padding-top: 150px;  Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -115,7 +115,7 @@
 }
 
 .loginDialogLoginBtn {
-  margin-top: 30px;
+  margin-top: 40px;
   float: left;
 }
 
@@ -136,7 +136,7 @@
 
 .loginDialogDontHaveanAccountText {
   font-family: LeasePlan,Arial,Helvetica,sans-serif;
-  padding-top: 10px;
+  padding-top: 30px;
   font-size: 16px;
   text-align: left;
   width: 100%;
