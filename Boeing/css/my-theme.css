@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*===============my html purpose=================*/
+.main-header{ padding:10px 0px;}
+.carousel .item a{ color:#fff;}
+.carousel .item a:hover{ color:#fff;}
+@media only screen and (min-width:768px) {
+.navbar-nav > li > a { padding:8px 6px;}
+.navigation{ padding-top:10px; padding-bottom:10px;}
+}

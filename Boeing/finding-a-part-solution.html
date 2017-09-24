@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>The Boeing Part Page</title>
+
+<!-- dont include these files already its there in hybris framework -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!--ends-->
+
+<!-- dont include these file it is for html view -->
+<link href="css/my-theme.css" rel="stylesheet">
+<!--ends-->
+
+<!-- framework override css and custom style css -- needs to be add in css.tag file -->
+<link href="css/framework-override.css" rel="stylesheet">
+<link href="css/material-menu.css" rel="stylesheet">
+<link href="css/custom-style.css" rel="stylesheet">
+
+<!--ends-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--header-->
+<header>
+  <div class="main-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-8 col-xs-24">
+          <div class="pull-left">
+            <div id="wrapper" class="wrapper"> </div>
+            <!-- /wrapper -->
+            
+            <button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
+            <nav id="mm-menu" class="mm-menu">
+              <div class="mm-menu__header"> </div>
+              <ul class="mm-menu__items">
+                <li class="mm-menu__item"> <a class="mm-menu__link" href="#"> <span class="mm-menu__link-text">Parts</span> </a> </li>
+                <li class="mm-menu__item"> <a class="mm-menu__link" href="#"> <span class="mm-menu__link-text">Orders</span> </a> </li>
+                <li class="mm-menu__item"> <a class="mm-menu__link" href="#"> <span class="mm-menu__link-text">Quotes</span> </a> </li>
+                <li class="mm-menu__item"> <a class="mm-menu__link" href="#"> <span class="mm-menu__link-text">Returns</span> </a> </li>
+                <li class="mm-menu__item"> <a class="mm-menu__link" href="#"> <span class="mm-menu__link-text">Ship To</span> </a> </li>
+                <li class="mm-menu__item"> <a class="mm-menu__link" href="#"> <span class="mm-menu__link-text">Support Requests</span> </a> </li>
+                <li class="mm-menu__item"> <a class="mm-menu__link" href="#"> <span class="mm-menu__link-text">Info Desks</span> </a> </li>
+              </ul>
+            </nav>
+            <!-- /nav --> 
+          </div>
+          <div class="logo pull-left mt5 ml50 xs-mb10"><a href="index.html">The Boeing PART Page</a></div>
+        </div>
+        <div class="col-md-10 col-sm-12 col-xs-24">
+          <form class="form-inline text-right">
+            <div class="form-group">
+              <select class="form-control part-number">
+                <option>Part Number</option>
+                <option>Purchase Order</option>
+                <option>Quote Number</option>
+                <option>Invoice Number</option>
+                <option>MBF Global Search</option>
+              </select>
+            </div>
+            <div class="form-group part-search"> <span aria-hidden="true" class="glyphicon glyphicon-search search-icon"></span>
+              <input type="email" class="form-control" placeholder="Part Search">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 col-sm-4 col-xs-24">
+          <ul class="nav navbar-nav navbar-right cart-links">
+            <li class="dropdown"> <a class="dropdown-toggle color-white" data-toggle="dropdown" href="#"><span aria-hidden="true" class="glyphicon glyphicon-shopping-cart"></span> Cart (0) <span class="caret"></span></a>
+              <ul class="dropdown-menu cart-dropdown">
+                <li>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th colspan="4" class="text-right">Showing 3 of 3 Items</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="img/thumb-img.jpg" /></td>
+                        <td>6 Inch Nylon Cable Tiles 100-Pack </td>
+                        <td>2</td>
+                        <td>$16.00</td>
+                      </tr>
+                      <tr>
+                        <td><img src="img/thumb-img.jpg" /></td>
+                        <td>6 Inch Nylon Cable Tiles 100-Pack </td>
+                        <td>2</td>
+                        <td>$16.00</td>
+                      </tr>
+                      <tr>
+                        <td><img src="img/thumb-img.jpg" /></td>
+                        <td>6 Inch Nylon Cable Tiles 100-Pack </td>
+                        <td>2</td>
+                        <td>$16.00</td>
+                      </tr>
+                      <tr>
+                        <th colspan="4" class="text-right">Total $430.99</th>
+                      </tr>
+                      <tr>
+                        <td colspan="4" class="text-right"><button class="btn btn-primary" type="submit">CheckOut</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown"> <a class="dropdown-toggle color-white" data-toggle="dropdown" href="#"><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Quote (0) <span class="caret"></span></a>
+              <ul class="dropdown-menu cart-dropdown">
+                <li>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th colspan="4" class="text-right">Showing 2 of 2 Items</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img src="img/thumb-img.jpg" /></td>
+                        <td>6 Inch Nylon Cable Tiles 100-Pack </td>
+                        <td>2</td>
+                        <td>$16.00</td>
+                      </tr>
+                      <tr>
+                        <td><img src="img/thumb-img.jpg" /></td>
+                        <td>6 Inch Nylon Cable Tiles 100-Pack </td>
+                        <td>2</td>
+                        <td>$16.00</td>
+                      </tr>
+                    
+                      <td colspan="4" class="text-right"><button class="btn btn-primary" type="submit">Quote</button></td>
+                    </tr>
+                      </tbody>
+                    
+                  </table>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="navigation navbar navbar-inverse"><!--Navigation-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-24 col-sm-24">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav  navbar-left">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">My Orders</a></li>
+                    <li><a href="#">Search Orders</a></li>
+                    <li><a href="#">Enter New Order</a></li>
+                    <li><a href="#">Upload Orders</a></li>
+                    <li><a href="#">Product List</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Quotes <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">My Quotes</a></li>
+                    <li><a href="#">Search Quotes</a></li>
+                    <li><a href="#">Request New Quote</a></li>
+                    <li><a href="#">Upload Quotes</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Returns <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">My Returns</a></li>
+                    <li><a href="#">Search Returns</a></li>
+                    <li><a href="#">Request Return</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ship To <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Search Ship To's</a></li>
+                    <li><a href="#">Add Ship To</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Support Requests <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">My Requests</a></li>
+                    <li><a href="#">Search Requests</a></li>
+                    <li><a href="#">Submit Support Request</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Info Desk</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="customer-code-ANA">
+                  <div class="customer-code">Customer Code ANA</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--end-->
+
+<main class="main-body"><!--Main Section-->
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-md-24">
+              <h1 class="heading1">Aftermarket Part Solutions</h1>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-24 mb10">
+              <h3 class="heading3">Boeing's Aftermarket Solutions Greatly Expand  Your Inventory Sourcing Options!</h3>
+              <p class="paragraph"><strong>Boeing Aftermarket Solutions Offerings</strong></p>
+              <ul class="bulletpoints">
+                <li>PART  Page Marketplace</li>
+              </ul>
+              <div class="ml20">
+                <ul class="bulletpoints">
+                  <li>Offers  real-time inventory availability with clear pricing and part traceability  online.</li>
+                  <li>Inventory  consists of new surplus, overhauled, and serviceable parts.  </li>
+                  <li>PART  Page Marketplace orders will be packed and shipped by Boeing or a Strategic  Boeing Supplier with a 2 business day lead time.  To request that a part by expedited, please  contact the Boeing Aftermarket Solutions Team <br />
+                    <a href="mailto:aftermarketparts@boeing.com">aftermarketparts@boeing.com </a></li>
+                </ul>
+                <p class="paragraph">To  download the list of all Marketplace parts, click on the ""Download"" button  below.</p>
+                <p class="paragraph">
+                  <input type="submit" value="Download" />
+                  Excel format (.xls)</p>
+              </div>
+              <ul class="bulletpoints">
+                <li>Request for Quote (RFQ's)</li>
+              </ul>
+              <div class="ml20">
+                <p class="paragraph">(<em>open bullet here as above</em>) We have the ability, upon your request  to search the market to aid in finding an equitable aftermarket solution for  your requirement if PART Page Marketplace does not list the parts.  Our operations team is in direct contact with  the supply chain which allows for rapid responses to your quotes. For  more information, contact the Boeing Aftermarket Solutions Team <a href="mailto:aftermarketparts@boeing.com">aftermarketparts@boeing.com</a></p>
+              </div>
+              <ul class="bulletpoints text-l">
+                <li>Part Package Proposals</li>
+              </ul>
+              <div class="ml20">
+                <p class="paragraph">We provide        quotes on part packages (customer-specific RSPL), based upon requested        lists of parts provided.</p>
+              </div>
+              <h3 class="heading3">Boeing's Aftermarket Solutions Inventory</h3>
+              <ul type="disc">
+                <ul class="bulletpoints">
+                  <li>Includes the        Boeing warranty as specified in the <a href="javascript:void">Aftermarket Terms & Conditions</a></li>
+                  <li>Comes with        approved traceability documentation per FAA (AC) 20-62E<strong></strong></li>
+                  <li>Comes with        appropriate documentation and certification which includes ATA 106 Material        Certification/Non-Incident Statement, Export 8130-3 (Export Certification        of Airworthiness), FAA Form 8130-3 Airworthiness Approval, or JAA-1 Form        (or, EASA Form), or CAAC-Tag, as required<strong></strong></li>
+                  <li>Will be        within the manufacturer's time, life, or usage limits<strong></strong></li>
+                  <li>Was NOT        procured from U.S. Government or military source<strong></strong></li>
+                </ul>
+              </ul>
+              <p class="paragraph">Purchase Orders for PART Page Marketplace inventory must be placed on  the PART Page and are subject to the <a href="javascript:void">Aftermarket Terms & Conditions</a><strong> </strong></p>
+              <p class="paragraph">Pricing and  availability is subject to prior sale. Special pricing may be available,  contact the Boeing Aftermarket Solution team <a href="mailto:aftermarketparts@boeing.com">aftermarketparts@boeing.com</a> </p>
+              <p class="paragraph">For  more information, contact the Boeing&rsquo;s Aftermarket Solutions Program:</p>
+              <div class="row">
+                <div class="col-md-12">
+                  <table class="table table-bordered">
+                    <tr class="active">
+                      <td colspan="2" valign="top"><strong>Contact us at    any of the following</strong></td>
+                    </tr>
+                    <tr>
+                      <td align="left"><strong>Phone</strong></td>
+                      <td>(206) 200-3532</td>
+                    </tr>
+                    <tr class="active">
+                      <td><strong>E-Mail</strong></td>
+                      <td><a href="mailto:aftermarketparts@boeing.com">aftermarketparts@boeing.com </a></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--end-->
+
+<footer class="footer"><!--section-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-24">
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Log Off</a></li>
+        </ul>
+      </div>
+      <div class="col-md-24">
+        <p class="copyright">Copyright © 2014 Boeing. All Rights Reserved. <a href="#">Terms of use</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--end--> 
+<!-- Go To Top Link --> 
+<a href="#" class="back-to-top"><span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span></a> 
+<!-- dont include these files already its there in hybris framework --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-2.1.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<!--end--> 
+<script src="js/materialMenu.min.js"></script> 
+<!-- datapicker it has to be add in js.tag file --> 
+<script src="js/bootstrap-datepicker.js" type="text/javascript"></script> 
+<!--ends--> 
+<!-- custom javascript it has to be add in js.tag file --> 
+<script src="js/custom-script.js" type="text/javascript"></script> 
+<!--ends-->
+</body>
+</html>

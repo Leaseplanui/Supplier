@@ -1,0 +1,78 @@
+/*=========frames work css overriding according to the design==========*/
+/* ==========bootstrap============== */
+.btn{text-transform:capitalize;}
+.btn-info, .btn-primary, .btn-default{ box-shadow:none;}
+.btn-info { background:#009bde; box-shadow:none;}
+.btn-info:hover{ background:#009bde;}
+.btn-primary{background:#003571;; border:none;}
+.btn-primary:hover{ background:#285b94;}
+a.btn-primary:hover{background:#285b94 !important;}
+.btn-default:hover{background:#d7d2d2;}
+.form-control { box-shadow:none;}
+select.form-control{ height:32px;}
+.form-group{ margin-bottom:10px;}
+.table { margin-bottom:10px;}
+.panel{ border-radius:0px; margin-bottom:10px;}
+.alert{ padding:10px; margin-bottom:10px; border-radius:0px;}
+.alert-success .badge{ color:#fff; background:#75be3d;}
+.nav-pills > li > a{ border-radius:0px;}
+.panel-body{ padding:10px;}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{ background:#0698d9; color:#fff;}
+.nav-tabs .nav > li > a:hover{ background:#0698d9; color:#fff;}
+.nav-tabs > li > a{ background:#ddd; color:#333;}
+.table-responsive{ overflow-x:visible}
+.navbar-nav > li > a{color : #fff;}
+
+
+/*=================style====================*/
+.main-header{padding:17px 0px 0px !important; background:#263746; margin:0px;}
+.main-navigation{ margin-top:0px !important;}
+ .main-header .main-navigation > .nav > li .sub-navigation {left: 0px !important;}
+.main-header .main-navigation > .nav > li + li{ border-left:1px solid #e7e7e7;}
+.main-header .main-navigation > .nav > li > a:hover, .main-header .main-navigation > .nav > li > a:focus{background:none !important; color:#565656 !important;box-shadow: 0 -3px 0 0 #263746 inset;}
+.main-header .main-navigation > .nav > li > a{ background:none !important; color:#565656 !important; font-size:14px; line-height:35px;}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{background:none !important; color:#565656 !important;box-shadow: 0 -3px 0 0 #263746 inset; }
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{ background:#3071a9; color:#fff;}
+.btn-primary{box-shadow:none;}
+a:focus, a:hover{outline:none;}
+.main-header .main-navigation > .nav > li .sub-navigation .sub-navigation-section .sub-navigation-list li a{ padding-left:15px;}
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary.active{ background-color:#4f617b; color:#354153}
+.main-header .main-navigation {background:#eeeff0;}
+.sub-navigation{ left:0px !important;}
+.main-header .main-navigation > .nav > li{ position:relative;}
+.main-header .main-navigation > .nav > li .sub-navigation .sub-navigation-section .sub-navigation-list li a{ line-height:30px;}
+.main-header .main-navigation > .nav > li.md-show-sub.has-sub > a:after{ display:none;}
+.panel-info > .panel-heading{background:#eeeff0; border-color:#eeeff0;}
+.panel-info{ border-color:#eeeff0;}
+.panel{box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);}
+table th{ color:#565656;}
+.cart-links > li > a:hover, .cart-links > li > a:focus {background-color:#263746 !important;text-decoration: none;}
+.btn{ text-transform:uppercase;}
+.form-control{ font-size:13px;}
+/*ends*/
+
+
+/*====================Media Queries==========================*/
+@media only screen and (max-width:992px) {
+.table-responsive{ overflow-x:auto;}
+}
+@media only screen and (min-width:769px) {
+.main-header .main-navigation > .nav > li .sub-navigation{width:250px; background:#ffffff; overflow:hidden;}
+.main-header .main-navigation > .nav > li .sub-navigation .sub-navigation-section{ padding:5px;}
+.main-header .main-navigation > .nav > li .sub-navigation .sub-navigation-section + .sub-navigation-section::before{ width:none;}
+.main-header .main-navigation > .nav > li .sub-navigation .sub-navigation-section .sub-navigation-list li:first-child{ border-top:none;}
+.main-header .main-navigation > .nav > li .sub-navigation .sub-navigation-section .sub-navigation-list li{border-bottom:none;}
+.main-header .main-navigation > .nav > li .sub-navigation .sub-navigation-section .sub-navigation-list li a:hover{ background:#ececec; color:#000;}
+.cart-links > li > a:hover{background:none; color:#fff;}
+.main-header .main-navigation > .nav > li:hover{background:none !important; color:#565656 !important;box-shadow: 0 -3px 0 0 #263746 inset; color:#565656;}
+ .main-header .main-navigation > .nav > li:hover > a{ color:#565656;}
+.nav > li{ position:relative !important;}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{background:none; color:#fff !important; border:none;}
+}
+@media only screen and (max-width:768px) {
+.main-header .main-navigation > ul a{ line-height:20px;}
+.main-header .main-navigation .has-sub > a::before{ top:14px;}
+.main-header .main-navigation .has-sub .sub-navigation .sub-navigation-section{ margin-bottom:0px;}
+}
+/*ends*/
