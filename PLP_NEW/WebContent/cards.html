@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="icon" type="image/png" href="images/logo.png">
-<title>Title of the document</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/loginDialog.js"></script>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/ddMenu.css">
-<link rel="stylesheet" href="css/carShowcase.css">
-<link rel="stylesheet" href="css/loginDialog.css">
+  <title>Title of the document</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js/loginDialog.js"></script>
+  <script type="text/javascript" src="js/carCards.js"></script>
+  <script type="text/javascript" src="js/verticalMenu.js"></script>
+  <link rel="stylesheet" href="css/ddMenu.css">
+  <link rel="stylesheet" href="css/carCards.css">
+  <link rel="stylesheet" href="css/verticalMenu.css">
+  <link rel="stylesheet" href="css/loginDialog.css">
+  <!-- The Footer Ends -->
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="js/bootstrap-multiselect/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+  <script src="js/bootstrap-multiselect/js/bootstrap-multiselect.js"></script>
+
+  <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/select.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select.css">
+
+
+  <!-- Include the plugin's CSS and JS: -->
+  <!-- <script type="text/javascript" src="js/bootstrap/js/bootstrap-multiselect.js"></script>
+  <link rel="stylesheet" href="js/bootstrap/css/bootstrap-multiselect.css" type="text/css" /> -->
+
 </head>
+
 <body>
-<div class="bodyDiv">
+  <div class="bodyDiv">
     <!-- The Login Dialog Starts -->
     <div class="loginDialog" id="idLoginDialog">
       <!-- Modal content -->
@@ -32,7 +52,7 @@
       </div>
     </div>
     <!-- The Login Dialog Ends -->
-  <div class="headerBar">
+    <div class="headerBar">
       <div class="logoContainer">
         <img src="images/logo.png" height="100%" width="100%"></img>
       </div>
@@ -47,7 +67,7 @@
             <li><img src="images/user-32x32.png" class="topRightMenuIcon"><a href="javascript:doSomething();">Login</a></li>
           </ul>
         </div>
-    </div>
+      </div>
       <div class="headerBarBottom">
         <div class="headerBarBottomMenuDiv">
           <ul class="ddMenuUl">
@@ -78,43 +98,15 @@
               </div>
             </li>
           </ul>
+        </div>
       </div>
-      </div>
-  </div>
-  <div class="contentDiv">
-    <a class="contentHeaderText">We think you will love these electric cars</a>
-    <ul class="carShowcaseUl">
-      <li class="carShowcaseLi">
-        <div class="carShowcaseContentMain">
-          <img src="images/red_car.JPG" width="350px" height="160px" class="carShowcaseImage"></img>
-          <a class="carShowcaseBlockHeaderText">Tesla Model s</a>
-          <a class="carShowcaseBlockTextDescription">Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden.</a>
-          <a class="carShowcaseBlockTextPrice">€ 350</a>
-          <a class="carShowcaseBlockTextPriceDetails">Ideal Voor Lange afstanden.</a>
-        </div>
-      </li>
-      <li class="carShowcaseLi">
-        <div class="carShowcaseContentMain">
-          <img src="images/gray_car.JPG" width="350px" height="160px" class="carShowcaseImage"></img>
-          <a class="carShowcaseBlockHeaderText">BMW i3</a>
-          <a class="carShowcaseBlockTextDescription">Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden.</a>
-          <a class="carShowcaseBlockTextPrice">€ 250</a>
-          <a class="carShowcaseBlockTextPriceDetails">Ideal Voor Lange afstanden.</a>
-        </div>
-      </li>
-      <li class="carShowcaseLi">
-        <div class="carShowcaseContentMain">
-          <img src="images/blue_car.JPG" width="350px" height="160px" class="carShowcaseImage"></img>
-          <a class="carShowcaseBlockHeaderText">Mercedes Benz B Electric</a>
-          <a class="carShowcaseBlockTextDescription">Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden. Ideal Voor Lange afstanden.</a>
-          <a class="carShowcaseBlockTextPrice">€ 150</a>
-          <a class="carShowcaseBlockTextPriceDetails">Ideal Voor Lange afstanden.</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <!-- The Footer Starts -->
-  <div class="footer">
+    </div>
+    <div class="contentDiv" id="idContentDiv">
+      <div id="idVerticalMenuDiv" class="verticalMenuContainerDiv"></div>
+      <div id="idCardContainerDiv" class="cardContainerDiv"></div>
+    </div>
+    <!-- The Footer Starts -->
+    <div class="footer">
       <img src="images/logo.png" width="250px" height="125px" class="footerLogo"></img>
       <ul class="footerMenuUl">Zakelijk
         <li class="footerMenuLi"><a href="#home">Bekijk personenwagens</a></li>
@@ -154,7 +146,7 @@
         <li class="footerDisclaimerLi"><a href="#news">Cookies policy</a></li>
         <li class="footerDisclaimerLi"><a href="#news">Sitemap</a></li>
       </ul>
-  </div>
-  <!-- The Footer Ends -->
+    </div>
 </body>
+
 </html>

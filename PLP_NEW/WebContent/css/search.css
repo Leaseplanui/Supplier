@@ -1,0 +1,57 @@
+.bannerDiv {
+  background-image: url('../images/background_04.jpg');
+  background-repeat: no-repeat;
+  height: 474px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+}
+
+.searchContainer {
+  width: 30%;
+  height: 90%;
+  background: white;
+  float: left;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  display: table;
+  text-align: left;
+}
+
+.searchContainerHeader {
+  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.8em;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.selectDiv {
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+
+.sliderTitle {
+  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 16px;
+}
+
+.slider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.searchCarsBtn {
+  margin-right: 10px;
+}
+
+.advancedSearchLink {
+  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #F5821E;
+  line-height: 70px;
+}

@@ -1,0 +1,39 @@
+.btn {
+  border-radius: 0;
+  background: white;
+  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 800;
+  background: white !important;
+  box-shadow: none !important;
+  padding: 14px 16px;
+  text-align: left;
+  width: calc(100%);
+  border: 1px solid #ddd;
+}
+
+.btn:hover,.btn:focus {
+  border-color: #ddd;
+}
+
+.btn-group {
+  width: calc(100% - 30px); //14*2 - 1 -1
+}
+
+.caret {
+  float: right;
+}
+
+.multiselect-container>li>a>label {
+  margin-bottom: 6px !important;
+  margin-top: 3px !important;
+  height: 30px;
+  font-family: LeasePlan, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.dropdown-menu {
+  width: 100%;
+}

@@ -1,14 +1,5 @@
 // Get the modal
 $(function(){
-	
-	$.get("Footer.html", function(data) {
-	    $("#footerDiv").html(data);
-	})
-	
-	$.get("Header.html", function(data) {
-	    $("#HeaderDiv").html(data);
-	});
-	
   var modal = $(".loginDialog");
 
   // Get the <span> element that closes the modal
