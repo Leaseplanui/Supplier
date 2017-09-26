@@ -52,3 +52,8 @@ $(function() {
   });
   $("#slider").slider();
 });
+
+function viewCars()
+{
+	window.open("index.html","_self") 
+}
