@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/png" href="images/logo.png">
+<link rel="icon" type="image/png" href="images/logo.png">
 <title>Supplier Portal</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/loginDialog.js"></script>
+<script type="text/javascript" src="js/CarHomePage.js"></script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/ddMenu.css">
 <link rel="stylesheet" href="css/carShowcase.css">
 <link rel="stylesheet" href="css/loginDialog.css">
 <link rel="stylesheet" href="css/menuLinkTab.css">
-<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="__https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .headerbarHeight
 {
 height:100% !important;
 }
-</style>
-
-</head>
-<body>
-  <!-- The Login Dialog Ends -->
-  <div class="headerBar">
+</style></head>
+<body><!-- The Login Dialog Ends -->
+<div class="headerBar">
       <div class="logoContainer">
         <img src="images/logo.png" height="100%" width="100%"></img>
       </div>
@@ -30,8 +28,8 @@ height:100% !important;
         <ul class="headerBarTopMenu " >
           <li><a class="topMenuActive" href="#Car Supplier Portal">Car Supplier Portal</a></li>
           <li><a href="#Service supplier portal">Service supplier portal</a></li>
-          <li><a href="Contact & Training.html">Contact & Traning</a></li>
-          <li><a href="Help & FAQ.html">Help & FAQ</a></li>
+          <li> <a href="#ContactTraining" onclick='ContactTraining();'>Contact & Traning</a></li>
+         <li> <a href="#HelpFAQ" onclick='HelpFaq();'>Help & FAQ</a></li>
           <li><a href="#about-us">About Us</a></li>
         </ul>
         <div class="headerBarTopRightMenuDiv">
@@ -45,12 +43,11 @@ height:100% !important;
         <div class="headerBarBottomMenuDiv">
           <ul class="ddMenuUl">
           
-    <i class="fa fa-home"></i>
-    
-  
-            <li class="ddMenuActive ddMenuLink"><a href="#home">Home</a></li>
+            <li class="ddMenuActive ddMenuLink">
+            <a href="#home" onclick='CarShowCase();'><i class="fa fa-home" style="font-size:24px;"></a>
+            </li>
             <li class="ddMenuLink"><a href="#Order aanvraags">Order aanvraag</a></li>
-            <li class="ddMenuLink"><a href="#Afgeleverde">Afgeleverde</a></li>
+            <li class="ddMenuLink"><a href="#quotation" onclick='quotation();'>Afgeleverde</a></li>
             <li class="ddMenuLink"><a href="#Instellingen">Instellingen</a></li>
             <li class="ddMenuLink"><a href="#Berichten">Berichten</a></li>
             <li class="ddMenuLink"><a href="#Archief">Archief</a></li>
@@ -60,13 +57,13 @@ height:100% !important;
       </div>
       </div>
   </div>
-  <div class="intro">
-  <h2 id="firstname">My name is Donald</h2>
-  <p id="hometown">I live in Duckburg</p>
-  <p>My <b>best</b> friend is Mickey </p>
-  
-</div>
-   <!-- The Footer Starts -->
+ 
+ <div id="Contentdiv"></div>
+ <!-- <div id="helpfaqDiv"></div>
+ <div id="ContactTrainingDiv"></div>
+ <div id="quotationDiv"></div> -->
+ 
+    <!-- The Footer Starts -->
   <div id = "footerDiv">
   </div><!-- The Footer Ends -->
   </body>

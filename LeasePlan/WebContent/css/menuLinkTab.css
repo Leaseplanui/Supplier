@@ -68,7 +68,7 @@ body {margin:0;}
     display: inline-block;
     text-align: center;
     padding-left: 9px;
-    padding-right: 9px;
+    padding-right: 39px;
     padding-top: 14px;
     padding-bottom: 14px;
     text-decoration: none;
@@ -83,7 +83,7 @@ body {margin:0;}
   border-bottom: 3px solid #FE5A00;
 }
 
-body {margin: 0;}
+body {margin: 0;background-color: #f6f8fb}
 
 ul.topnav {
     list-style-type: none;
