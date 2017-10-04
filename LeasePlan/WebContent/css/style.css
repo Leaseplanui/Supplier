@@ -32,7 +32,7 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
 }
 
 .headerBarTop {
-  height: 89px;background-color: white;
+  height: 75px;
   border-bottom: 1px solid #E2E4E5;
 }
 
@@ -47,28 +47,23 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
 
 .headerBarTopMenu>li {
   float: left;
-  line-height: 73px;
+  line-height: 71px;
 }
-a{color:#f06400}
 
-.headerBarTopMenu>li a {    letter-spacing: .7px;
+.headerBarTopMenu>li a {
   font-family: LeasePlan, Arial, Helvetica, sans-serif;
   font-weight: 600;
   display: block;
-  color: #2d2d2d;
+  color: #767676;
   text-align: center;
   padding-left: 16px;
   padding-right: 16px;
-
-  padding-top: 12px;
   text-decoration: none;
 }
-fieldset {
-    border: 0;
-}
+
 .headerBarTopMenu>li a:hover {
-  color: #FE5A00;
-  border-bottom: 3px solid #FE5A00;
+  color: black;
+  border-bottom: 4px solid #FE5A00;
 }
 
 .headerBarBottom {
@@ -85,8 +80,8 @@ fieldset {
 }
 
 .topMenuActive {
-  color: #2d2d2d !important;
-  border-bottom: 3px solid #FE5A00;
+  color: black!important;
+  border-bottom: 4px solid #FE5A00;
 }
 
 .headerBarBottomMenuDiv {
@@ -111,7 +106,7 @@ fieldset {
 
 .headerBarTopRightMenu>li {
   float: left;
- <!-- border-right: 1px solid gray;-->
+  border-right: 1px solid gray;
   height: 100%;
 }
 
@@ -127,7 +122,6 @@ fieldset {
   text-decoration: none;
   float: left;
   padding-top: 10px;
-border-right: 1px solid gray;
 }
 
 .headerBarTopRightMenu>li:last-child {

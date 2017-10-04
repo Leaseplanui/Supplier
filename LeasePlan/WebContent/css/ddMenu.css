@@ -63,7 +63,7 @@
 }
 
 .ddMenuActive a {
-  color: #FE5A00 !important;
+  color: #FE5A00;
 }
 
 .ddMenuLiDropdownBtn::after {

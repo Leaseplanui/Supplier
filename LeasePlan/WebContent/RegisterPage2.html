@@ -6,11 +6,13 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/loginDialog.js"></script>
+<script type="text/javascript" src="js/registerPage2.js"></script>
+
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/ddMenu.css">
 <link rel="stylesheet" href="css/carShowcase.css">
 <link rel="stylesheet" href="css/loginDialog.css">
-<link rel="stylesheet" href="css/registerDialog.css">
+<link rel="stylesheet" href="css/postRegisterPage.css">
 </head>
 <body>
 <div class="bodyDiv">
@@ -81,30 +83,109 @@
       </div>
       </div>
   </div>
-  <!-- Page Content Starts -->
   <div class="contentDiv">
-     <div class="registerDialog" id="idregisterDialog">  
-	<a class="registerDialogHeaderText">My account LeasePlan.</a>
-        <a class="registerDialogTopDescriptionText">An account is useful. You can easily store and buy assembled cars. Moreover, you always view the status of your ordered lease.</a>
-        <a class="registerDialogLabel">E-mail address</a>
-        <input type="text" name="email" class="registerDialogInput">
-        <a class="registerDialogLabel">Password</a>
-        <input type="password" name="password" class="registerDialogInput">
-        <a class="registerDialogLabel">Repeat Password</a>
-        <input type="password" name="repeatpassword" class="registerDialogInput">
-        <div class="checkbox">
-	  <input type="checkbox" name="registerAcceptConditionsCB" id="registerAcceptConditionsCB">
-          <label for="registerAcceptConditionsCB">I accept the LeasePlan <a href="#AcceptConditions">conditions</a></label>
-	</div>
-	<div class="checkbox">
-	  <input type="checkbox" name="registerMarketingCommsCB" id="registerMarketingCommsCB">
-	  <label for="registerMarketingCommsCB">I opt-in for Marketing <a href="#MarketingComms">communications</a></label>
-	</div>
-	<button type="button" class="blackButton button registerDialogRegisterBtn">Register</button>
-	<a class="registerDialogAlreadyHaveanAccountText">I already have an account:</a>
-	<button type="button" class="orangeButton button registerDialogLogonBtn" onclick="javascript:doSomething();">&lt Log on</button>
-     </div>
+   <div class="registerScreen2"> 
+    <ul class="postRegisterPage">
+      <li class="postRegisterBlock1">
+        <div class="postRegisterBlock-Text">
+          <a class="postRegisterBlockHeaderText">More possibilities?</a>
+          <a class="postRegisterBlockHeaderText1"> Fill out your details.</a>
+          <a class="postRegisterBlockHeaderContent">Inside My LeasePlan you can access:</a>
+          <section class="myLeaseContent">
+            <a class="myLeaseSectionHeader">my Lease</a>
+            <div class="myLeaseBlockContent">
+            <a class="myLeaseBlockContentText">As a director of a company car, you can register for My Lease. During registration you will need the following information:</a>
+            <ul class="myLeaseBlockContentList">
+              <li class="myLeaseBlockContentLI"><span> Your name, including prefixes </span></li>
+              <li class="myLeaseBlockContentLI"><span> registration of your lease </span></li>
+              <li class="myLeaseBlockContentLI"><span> reporting code (last 4 digits of the identification number/ VIN on the registration card) </span></li>
+              <li class="myLeaseBlockContentLI"><span> card number of your fuel (do you have more than one pick) </span></li>
+            </ul>
+            <a class="myLeaseBlockContentText">Do not fuel card?</a> 
+            <a class="myLeaseBlockContentText">Enter your ordering contract or estimate number (on the order confirmation / affirmation bet)</a>
+            </div>
+          </section> 
+          <section class="myServicesContent">
+            <a class="myServicesSectionHeader">my services</a>
+            <a class="myServicesSectionText"> Are you a supplier of LeasePlan? You can register with the establishment number and order number listed on the order confirmation. Does not mention the establishment number? Send an email to <a class="myServicesOrderEmail" href="#ordering-emailid">orderingalmere@leaseplan.nl</a></a>
+          <section>
+        </div>
+      </li>
+      <li class="postRegisterBlock2">
+        <div class="postRegisterBlock-Fields">
+          <div class="postRegisterInitialSelect">          
+           <!-- <a class="postRegisterBlockLabel">make a choice</a>-->
+            <select id="leaseSelect" name="LeaseSelection" class="postregisterBlockSelectList">
+             <option value="default"> Make a choice </option>
+             <option value="leasecar"> I want access to my Lease Car </option>
+             <option value="supplier"> I am a LeasePlan supplier </option>
+            </select>
+          </div>
+          <div class="accessLeaseCar">
+            <a class="postRegisterBlockLabel">Your last name (incl. Prefix)</a>
+            <input type="text" name="lastname" class="postregisterBlockInput">
+
+            <a class="postRegisterBlockLabel">License Plate</a>
+            <input type="text" name="licensePlate" class="postregisterBlockInput">
+
+            <a class="postRegisterBlockLabel">Report Code</a>
+            <input type="text" name="reportCode" class="postregisterBlockInput">
+
+            <a class="postRegisterBlockLabel">Are you in possession of a fuel card issued by LeasePlan or ordering contract calculation number?</a>
+          
+            <select id="fuelOrderSelect" name="FuelCardNumber" class="postregisterBlockSelectList">
+             <option value="fuelCard">Yes I know my fuel card number</option>
+             <option value="orderContractNo">Yes, I know my order-contract calculation number</option>
+             <option value="no"> No </option>
+            </select>
+            
+            <div class="displayFuelCardNo">
+             <a class="postRegisterBlockLabel">Fuel card number</a>
+             <div class="postRegisterBlockFuelCardNo">
+               <ul class="fuelCardNoList">
+                 <li class="fuelCardNo"><input type="number" class="fuelCardInput"></li>
+                 <li class="fuelCardNo"><input type="number" class="fuelCardInput"></li>
+                 <li class="fuelCardNo"><input type="number" class="fuelCardInput"></li>
+                 <li class="fuelCardNo"><input type="number" class="fuelCardInput"></li>
+                 <li class="fuelCardNo"><input type="number" class="fuelCardInput"></li>
+               </ul>
+             </div>
+            </div>
+
+            <div class="displayOrderContractNo">
+              <a class="postRegisterBlockLabel"> Order number/contract number or calculation number</a>
+              <input type="text" name="order/contract No" class="postregisterBlockInput">
+            </div>
+          </div>
+
+          <div class="supplier">
+            <div class="supplierRadioBtnGrp">
+              <a class="supplierRadioBtnLabel"> Gender </a>
+              <input type="radio" name="Gender"> Man </input> 
+              <input type="radio" name="Gender"> Woman </input>
+            </div>
+            <a class="postRegisterBlockLabel">Initials</a>
+            <input type="text" name="initials" class="postregisterBlockInput">
+            <a class="postRegisterBlockLabel">Insertions</a>
+            <input type="text" name="insertions" class="postregisterBlockInput">
+            <a class="postRegisterBlockLabel">Name</a>
+            <input type="text" name="supplierName" class="postregisterBlockInput">
+            <a class="postRegisterBlockLabel">Location number</a>
+            <input type="text" name="locationNo" class="postregisterBlockInput">
+            <a class="postRegisterBlockLabel">Order number</a>
+            <input type="text" name="orderNo" class="postregisterBlockInput">
+          </div>
+
+         <div class="submitButton">
+           <button type="button" class="orangeButton button postRegisterBlockSubmitBtn">Submit</button>
+         </div>
+          
+       </div>
+      </li>
+
+    </ul>
    </div>
+  </div>
   <!-- The Footer Starts -->
   <div class="footer">
       <img src="images/logo.png" width="250px" height="125px" class="footerLogo"></img>

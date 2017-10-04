@@ -2,7 +2,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 999; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 30px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -22,7 +22,7 @@
     padding-bottom: 10px;
     border: 1px solid #888;
     width: 360px; /* Full width */
-    height: 650px; /* Full height */
+    height: 600px; /* Full height */
     text-align: left;
 }
 
@@ -80,7 +80,6 @@
   height: 30px;
   background: #e6e6e6;
   border: 0;
-  border-top: 1px solid #e0e0e0;
 }
 
 .checkbox {
