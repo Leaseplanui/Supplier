@@ -1,22 +1,19 @@
 @font-face {
-  font-family: "LeasePlan";
-  src: url(https://js.intercomcdn.com/fonts/proximanova-regular.a7942249.woff) format("truetype");
+    font-family: "LeasePlan";
+    src: url(https://js.intercomcdn.com/fonts/proximanova-regular.a7942249.woff) format("truetype");
 }
 
 body {
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-    background: #fff;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    background: #F6F8FB;
 }
 
 .bodyDiv {
   display: inline-block;
   width: 100%;
-  background: white;
-}
-nav.navigation.navigation--top.hidden-xs.hidden-sm {
-    border-bottom: 1px solid grey;
+  background: #f6f8fb;
 }
 
 .headerBar {
@@ -32,8 +29,9 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
 }
 
 .headerBarTop {
-  height: 75px;
+  height: 90px;
   border-bottom: 1px solid #E2E4E5;
+  background: white;
 }
 
 .headerBarTopMenu {
@@ -51,7 +49,7 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
 }
 
 .headerBarTopMenu>li a {
-  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
   font-weight: 600;
   display: block;
   color: #767676;
@@ -98,7 +96,7 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
 
 .headerBarTopRightMenu {
   margin: 0;
-  height: 50%;
+  height: 75%;
   list-style-type: none;
   overflow: hidden;
   padding-top: 20px;
@@ -111,7 +109,7 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
 }
 
 .headerBarTopRightMenu>li a {
-  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
   font-weight: 100;
   font-size: 14px;
   display: block;
@@ -123,7 +121,6 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
   float: left;
   padding-top: 10px;
 }
-
 .headerBarTopRightMenu>li:last-child {
   border-right: 0;
 }
@@ -132,34 +129,52 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
   float: left;
   padding-left: 20px;
 }
+.btnOrange:focus, .btnOrange:hover {
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+    animation: btnAnimateGradient .3s ease-in forwards;
+}
+.btnOrange{
+font-family: LeasePlan,Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 20px;
+    position: relative;
+    display: inline-block;
+    min-height: 50px;
+    padding: 15px 35px;
+    border: 0;
+    transition: all .3s ease;
+    border-radius: 50px;
+    background: linear-gradient(90deg,#ed8b00,#ee4c14);
+    background-size: 100%;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    animation: btnAnimateGradientBack .3s ease-in forwards;
+}
+
 
 .contentDiv {
   float: left;
+  width: 98%;
+ 
+  padding-left: 1%;
+  padding-top: 10px;  padding-right: 1%;
+  padding-bottom: 10px;
   background: #F6F8FB;
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.verticalMenuContainerDiv {
-  width: calc(20% - 24px);
-  height: 600px;
-  float: left;
-  padding-left: 24px;
-}
-
-.cardContainerDiv {
-  width: 80%;
-  float: right;
 }
 
 .contentHeaderText {
   width: 100%;
   float: left;
   text-align: left;
-  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
   font-size: 35px;
   color: #004a5d;
   padding-left: 10px;
@@ -176,7 +191,9 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
   text-align: left;
   display: inline-block;
   float: left;
-  width: 100%;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .footerLogo {
@@ -186,7 +203,7 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
 }
 
 .footerMenuUl {
-  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
   font-weight: 600;
   color: white;
   margin: 0;
@@ -211,7 +228,7 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
 }
 
 .footerDisclaimerUl {
-  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
   color: white;
   width: 100%;
   margin: 0;
@@ -231,11 +248,10 @@ nav.navigation.navigation--top.hidden-xs.hidden-sm {
   color: #F4AF9E;
   padding-right: 20px;
 }
-
-* {
-  -webkit-box-sizing: initial;
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: none;
 }
-
-html {
-  font-size: initial;
+.MyProfileLink{
+	border-right: none !important;
 }

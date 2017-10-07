@@ -5,10 +5,6 @@
     overflow: hidden;
 }
 
-
-
-
-
 .ddMenuLi {
     float: left;
 }
@@ -26,7 +22,6 @@
     color: black;
     text-align: center;
     position: relative;
-    z-index: 2010;    list-style: none;
 }
 
 .ddMenuLi a:hover, .ddMenuLiDropdown:hover .ddMenuLiDropdownBtn {
@@ -55,7 +50,7 @@
 
 .dropdown-content a:hover {
   border-bottom: 0;
-  background: #FE5A00;
+  background: #e8e8e8;
 }
 
 .ddMenuLiDropdown:hover .dropdown-content {

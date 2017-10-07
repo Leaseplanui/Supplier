@@ -1,4 +1,11 @@
 $(function() {
+    
+    if  (localStorage.getItem("UserRegistered") && localStorage.getItem("UserRegistered")=="X") {
+    	$("#LgnLink").css("display","none");
+    	$("#MyProfileLink").css("display","block");
+    	
+    }
+    
   $('#idBrand').multiselect({
     buttonText: function(options, select) {
       if (options.length === 0) {
@@ -51,4 +58,12 @@ $(function() {
     }
   });
   $("#slider").slider();
+  
+  
+  
 });
+function viewCars()
+{
+	  $("#idContentDiv").load("cards.html");
+}
+

@@ -122,5 +122,16 @@
 }
 
 .carShowcaseDetailContainer {
-  padding: 18px 15px;
+  padding: 28px 15px;
+}
+.verticalMenuContainerDiv {
+  width: calc(20% - 24px);
+  height: 100%;
+  float: left;
+  padding-left: 24px;    padding-top: 40px;
+}
+
+.cardContainerDiv {
+  width: 80%;
+  float: right;    padding-top: 20px;
 }

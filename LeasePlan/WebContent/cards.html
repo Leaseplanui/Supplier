@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/ddMenu.css">
   <link rel="stylesheet" href="css/carCards.css">
   <link rel="stylesheet" href="css/verticalMenu.css">
+  <link rel="stylesheet" href="css/TagCloud.css">
   <link rel="stylesheet" href="css/loginDialog.css">
   <!-- The Footer Ends -->
 
@@ -20,133 +21,22 @@
   <link href="js/bootstrap-multiselect/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
   <script src="js/bootstrap-multiselect/js/bootstrap-multiselect.js"></script>
 
-  <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/select.js"></script>
+ 
+  <script type="text/javascript" src="js/LandingPage.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/select.css">
-
-
-  <!-- Include the plugin's CSS and JS: -->
-  <!-- <script type="text/javascript" src="js/bootstrap/js/bootstrap-multiselect.js"></script>
-  <link rel="stylesheet" href="js/bootstrap/css/bootstrap-multiselect.css" type="text/css" /> -->
-
 </head>
 
 <body>
   <div class="bodyDiv">
-    <!-- The Login Dialog Starts -->
-    <div class="loginDialog" id="idLoginDialog">
-      <!-- Modal content -->
-      <div class="loginDialog-content">
-        <span class="loginDialog-close">&times;</span>
-        <a class="loginDialogHeaderText">Login op Mijn LeasePlan</a>
-        <a class="loginDialogTopDescriptionText">Om uw auto te kunnen bestellen, logt u eerst in op Mijn LeasePlan. | Nog geen account? Maak dan een nieuw account aan. Ruim 85.000 mensen gingen u voor.</a>
-        <a class="loginDialogLabel">Email Address</a>
-        <input type="text" name="email" class="loginDialogInput">
-        <a class="loginDialogLabel">Password</a>
-        <input type="password" name="password" class="loginDialogInput">
-        <button type="button" class="blackButton button loginDialogLoginBtn">Logon</button>
-        <a class="forgotPassword" href="#forgot-password">Forgot Password</a>
-        <a class="loginDialogDontHaveanAccountText">Do not have an Account yet? Create new account.</a>
-        <button type="button" class="orangeButton button loginDialogRegisterBtn">Register</button>
-      </div>
-    </div>
-    <!-- The Login Dialog Ends -->
-    <div class="headerBar">
-      <div class="logoContainer">
-        <img src="images/logo.png" height="100%" width="100%"></img>
-      </div>
-      <div class="headerBarTop">
-        <ul class="headerBarTopMenu">
-          <li><a class="topMenuActive" href="#corporate-lease">Corporate Lease</a></li>
-          <li><a href="#about-us">About Us</a></li>
-        </ul>
-        <div class="headerBarTopRightMenuDiv">
-          <ul class="headerBarTopRightMenu">
-            <li><a class="topRightMenuActive" href="#corporate-lease">Customer Support</a></li>
-            <li><img src="images/user-32x32.png" class="topRightMenuIcon"><a href="javascript:doSomething();">Login</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="headerBarBottom">
-        <div class="headerBarBottomMenuDiv">
-          <ul class="ddMenuUl">
-            <li class="ddMenuActive ddMenuLi"><a href="#home">Top 5 leaseauto's</a></li>
-            <li class="ddMenuLi"><a href="#news">Auto zoeken</a></li>
-            <li class="ddMenuLi ddMenuLiDropdown">
-              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Lease Info</a>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </li>
-            <li class="ddMenuLi ddMenuLiDropdown">
-              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Over ons</a>
-              <div class="dropdown-content">
-                <a href="#">Link 21</a>
-                <a href="#">Link 22</a>
-                <a href="#">Link 23</a>
-              </div>
-            </li>
-            <li class="ddMenuLi ddMenuLiDropdown">
-              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Uw leaseauto</a>
-              <div class="dropdown-content">
-                <a href="#">Link 21</a>
-                <a href="#">Link 22</a>
-                <a href="#">Link 23</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="contentDiv" id="idContentDiv">
+
+    
       <div id="idVerticalMenuDiv" class="verticalMenuContainerDiv"></div>
-      <div id="idCardContainerDiv" class="cardContainerDiv"></div>
-    </div>
-    <!-- The Footer Starts -->
-    <div class="footer">
-      <img src="images/logo.png" width="250px" height="125px" class="footerLogo"></img>
-      <ul class="footerMenuUl">Zakelijk
-        <li class="footerMenuLi"><a href="#home">Bekijk personenwagens</a></li>
-        <li class="footerMenuLi"><a href="#news">Bekijk bestelwagens</a></li>
-        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
-        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
-        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
-        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
-      </ul>
-      <ul class="footerMenuUl">Particulars
-        <li class="footerMenuLi"><a href="#home">Bekijk personenwagens</a></li>
-        <li class="footerMenuLi"><a href="#news">Bekijk bestelwagens</a></li>
-        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
-        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
-        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
-        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
-      </ul>
-      <ul class="footerMenuUl">Particulars
-        <li class="footerMenuLi"><a href="#home">Bekijk personenwagens</a></li>
-        <li class="footerMenuLi"><a href="#news">Bekijk bestelwagens</a></li>
-        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
-        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
-        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
-        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
-      </ul>
-      <ul class="footerMenuUl">Particulars
-        <li class="footerMenuLi"><a href="#home">Bekijk personenwagens</a></li>
-        <li class="footerMenuLi"><a href="#news">Bekijk bestelwagens</a></li>
-        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
-        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
-        <li class="footerMenuLi"><a href="#news">Zo werk Zakelijk Lease</a></li>
-        <li class="footerMenuLi"><a href="#news">Mobilitite</a></li>
-      </ul>
-      <ul class="footerDisclaimerUl">
-        <li class="footerDisclaimerLi"><a href="#home">Voorwarden</a></li>
-        <li class="footerDisclaimerLi"><a href="#news">Privacy Statement</a></li>
-        <li class="footerDisclaimerLi"><a href="#news">Cookies policy</a></li>
-        <li class="footerDisclaimerLi"><a href="#news">Sitemap</a></li>
-      </ul>
-    </div>
+      <div id="idCardContainerDiv" class="cardContainerDiv">
+        <div class="tagCloudContainer" id="idTagCloudContainer"></div>
+      </div>
+   
+  </div>
 </body>
 
 </html>

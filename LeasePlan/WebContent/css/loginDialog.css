@@ -2,7 +2,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 999; /* Sit on top */
-    padding-top: 200px; /* Location of the box */
+    padding-top: 30px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -21,8 +21,8 @@
     padding-top: 20px;
     padding-bottom: 10px;
     border: 1px solid #888;
-    width: 360px; /* Full width */
-    height: 575px; /* Full height */
+    width: 35%; /* Full width */
+    height: 100%; /* Full height */
     text-align: left;
 }
 
@@ -43,9 +43,10 @@
 
 .loginDialogHeaderText {
   font-family: LeasePlan,Arial,Helvetica,sans-serif;
-  font-size: 22px;
+  font-size: 2.2rem;color:#004a5d;
   text-align: left;
-  float: left;
+  float: left;    font-style: normal;
+    font-weight: 800;
   letter-spacing: 1px;
 }
 
@@ -80,12 +81,24 @@
   border-top: 1px solid #e0e0e0;
 }
 
-.loginDialogCB {
+.stayLoggedInCB {
   float: left;
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 15px;
   text-align: left;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   height: 30px;
+}
+
+.stayLoggedInCB input {
+  background: #e6e6e6;
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.stayLoggedInCB input:hover {
+  cursor: pointer;
 }
 
 .button {
@@ -97,7 +110,7 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 25px;
-  min-width: 100px;
+  min-width: 150px;
 }
 
 .blackButton {
@@ -115,7 +128,7 @@
 }
 
 .loginDialogLoginBtn {
-  margin-top: 40px;
+  margin-top: 10px;
   float: left;
 }
 
@@ -124,22 +137,94 @@
   float: left;
 }
 
-.forgotPassword {
-  font-family: LeasePlan,Arial,Helvetica,sans-serif;
-  color: black;
-  padding-top: 25px;
-  font-size: 14px;
-  width: 100%;
-  float: left;
-  text-align: left;
-}
-
 .loginDialogDontHaveanAccountText {
   font-family: LeasePlan,Arial,Helvetica,sans-serif;
-  padding-top: 30px;
+  padding-top: 10px;
   font-size: 16px;
   text-align: left;
   width: 100%;
   color: black;
   float: left;
 }
+
+.otherLinks {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.forgotPassword {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  color: black;
+  font-size: 15px;
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+}
+
+.forgotPassword:hover {
+  color: #eb7922;
+}
+
+.activationLink {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  color: black;
+  font-size: 15px;
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+}
+
+.activationLink:hover {
+  color: #eb7922;
+}
+
+.show-hide-password {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.show-hide-password input {
+  float: left;
+  text-align: left;
+  width: 90%;
+  padding-bottom: 10px;
+  height: 30px;
+  background: #e6e6e6;
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.show-hide-password button {
+  border: none;
+  background: #e6e6e6;
+  float:right;
+  height: 42px;
+  width: 10%;
+}
+
+.toggler-ico {
+  padding: 0;
+  width: 20px;
+  text-align:center;
+  right: 5px;
+  top: 5px;
+}
+
+.toggler-ico:hover,
+.toggler-ico:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.altLinks {
+  list-style-type: none;
+  margin-top: 20px;    -webkit-padding-start: 0px;
+}
+
+.altLinks li {
+  display: inline-block;
+  float:left;
+  width: 100%;
+  margin-top: 10px;
+}  
