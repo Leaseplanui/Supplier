@@ -157,6 +157,14 @@ function displayCheckout3() {
 	$("#idContentDiv").load("Checkout3.html");
 }
 
+function displayCheckout4() {
+	$("#idContentDiv").load("Checkout4.html");
+}
+
+function displayCheckout5() {
+	$("#idContentDiv").load("Checkout5.html");
+}
+
 function showPassword() {
 
  var ele = document.getElementById('pwd');
