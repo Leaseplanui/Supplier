@@ -1,4 +1,16 @@
 $(document).ready(function() {
+	 	$.get("header.html", function(data) {
+		    $("#includeHeader").html(data);
+		});
+	 	
+		$.get("footer.html", function(data) {
+	 	/*$.get("Footer.html", function(data) {*/
+		    $("#includeFooter").html(data);
+		});
+	
+	 	
+	 	
+	
 	$('#example-getting-started').multiselect({
 		nonSelectedText: 'Brandstof'
 	});
@@ -23,8 +35,49 @@ $(document).ready(function() {
         $("#uniquename1").fadeToggle();
     });
 	
+	$("#doMore").click(function() {
+        $("#searchMore").fadeToggle();
+    });
 	
-
+	$("#doMore1").click(function() {
+        $("#searchMore1").fadeToggle();
+        showText: 'Show more';
+        hideText: 'Show less';
+    });
+	
+	
+	
+	$("input[name='dateSelection']").click(function () {
+        if ($("#chkYes").is(":checked")) {
+            $("#exPeriod").show();
+            $("#expDate").hide();
+        } else {
+            $("#expDate").show();
+            $("#exPeriod").hide();
+        }
+    });
+	
+	
+	
+	
+    /*if ($("#chkYes").is(":"))
+	{
+		$("#expirationDate").show();
+		$("#startDate").hide();
+		$("#endDate").hide();
+	    }*/
+	
+	/*if ($("#chkYes1").is(":checked"))
+	{
+	$("#expirationDate").show();		
+	$("#startDate").hide();
+	$("#endDate").hide();
+	
+	}*/
+	
+	
+	
+	
 });
 
 

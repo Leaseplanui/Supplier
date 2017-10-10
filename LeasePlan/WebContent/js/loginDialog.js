@@ -53,6 +53,19 @@ if(span)
 	  $("#idContentDiv").load("myProfile.html");
   }
 
+  window.openMyCompany = function() {
+	  $("#idContentDiv").load("Company.html");
+  }
+  
+  window.openMyContract = function() {
+	  $("#idContentDiv").load("Contract.html");
+  }
+  
+  window.openMyExpiration = function() {
+	  $("#idContentDiv").load("Expiration.html");
+  }
+  
+  
   window.doRegister = function() {
 	  $("#idregisterDialog").load("RegistrationBasic.html");
     $(modal1).css("display", "block");
@@ -134,6 +147,14 @@ function setClickCalls()
 
 function displayCheckout1() {
 	$("#idContentDiv").load("Checkout1.html");
+}
+
+function displayCheckout2() {
+	$("#idContentDiv").load("Checkout2.html");
+}
+
+function displayCheckout3() {
+	$("#idContentDiv").load("Checkout3.html");
 }
 
 function showPassword() {

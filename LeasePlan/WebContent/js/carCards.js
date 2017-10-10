@@ -59,6 +59,10 @@ $(function() {
     addClass(loContentMain, "carShowcaseContentMain");
     roLi.appendChild(loContentMain);
 
+$( loContentMain ).click(function() {
+
+	  $("#idContentDiv").load("PDP.html");
+});
     //Create Image Container
     var loImageContainer = document.createElement("div");
     addClass(loImageContainer, "carShowcaseImgContainer");

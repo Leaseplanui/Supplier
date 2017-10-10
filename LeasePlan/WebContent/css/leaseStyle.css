@@ -275,6 +275,20 @@ h2 {
 #uniquename1 {
     display: none;
 }
+#searchMore {
+    display: none;
+}
+
+#searchMore1 {
+    display: none;
+}
+/* #startDate {
+    display: none;
+}
+#endDate {
+    display: none;
+} */
+
 .transmissie-label {
     margin: 0 0 .15rem .2rem;
     font-size: .9rem;
@@ -419,5 +433,351 @@ position: relative;
     white-space: pre-wrap;
 }
 
+.search {
+    /* width:100%;
+    text-align: -webkit-left;
+    background-color: gainsboro; */
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 35px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #e9e9e9;
+    overflow: hidden;
+}
+.search-head{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ccc;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    font-weight: bold;
+    text-align: left;
+    color: #666;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+.search-label{
+	/* display: inline-block;
+    width: 200px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: small;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529; */
+    
+    margin: 8px 0 0 3px;
+    display: block;
+    width: 195px;
+    cursor: default;
+    text-align: left;
+    color: #666;
+    line-height: 20px;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+.search-label1{
+	display: inline-block;
+    width: 100%;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: small;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+.btnSearch{
+	position: absolute;
+    top: 0;
+    right: 0;
+    color: #666;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 0 20px 0 10px;
+    border-radius: 2px;
+    text-indent: 0;
+    border-left: 1px solid #999;
+    box-sizing: border-box;
+	/* line-height: 28px;
+	text-align: left;
+	font-family: Arial,sans-serif;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-left-color: #fff;
+    height: 28px;
+    left: 0;
+    top: 0;
+    content: ' ';
+    width: 0;
+    
+    z-index: 1;
+    height: 0;
+    right: 4px;
+    top: 9px;
+    border-style: solid;
+    border-width: 5px 0 5px 7px;
+    border-color: transparent transparent transparent #fff;
+    content: ' ';
+    width: 0;
+   
+    z-index: 1; */
+    /* background-color: #DCDCDC; Green
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	width: 100px;
+	color:black; */
+	}   
+.search-text{
+	width: 195px;
+    height: 26px;
+    line-height: 1em;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-color: #ccc #e9e9e9 #e9e9e9 #ccc;
+    text-indent: 3px;
+    color: #666;
+    box-sizing: content-box;
+	
+} 
+.search-form {
+    width: 95%;
+    margin: 35px 0 0 10px;
+    padding: 0;
+    display: block;
+    position: relative;
+    text-align: left;
+    color: #666;
+    line-height: 20px;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+.offscreen {
+    position: absolute;
+    left: -9999em;
+}
+.result{
+	position: relative;
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    width: 100%;
+	
+}
+.result-Content{
+	position: relative;
+    margin: 12px auto !important;
+    padding: 15px 12px;
+    width: 93%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    overflow: hidden;
+}
+.headContent{
+	font-size: 1.1em;
+    display: inline-block;
+    float: left;
+    font-weight: normal;
+    margin-bottom: 1em;
+    margin: 0 0 .5em;
+    line-height: 1.385em;
+    color: #f90;
+}
+.clear{
+	clear: both;
+    width: 100%;
+    height: 1px;
+}
+.foot{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ccc;
+    height: 28px;
+}
+.reset{
+	padding: 0 8px 0 22px;
+    border-radius: 2px;
+    background-color: #ccc;
+    border-left: 1px solid #999;
+    width: auto;
+    height: 28px;
+    top: 0;
+    right: 0;
+    display: block;
+    line-height: 28px;
+    color: #666;
+    text-decoration: none;
+    font-weight: normal;
+}
+.toprow{
+	width: 97%;
+    text-indent: 5px;
+    font-weight: bold;
+    height: 20px;
+    overflow: hidden;
+    color: #666;
+    text-align: left;
+    line-height: 20px;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+}
 
+.colUsername{
+	width: 36%;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    height: 30px;
+    float: left;
+    overflow: hidden;
+    text-indent: 5px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 20px;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+}
+.colFind{
+	width: 16%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    height: 30px;
+    float: left;
+    overflow: hidden;
+    text-indent: 5px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 20px;
+    font-family: Arial,sans-serif;
+    font-size: 9px;
+	
+}
+.listholder{
+	position: relative;
+    min-height: 262px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    border-color: #ccc #e9e9e9 #e9e9e9 #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    clear: both;
+}
+
+.radio-show-hide {
+    margin: 2px 12px 0 0;
+    background: #f9f9f9;
+    border-radius: 3px;
+    padding: 8px 6px;
+    width: 80%;
+}
+
+.radio-textinput {
+    width: 98%;
+    margin-bottom: .5em;
+}
+.inputSelect{
+	margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 80%;
+	
+}
+.clear{
+	clear: both;
+    width: 100%;
+    height: 1px;
+}
+
+.findCheckbox{
+	display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 4px 0 6px;
+    text-align: left;
+    line-height: 20px;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    /* background: #ddd; */
+    color: #555;
+}
+.findCheckbox-line{
+	float: left;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    background: #ddd;
+    color: #555;
+    margin-left: 0px;
+}
+.findCheckbox-lab
+{
+	width: 70px;
+    margin-top: 0;
+    float: left;
+    display: inline-block;
+    	
+    top: 8px;
+    margin: 8px 0 0 3px;
+    text-align: left;
+    color: #666;
+    line-height: 20px;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+   /*  background: #ddd; */
+    
+}
+.activeInSearch{
+    background: #fff;
+    border-color: #ccc #ccc #e9e9e9;
+    border-image: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: content-box;
+    color: #666;
+    height: 62px;
+    line-height: 18px;
+    padding: 5px 0;
+    text-indent: 2px;
+    text-overflow: "";
+    width: 180px;
+    scroll-behavior: smooth;
+}
+.checkBoxLine-LabW{
+	width: 165px;
+    margin-top: 0;
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 8px;
+	
+}
+.myResult{
+	margin-left: 10px;
+}
+.myMargin{
+	    margin-left: 0px !important;
+}
+
+.imgUser{
+	float: right;
+}
 /* End tool tip */
