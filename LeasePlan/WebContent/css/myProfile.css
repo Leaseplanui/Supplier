@@ -1,0 +1,463 @@
+.myAccountPage {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+}
+
+.myAccountBlock1 {
+  width: 50%;
+  float: left;
+}
+
+.myAccountBlock2 {
+  width: 50%;
+  float: left;
+  padding-left: 5%;
+}
+
+.myAccountBlock1Info {
+  width: 100%;
+  float: left;
+  padding: 10px;
+}
+
+.myAccountBlock1Text {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.yourLeaseSection {
+   float: left;
+   width: 90%;
+   padding: 10px;
+}
+
+.yourLeaseHeader {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  font-size: 22px;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.yourLeaseActionList {
+  list-style-type: disc;
+}
+
+.yourLeaseActionList li {
+  color: #eb7922;
+  float: left;
+}
+
+.yourLeaseActionList li a {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  color: #eb7922;
+  float: left;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.helpSection {
+   float: left;
+   width: 90%;
+   padding: 10px;
+}
+
+.helpSectionHeader {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  font-size: 22px;
+  text-align: left;
+}
+
+.callAppln {
+  list-style-type: none;
+  width: 100%;
+  height: 50px;
+  float: left;
+  margin-top: 20px;
+}
+
+.callApplnImage {
+  float: left;
+  width: 20%;
+  cursor: pointer;
+}
+
+.callApplnTextArea {
+  float: left;
+  width: 70%;
+  padding: 5px;
+}
+
+.callApplnNo {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  text-align: left;
+}
+
+.callApplnText {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  color: limegreen;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.chatAppln {
+  list-style-type: none;
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+
+.chatApplnImage {
+  float: left;
+  width: 20%;
+  cursor: pointer;
+}
+
+.chatApplnTextArea {
+  float: left;
+  width: 70%;
+  padding: 5px;
+}
+
+.chatApplnText {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  color: #eb7922;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.emailAppln {
+  list-style-type: none;
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+
+.emailApplnImage {
+  float: left;
+  width: 20%;
+  cursor: pointer;
+}
+
+.emailApplnTextArea {
+  float: left;
+  width: 70%;
+}
+
+.emailApplnText1 {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  color: #eb7922;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.emailApplnText2 {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  color: limegreen;
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+.tabControlBtn {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+}
+
+.tabControlBtnList {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+}
+
+.editAccountBtn {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 3px;
+  float: left;  
+  border: 0;
+  border-radius: 5px;
+  color: gray;
+  cursor: pointer;
+}
+
+.savedCarsBtn{
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 3px;
+  float: left;  
+  border: 0;
+  border-radius: 5px;
+  color: gray;
+  cursor: pointer;
+}
+
+.ordersBtn{
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 3px;
+  float: left;  
+  border: 0;
+  border-radius: 5px;
+  color: gray;
+  cursor: pointer;
+}
+
+.editAccountSection {
+   display: none;
+   width: 90%;
+   float: left;
+   padding: 10px;
+}
+
+.editAccountSectionText {
+  width: 100%;
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 5px;
+  float: left;
+}
+
+.editAccountPwdBtn {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 5px;
+  float: left;
+  background: black;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editAccountEmailBtn {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 5px;
+  float: left;
+  background: black;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editAccountRegisterBtn {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 5px;
+  float: left;
+  background: black;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.orangeBackground {
+  background-color: #eb7922;
+  color: white;
+}
+
+.setNewPwdSection {
+   display: none;
+   margin-top: 35px;
+   padding: 5px;
+}
+
+.changeEmailSection {
+   display: none;
+   margin-top: 35px;
+   padding: 5px;
+}
+
+.setNewPwdSectionHeader {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.setNewPwd-text-fields label,
+.setNewPwdSectionLabel {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 15px;
+}
+
+.setNewPwdSectionInput {
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 10px;
+  height: 30px;
+  background: #e6e6e6;
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.newPwdUL {
+  list-style-type: none;
+}
+
+.newPwdLI {
+  display: inline;
+  width: 100%;
+  float: left;
+}
+
+.newPwdBtnUL {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+}
+
+.newPwdBtnUL li {
+  display: inline-block;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.newPwdChangeBtn {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  float:left;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newPwdBackBtn {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  float: left;
+  color: #eb7922;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.changeEmailSectionHeader {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  float: left;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.changeEmailSectionLabel, 
+.changeEmail-text-fields label {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 15px;
+}
+
+.changeEmailSectionInput {
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 10px;
+  height: 30px;
+  background: #e6e6e6;
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.emailBtnUL {
+  list-style-type: none;
+}
+
+.emailBtnUL li {
+  display: inline-block;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.changeEmailBtn {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  float:left;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.changeEmailBackBtn {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  float: left;
+  color: #eb7922;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.setNewPwdBtnArea {
+  width: 100%;
+  margin-top: 20px;
+  float: left;
+}
+
+.emailBtnArea {
+  width: 100%;
+  margin-top: 20px;
+  float: left;
+}

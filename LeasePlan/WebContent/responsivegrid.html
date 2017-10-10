@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/carHomepage.js"></script>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create  equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 12.5%;
+    padding: 10px;
+    border-right-style: solid;
+    background-color: #f6f8fb ;
+    border: 1px solid black;border-right: 1px solid black;
+    /*height: 500px;*/ /* Should be removed. Only for demonstration */
+}
+.carSection{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    /* width: 100%; */
+    color: white;
+    background: linear-gradient(45deg,#05b1af,#05b1af 50%,#22b5b3 51%,#039f9e 52%,#05b1af);
+    margin-bottom: 5px;
+    /* transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translateY(-50%); */
+    font-family: Leaseplan;
+}
+.carHeaders{
+    font-size: 17px;
+    font-weight: 700;    font-size: 17px;
+    font-weight: 700;
+    font-family: Leaseplan;
+    letter-spacing: 1.5px;
+}
+.carImage
+{
+	 
+	 width: 80%;
+	 margin-left: 15px;
+}
+.row{
+padding-top:160px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.paddingRight10px{
+padding-right: 10px;
+}
+.inlinecarSection
+{ 
+height: 25px !important;    
+
+    position: relative;
+    
+    right: 10%;
+}
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+</style>
+</head>
+
+<body>
+
+
+<div class="row">
+<div class="rightFilters">
+   <a class="paddingRight10px" style="margin-left: 70%;">300<img src="images/hg.gif" ></a>
+   
+   <a class="paddingRight10px">500<img src="images/MailIn.gif" ></a>
+   
+  <a class="paddingRight10px"> 600<img src="images/MailOut.gif"> </a>
+   <a class="paddingRight10px"> 800<img src="images/delivery.gif"> </a>
+    <a class="paddingRight10px"> 900<img src="images/FollowUp.gif"> </a>
+</div>
+ <div class="column" id="column_cars1">
+    <h2 class="carHeaders">Group1</h2>
+   
+  </div>
+  <div class="column" id="column_cars2">
+    <h2 class="carHeaders">Group2</h2>
+   
+  </div>
+  <div class="column" id="column_cars3">
+    <h2 class="carHeaders">Group3</h2>
+    
+  </div>
+  <div class="column" id="column_cars4">
+    <h2 class="carHeaders">Group4</h2>
+    
+  </div>
+  <div class="column" id="column_cars5">
+    <h2 class="carHeaders">Group5</h2>
+    
+  </div>
+  <div class="column" id="column_cars6">
+    <h2 class="carHeaders">Group6</h2>
+    
+  </div>
+  <div class="column" id="column_cars7">
+    <h2 class="carHeaders">Group7</h2>
+    
+  </div>
+   <div class="column" id="column_cars8">
+    <h2 class="carHeaders">Group8</h2>
+  
+  </div>
+
+
+</div>
+</body>
+</html>

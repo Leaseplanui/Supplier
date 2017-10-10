@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+<title>Find Contact</title>
+
+<!-- Start bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+<script src="js/popper.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/leaseScript.js" type="text/javascript"></script>
+<!-- End bootstrap  -->
+
+<!-- Include the plugin's CSS and JS: -->
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="css/bootstrap-multiselect.css"	type="text/css"/>
+<link href="css/leaseStyle.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/registerDialog.css"> -->
+
+</head>
+
+<!-- <div id="includeHeader">
+  Content will be inserted by jQuery from header.html
+</div> -->
+
+
+ <!-- Start Content -->
+  <div class="bodyDiv">
+  <div class="contentDiv">
+	
+	
+  
+  <div class="container">
+ 
+  	<div class="row">
+  		<div class="col-2">
+  		
+  			
+  			<div class="row">
+  				<div class="search">
+  				<div class="search-head">
+  				Find Contact
+  				<a href="javascript:void(0)" class="btnSearch" id="dosearch">search</a>
+  				</div>
+  				<div class="foot">
+  				<a href="javascript:void(0)" id="doMore" class="search-label">More</a>
+  				<a href="javascript:void(0)" class="btnSearch"  id="doReset">Reset</a>
+  				</div>
+  			
+					<form id="searchForm" class="search-form">
+                        <label class="search-label" for="licensePlate">License plate</label>
+                        <input id="licensePlate" name="licensePlate" tabindex="1" type="text">
+                        <label class="search-label" for="contractNumber">Contact number</label>
+                        <input id="contractNumber" name="contractNumber" tabindex="2" type="text">
+                        <label class="search-label" for="driverName">Surname</label>
+                        <input id="driverName" name="driverName" tabindex="3" data-mask="int" type="text">
+                        <label class="search-label" for="personnelNumber">Personel code</label>
+                        <input id="personnelNumber" name="personnelNumber" tabindex="4"  type="text">
+                        <label class="search-label" for="postcode">Postal code</label>
+                        <input id="postcode" name="companyAreaCode" tabindex="5"  type="text">
+                        <label class="search-label" for="plaats">Residence</label>
+                        <input id="plaats" name="companyCity" tabindex="6" type="text">
+                    </form>
+                    <form id="searchMore" class="search-form">
+                        <label class="search-label" for="companyName">Company name</label>
+                        <input id="companyName" name="companyName" tabindex="1" type="text">
+                        <label class="search-label" for="companyNumber">Company number</label>
+                        
+                        <div class="radio-show-hide">
+                        <input id="companyNumber" name="companyNumber" tabindex="8" data-mask="int" type="text">
+                        <label>
+                        <input id="searchCompanyTree1" name="searchCompanyTree" tabindex="9" default="off" type="checkbox" value="true">
+                        <input type="hidden" name="_searchCompanyTree" value="on" >Search in subsidiaries
+                        
+                        </label>
+                        </div>
+                                             
+                        
+                        <label class="search-label" for="bedrijfsnaam">Personel Id</label>
+                        <input id="employeeId" name="employeeId" tabindex="4"  type="text">
+                        <label class="search-label" for="brand">Make</label>
+                        <input id="brand" name="brand" tabindex="5"  type="text">
+                        <label class="search-label" for="model">Model</label>
+                        <input id="model" name="companyCity" tabindex="6" type="text">
+                        
+                        <div class="findCheckbox">
+                        <input id="contractTypes1" name="contractTypes" tabindex="13" default="on" class="findCheckbox-line" type="checkbox" value="LEASE" checked="checked"><input type="hidden" name="_contractTypes" value="on">
+                        <label for="contractTypes" class="findCheckbox-lab">
+                            Lease
+                        </label>
+                        <input id="contractTypes2" name="contractTypes" tabindex="14" default="on" class="findCheckbox-line" type="checkbox" value="RENT" checked="checked"><input type="hidden" name="_contractTypes" value="on">
+                        <label for="contractTypes" class="findCheckbox-lab">
+                            Rent
+                        </label>
+                    	</div>
+                    	<div class="clear"></div>
+                    	<div class="findCheckbox">
+                        <input id="contractTypes3" name="contractTypes" tabindex="15" default="on" class="findCheckbox-line" type="checkbox" value="MANAGEMENT" checked="checked"><input type="hidden" name="_contractTypes" value="on">
+                        <label for="contractTypes" class="findCheckbox-lab">
+                            Management
+                        </label>
+
+                        <input id="contractTypes4" name="contractTypes" tabindex="16" default="on" class="findCheckbox-line" type="checkbox" value="FUEL" checked="checked"><input type="hidden" name="_contractTypes" value="on">
+                        <label for="contractTypes" class="findCheckbox-lab">
+                            Fuel
+                        </label>
+                    </div>
+                    <div class="clear"></div>
+                    <label for="vehicleCategoryTypes">
+                        Type of vehicle
+                    </label>
+                    <select id="vehicleCategoryTypes" name="vehicleCategoryTypes" tabindex="17" class="activeInSearch" multiple="multiple" size="4">
+                        <option value="">
+                            All
+                        </option>
+                        <option value="PASSENGER">
+                            Passenger car
+                        </option>
+                        <option value="VAN">
+                            Company car
+                        </option>
+                        <option value="MOTOR">
+                            Engine
+                        </option>
+                    </select>
+                    <input type="hidden" name="_vehicleCategoryTypes" value="1">
+					<label for="fuelTypes">
+                        Fuel
+                    </label>
+					<select id="fuelTypes" name="fuelTypes" tabindex="18" class="activeInSearch" multiple="multiple" size="6">
+                        <option value="">
+                            All
+                        </option>
+                        <option value="GASOLINE">
+                            Petrol
+                        </option>
+                        <option value="DIESEL">
+                            Diesel
+                        </option>
+                        <option value="LPG">
+                            LPG
+                        </option>
+                        <option value="ELECTRIC">
+                            Electric
+                        </option>
+                        <option value="NATURAL_GAS">
+                            Natural gas
+                        </option>
+                        <option value="HYBRID">
+                            Electric (hybrid)
+                        </option>
+                    </select>
+					<input type="hidden" name="_fuelTypes" value="1">
+                    <div class="checkbox">
+                        <input id="includeHistory" name="contractStatus" tabindex="19" default="off" class="findCheckbox-line myMargin" type="checkbox" value="ALL"><input type="hidden" name="_contractStatus" value="on">
+                        <label for="contractStatus" class="checkBoxLine-LabW">
+                            including history
+                        </label>
+                    </div>
+                    
+                    </form>
+					
+  				</div>
+  			</div>
+  						
+  			
+  			
+  </div>
+ 
+  <div class="col-9">
+  			<div class="row">
+					        
+					        <div class="result myResult">
+					      <!--   <div class="search-head"></div> -->
+					        <div class="result-Content">
+					      
+					       <h1 class="headContent">Contacts</h1>
+					       <div class="clear"></div>
+					       <div class="toprow">
+					       <span class="colFind">License plate</span>
+					        <span class="colFind">Employee</span>
+					         <span class="colFind">Residence</span>
+					        <span class="colFind">Company Name</span>
+					        <span class="colFind">Start</span>
+					        <span class="colFind">End</span>
+					       </div>
+					       <div class="listholder" id="rolling"></div>
+					        </div>
+					       
+					        </div>
+					        
+      			</div>
+      			
+  		</div>
+  
+  
+  
+ 
+  </div>
+  </div>
+  
+  </div>
+ 	</div> 
+ 	
+ 	
+ 	
+  <!-- End Content -->
+
+
+
+<!-- <div class="bodyDiv" id="includeFooter">
+  Content will be inserted by jQuery from footer.html
+</div> -->

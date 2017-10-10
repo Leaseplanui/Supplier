@@ -1,0 +1,148 @@
+.registerDialog {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 30px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.registerDialog-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 1px solid #888;
+    width: 360px; /* Full width */
+    height: 600px; /* Full height */
+    text-align: left;
+}
+
+/* The Close Button */
+.registerDialog-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.registerDialog-close:hover,
+.registerDialog-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.registerDialogHeaderText {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 22px;
+  color: #004a5d;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.registerDialogTopDescriptionText {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  text-align: left;
+  float: left;
+  padding-top: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.registerDialogLabel {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 15px;
+}
+
+.registerDialogInput {
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 10px;
+  height: 30px;
+  background: #e6e6e6;
+  border: 0;
+}
+
+.checkbox {
+  float:left;
+  display:block;
+  padding:5px;
+}
+
+.checkbox input {
+      float:left;
+      width:auto;
+      height:13px;
+}
+
+.checkbox label {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  float:left;
+  display: inline-block;
+  width:auto;
+}
+
+.button {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  text-align: center;
+  border: 0;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+}
+
+.blackButton {
+  background: black;
+  color: white;
+}
+
+.orangeButton {
+  background: #eb7922; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#eb7922, #e3442a); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#eb7922, #e3442a); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#eb7922, #e3442a); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#eb7922, #e3442a); /* Standard syntax */
+  color: white;
+}
+
+.registerDialogRegisterBtn {
+  margin-top: 10px;
+  float: left;
+}
+
+.registerDialogLogonBtn {
+  margin-top: 10px;
+  float: left;
+}
+
+.registerDialogAlreadyHaveanAccountText {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  color: black;
+  float: left;
+}

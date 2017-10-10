@@ -1,0 +1,145 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+<title>Title of the document</title> -->
+
+<!-- Start bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+<script src="js/popper.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/leaseScript.js" type="text/javascript"></script>
+<!-- End bootstrap  -->
+
+<!-- Include the plugin's CSS and JS: -->
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="css/bootstrap-multiselect.css"	type="text/css"/>
+<link href="css/leaseStyle.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/registerDialog.css"> -->
+
+<!-- </head> -->
+
+<!-- <div id="includeHeader">
+  Content will be inserted by jQuery from header.html
+</div> -->
+
+
+ <!-- Start Content -->
+<div class="bodyDiv">
+  <div class="contentDiv">
+  
+  <div class="container">
+ 
+  	<div class="row">
+  		<div class="col-2">
+  		
+  			
+  			<div class="row">
+  				<div class="search">
+  				<div class="search-head">
+  				Search
+  				<a href="javascript:void(0)" class="btnSearch" id="dosearch">search</a>
+  				</div>
+  				<div class="foot">
+  				<a href="javascript:void(0)" class="btnSearch"  id="doReset">Reset</a>
+  				</div>
+  								
+					<form id="searchForm" class="search-form">
+                        <label class="search-label" for="gebruikersnaam">Username</label>
+                        <input id="gebruikersnaam" name="username" tabindex="1" type="text">
+                        <label class="search-label" for="personname">Surname</label>
+                        <input id="personname" name="personName" tabindex="2" type="text">
+                        <label class="search-label" for="bedrijfsnummer">Company number</label>
+                        <input id="bedrijfsnummer" name="companyNumber" tabindex="3" data-mask="int" type="text">
+                        <label class="search-label" for="bedrijfsnaam">Company name</label>
+                        <input id="bedrijfsnaam" name="companyName" tabindex="4"  type="text">
+                        <label class="search-label" for="postcode">Postal code</label>
+                        <input id="postcode" name="companyAreaCode" tabindex="5"  type="text">
+                        <label class="search-label" for="plaats">Residency</label>
+                        <input id="plaats" name="companyCity" tabindex="6" type="text">
+                        <label class="search-label">Authorization Profile</label>
+                        <select name="authorisationProfileId" class="inputSelect">
+                            <option value="">All</option>
+                            
+                                <option value="1393">Basisprofiel Inleverregeling</option>
+                            
+                                <option value="1277">Basisprofiel Mijn Wagenpark *</option>
+                            
+                                <option value="1408">FleetPlan Basisprofiel</option>
+                            
+                                <option value="1422">FleetPlan Facturen</option>
+                            
+                                <option value="1425">FleetPlan Wagenparkbeheer</option>
+                            
+                                <option value="1451">LeasePlan Connect API</option>
+                            
+                                <option value="1424">Project Beheren Berijder (OCM) - team Service Excellence</option>
+                            
+                                <option value="1415">Project Mijn Wagenpark (MWP) - team Agility</option>
+                            
+                                <option value="1394">Uitgebreid profiel Inleverregeling</option>
+                            
+                                <option value="1266">Uitgebreid profiel Mijn Wagenpark</option>
+                            
+                                <option value="1454">Uitgebreid profiel Mijn Wagenpark (zonder autokeuze)</option>
+                            
+                                <option value="1275">WSE External Webservice</option>
+                            
+                                <option value="1276">e-invoicing</option>
+                            
+                        </select>
+                        <input type="submit" id="btnSearch" value="Search" class="offscreen">
+                    </form>
+					
+  				</div>
+  			</div>
+  						
+  			
+  			
+  </div>
+ 
+  <div class="col-9">
+  			<div class="row">
+					        
+					        <div class="result myResult">
+					      <!--   <div class="search-head"></div> -->
+					        <div class="result-Content">
+					      <div>
+					      	<h1 class="headContent">Found users (fleet management and/or e-invoicing)</h1>
+					      	<span class="imgUser"> <input id="btnAdduser" id type="submit" value="Adduser"></span>
+					      </div>
+					       
+					       <span></span> 
+					       <!-- <span><a class="btn btn-primary" href="#"><i class="icon-user"></i> User</a></span> -->
+					       <div class="clear"></div>
+					       <div class="toprow">
+					       <span class="colUsername">Username</span>
+					        <span class="colUsername">Full name</span>
+					       </div>
+					       <div class="listholder" id="rolling"></div>
+					        </div>
+					       
+					        </div>
+					        
+      			</div>
+      			
+  		</div>
+  
+  
+  
+ 
+  </div>
+  </div>
+
+ </div>
+ 	</div> 	
+ 	
+ 	
+  <!-- End Content -->
+
+
+
+<!-- <div class="bodyDiv" id="includeFooter">
+  Content will be inserted by jQuery from footer.html
+</div> -->

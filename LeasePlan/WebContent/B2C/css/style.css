@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "LeasePlan";
+    src: url(https://js.intercomcdn.com/fonts/proximanova-regular.a7942249.woff) format("truetype");
+}
+
+body {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    background: #F6F8FB;
+}
+
+.bodyDiv {
+  display: inline-block;
+  width: 85%;
+  background: white;
+}
+
+.headerBar {
+  height: 125px;
+  float: left;
+  width: 100%;
+}
+
+.logoContainer {
+  width: 250px;
+  height: 125px;
+  position: absolute;
+}
+
+.headerBarTop {
+  height: 75px;
+  border-bottom: 1px solid #E2E4E5;
+}
+
+.headerBarTopMenu {
+  margin: 0;
+  padding-left: 260px;
+  height: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  float: left;
+}
+
+.headerBarTopMenu>li {
+  float: left;
+  line-height: 71px;
+}
+
+.headerBarTopMenu>li a {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-weight: 600;
+  display: block;
+  color: #767676;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+}
+
+.headerBarTopMenu>li a:hover {
+  color: black;
+  border-bottom: 4px solid #FE5A00;
+}
+
+.headerBarBottom {
+  height: 50px;
+  border-bottom: 1px solid #E2E4E5;
+}
+
+.headerBarBottomMenu {
+  margin: 0;
+  padding-left: 260px;
+  height: 100%;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.topMenuActive {
+  color: black!important;
+  border-bottom: 4px solid #FE5A00;
+}
+
+.headerBarBottomMenuDiv {
+  margin: 0;
+  padding-left: 260px;
+  height: 100%;
+}
+
+.headerBarTopRightMenuDiv {
+  float: right;
+  margin: 0;
+  height: 100%;
+}
+
+.headerBarTopRightMenu {
+  margin: 0;
+  height: 50%;
+  list-style-type: none;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.headerBarTopRightMenu>li {
+  float: left;
+  border-right: 1px solid gray;
+  height: 100%;
+}
+
+.headerBarTopRightMenu>li a {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+  float: left;
+  padding-top: 10px;
+}
+.headerBarTopRightMenu>li:last-child {
+  border-right: 0;
+}
+
+.topRightMenuIcon {
+  float: left;
+  padding-left: 20px;
+}
+
+.contentDiv {
+  float: left;
+  width: 96%;
+ 
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 10%;
+  background: #F6F8FB;
+}
+
+.contentHeaderText {
+  width: 100%;
+  float: left;
+  text-align: left;
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-size: 35px;
+  color: #004a5d;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  position: relative;
+  background: #E7441B;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: left;
+  display: inline-block;
+  float: left;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footerLogo {
+  position: absolute;
+  top: -86px;
+  right: 175px;
+}
+
+.footerMenuUl {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  list-style-type: none;
+  width: 17%;
+  float: left;
+}
+
+.footerMenuUl>li:first-child {
+  padding-top: 20px;
+}
+
+.footerMenuUl>li {
+  padding-top: 8px;
+}
+
+.footerMenuLi a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.footerDisclaimerUl {
+  font-family: LeasePlan,Arial,Helvetica,sans-serif;
+  color: white;
+  width: 100%;
+  margin: 0;
+  list-style-type: none;
+  float: left;
+  padding-top: 30px;
+}
+
+.footerDisclaimerLi {
+  float: left;
+}
+
+.footerDisclaimerLi a {
+  float: left;
+  text-decoration: none;
+  font-size: 13px;
+  color: #F4AF9E;
+  padding-right: 20px;
+}

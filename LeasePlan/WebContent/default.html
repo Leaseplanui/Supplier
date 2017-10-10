@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <title>Title of the document</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js/loginDialog.js"></script>
+  <link rel="stylesheet" href="css/ddMenu.css">
+
+  <!-- The Footer Ends -->
+
+  <script src="js/bootstrap/js/bootstrap_main.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link href="js/bootstrap-multiselect/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+  <script src="js/bootstrap-multiselect/js/bootstrap-multiselect.js"></script>
+
+
+  <script type="text/javascript" src="js/LandingPage.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select.css">
+  <link rel="stylesheet" href="css/search.css">
+  
+</head>
+
+<body>
+  <div class="bodyDiv">
+    <!-- The Login Dialog Starts -->
+    <div class="loginDialog" id="idLoginDialog">
+      
+    </div>
+    <script> $("#idLoginDialog").load("Login.html")</script>
+    <!-- The Login Dialog Ends -->
+    <!-- Registration DIalog starts -->
+<div class="registerDialog" id="idregisterDialog">
+</div>
+<!-- registration dialog ends -->
+
+<!-- Forgot Password Dialog Starts -->
+<div class="forgotpwdDialog" id="idForgotPassword">
+</div>
+<!-- Forgot Password Dialog Ends -->
+
+<!-- Activation Link Dialog Starts -->
+<div class="activateLinkDialog" id="idActivateLink">
+</div>
+<!-- Activation Link Dialog Ends -->
+
+    <div class="headerBar">
+      <div class="logoContainer">
+        <img src="images/logo.png" height="100%" width="100%"></img>
+      </div>
+      <div class="headerBarTop">
+        <ul class="headerBarTopMenu">
+          <li><a class="topMenuActive" href="#corporate-lease">Corporate Lease</a></li>
+          <li><a href="#about-us">About Us</a></li>
+        </ul>
+        <div class="headerBarTopRightMenuDiv">
+          <ul class="headerBarTopRightMenu">
+            <li><a class="topRightMenuActive" href="#corporate-lease">Customer Support</a></li>
+            <li class="MyProfileLink" id="MyProfileLink" style="display:none"><img src="images/user-32x32.png" class="topRightMenuIcon"><a href="javascript:openMyProfile();">My Profile</a></li>
+            <li id="LgnLink"><img src="images/user-32x32.png" class="topRightMenuIcon"><a href="javascript:doLogin();">Login</a></li>
+       
+       
+              </ul>
+        </div>
+      </div>
+      <div class="headerBarBottom">
+        <div class="headerBarBottomMenuDiv">
+          <ul class="ddMenuUl">
+            <li class="ddMenuActive ddMenuLi"><a href="#home">Top 5 leaseauto's</a></li>
+            <li class="ddMenuLi"><a href="#news">Auto zoeken</a></li>
+            <li class="ddMenuLi ddMenuLiDropdown">
+              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Lease Info</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+            <li class="ddMenuLi ddMenuLiDropdown">
+              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Over ons</a>
+              <div class="dropdown-content">
+                <a href="#">Link 21</a>
+                <a href="#">Link 22</a>
+                <a href="#">Link 23</a>
+              </div>
+            </li>
+            <li class="ddMenuLi ddMenuLiDropdown">
+              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Uw leaseauto</a>
+              <div class="dropdown-content">
+                <a href="#">Link 21</a>
+                <a href="#">Link 22</a>
+                <a href="#">Link 23</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contentDiv" id="idContentDiv">
+      <div class="bannerDiv">
+        <div class="searchContainer">
+          <span class="searchContainerHeader">Search for Vehicle</span>
+          <div class="selectDiv">
+            <select size="5" name="idBrand" multiple="multiple" id="idBrand" width="200px" class="selectDD">
+             <option value="0361"  >Abarth (16)</option>
+            
+                <option value="0004"  >Alfa Romeo (39)</option>
+            
+                <option value="0015"  >Audi (799)</option>
+            
+                <option value="0028"  >BMW (359)</option>
+            
+                <option value="0056"  >Citroën (163)</option>
+            
+                <option value="0063"  >Dacia (42)</option>
+            
+                <option value="0502"  >DS (64)</option>
+            
+                <option value="0388"  >Fiat (149)</option>
+            
+                <option value="0093"  >Ford (229)</option>
+            
+                <option value="0125"  >Honda (62)</option>
+            
+                <option value="0134"  >Hyundai (104)</option>
+            
+                <option value="0136"  >Infiniti (93)</option>
+            
+                <option value="0142"  >Jaguar (259)</option>
+            
+                <option value="0145"  >Jeep (54)</option>
+            
+                <option value="0160"  >KIA (148)</option>
+            
+                <option value="0181"  >Land Rover (277)</option>
+            
+                <option value="0185"  >Lexus (38)</option>
+            
+                <option value="0196"  >Maserati (15)</option>
+            
+                <option value="0200"  >Mazda (141)</option>
+            
+                <option value="0204"  >Mercedes-Benz (503)</option>
+            
+                <option value="0212"  >MINI (71)</option>
+            
+                <option value="0213"  >Mitsubishi (34)</option>
+            
+                <option value="0234"  >Nissan (279)</option>
+            
+                <option value="0245"  >Opel (297)</option>
+            
+                <option value="0250"  >Peugeot (206)</option>
+            
+                <option value="0257"  >Porsche (61)</option>
+            
+                <option value="0266"  >Renault (330)</option>
+            
+                <option value="0284"  >SEAT (202)</option>
+            
+                <option value="0288"  >Skoda (208)</option>
+            
+                <option value="0289"  >smart (46)</option>
+            
+                <option value="0295"  >SsangYong (7)</option>
+            
+                <option value="0301"  >Subaru (16)</option>
+            
+                <option value="0303"  >Suzuki (71)</option>
+            
+                <option value="0404"  >Tesla (7)</option>
+            
+                <option value="0316"  >Toyota (239)</option>
+            
+                <option value="0338"  >Volkswagen (547)</option>
+            
+                <option value="0339"  >Volvo (316)</option>
+          </select>
+          </div>
+          <div class="selectDiv">
+            <select size="5" name="idModelNo" multiple="multiple" id="idModelNo" width="200px" class="selectDD">
+              <option value="NJ">New Jersey</option>
+              <option value="NY">New York</option>
+              <option value="OH">Ohio</option>
+          </select>
+          </div>
+          <div class="selectDiv">
+            <select size="5" name="idFuel" multiple="multiple" id="idFuel" width="200px" class="selectDD">
+      <option value="aardgas"  >Aardgas</option>
+ <option value="benzine"  >benzine</option>
+ <option value="enzine-hybrid"  >enzine-hybrid</option> <option value="benzine-plug-in-hybrid"  >Benzine plug-in hybrid</option> <option value="benzine-plug-in-hybrid_Diesel"  >Diesel</option> <option value="diesel-hybrid"  >Diesel Hybrid</option> <option value="lpg"  >LPG</option> <option value="volledig-electrisch"  >Volledig elektrisch</option> <option value="waterstof"  >waterstof</option>
+ <option value="e85"  >E85</option>
+          </select>
+          </div>
+          <div class="selectDiv">
+            <span class="sliderTitle">Maximum Lease Rate p / m: € Max.</span>
+            <div id="slider" class="slider"></div>
+          </div>
+          <div class="selectDiv">
+            <button type="button" class="btnOrange orangeButton button loginDialogRegisterBtn searchCarsBtn" onclick="viewCars()">View Cars</button>
+            <span>or</span>
+<svg class="link--icon" width="21" height="13" viewBox="0 0 21 13" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>Slider</title><rect x="0" y="2" width="9" height="1" style="fill: rgb(238, 76, 20);"></rect><rect x="18" y="2" width="3" height="1" style="fill: rgb(238, 76, 20);"></rect><circle cx="13.5" cy="2.5" r="2.5" style="fill: rgb(238, 76, 20);"></circle><rect x="12" y="10" width="9" height="1" style="fill: rgb(238, 76, 20);"></rect><rect x="0" y="10" width="3" height="1" style="fill: rgb(238, 76, 20);"></rect><circle cx="7.5" cy="10.5" r="2.5" style="fill: rgb(238, 76, 20);"></circle></svg>
+            <a href="#" class="advancedSearchLink">Advanced Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Footer Starts -->
+     <div id = "footerDiv1">
+  </div>
+   </body>
+
+</html>

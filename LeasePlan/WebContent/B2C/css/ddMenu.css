@@ -1,0 +1,73 @@
+.ddMenuUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ddMenuLi {
+    float: left;
+}
+
+.ddMenuLi a, .ddMenuLiDropdownBtn {
+    display: inline-block;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 28px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-family: LeasePlan,Arial,Helvetica,sans-serif;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.ddMenuLi a:hover, .ddMenuLiDropdown:hover .ddMenuLiDropdownBtn {
+  border-bottom: 3px solid #FE5A00;
+}
+
+.ddMenuLi.ddMenuLiDropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+  border-bottom: 0;
+  background: #e8e8e8;
+}
+
+.ddMenuLiDropdown:hover .dropdown-content {
+    display: block;
+}
+
+.ddMenuActive a {
+  color: #FE5A00;
+}
+
+.ddMenuLiDropdownBtn::after {
+  content: ">";
+  right: 12px;
+  position: absolute;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}

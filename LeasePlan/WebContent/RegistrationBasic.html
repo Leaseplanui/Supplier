@@ -1,0 +1,31 @@
+   
+   
+       <link rel="stylesheet" href="css/loginDialog.css">
+    <link rel="stylesheet" href="css/registerDialog.css">
+
+     
+     
+   
+     <div class="registerDialog-content">
+        <span class="registerDialog-close">&times;</span>
+	<a class="registerDialogHeaderText">My account LeasePlan.</a>
+        <a class="registerDialogTopDescriptionText">An account is useful. You can easily store and buy assembled cars. Moreover, you always view the status of your ordered lease.</a>
+        <a class="registerDialogLabel">E-mail address</a>
+        <input type="text" name="email" class="registerDialogInput">
+        <a class="registerDialogLabel">Password</a>
+        <input type="password" name="password" class="registerDialogInput">
+        <a class="registerDialogLabel">Repeat Password</a>
+        <input type="password" name="repeatpassword" class="registerDialogInput">
+        <div class="checkbox">
+	  <input type="checkbox" name="registerAcceptConditionsCB" id="registerAcceptConditionsCB">
+          <label for="registerAcceptConditionsCB">I accept the LeasePlan <a href="#AcceptConditions">conditions</a></label>
+	</div>
+	<div class="checkbox">
+	  <input type="checkbox" name="registerMarketingCommsCB" id="registerMarketingCommsCB">
+	  <label for="registerMarketingCommsCB">I opt-in for Marketing <a href="#MarketingComms">communications</a></label>
+	</div>
+	<button type="button" class="blackButton button registerDialogRegisterBtn" onclick="javascript:doSubmitBasicRegisterReload();">Register</button>
+	<a class="registerDialogAlreadyHaveanAccountText">I already have an account:</a>
+	<button type="button" class="orangeButton button registerDialogLogonBtn" onclick="javascript:doRelogin();">Log on</button>
+     </div>
+   </div>

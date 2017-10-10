@@ -1,0 +1,125 @@
+.FAQ {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.FAQLeftSidebar {
+  float: left;
+  display: flex;
+  height: 100%;
+  width: 20%;
+}
+
+.FAQContentArea {
+  float: left;
+  display: flex;
+  height: 100%;
+  width: 80%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.FAQCategoryUl {
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+
+.FAQCategoryLi {
+  margin-left: 0;
+  padding: 6px 0;
+  cursor: pointer;
+  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding-right: 12px!important;
+}
+
+.FAQCategoryText {
+  color: #000;
+  text-decoration: none;
+}
+
+.FAQQuestionsUl {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  list-style: none;
+  background: white;
+  width: 100%;
+}
+
+.FAQQuestionsLi {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #f6f8fb;
+}
+
+.FAQQuestionsPanelButton {
+  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  width: calc(100% - 30px);
+  margin: 10px 0;
+  padding: 0 0 0 30px;
+  border: 0;
+  background: none;
+  color: #2d2d2d;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  float: left;
+}
+
+.FAQQuestionsPanelButton:hover {
+  color: #f06400;
+}
+
+.FAQQuestionsPanelButton::before {
+  top: 0;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background-color: #f06400;
+  color: white;
+  background-image: url("../images/icon-down.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  line-height: 17px;
+  text-align: center;
+  content: "";
+  float: left;
+  margin-right: 10px;
+}
+
+.FAQQuestionsPanelButton-open::before {
+  transform: rotate(180deg);
+}
+
+.FAQAnswerDiv {
+  width: 100%;
+  float: left;
+  display: none;
+  transition: max-height .3s ease-in-out,padding .3s ease-in-out;
+  overflow: hidden;
+}
+
+.FAQAnswer {
+  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 1.1rem;
+  width: 100%;
+  float: left;
+  padding: 0 40px 0 50px;
+  text-align: left;
+}

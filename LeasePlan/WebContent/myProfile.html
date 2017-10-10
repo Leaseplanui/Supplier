@@ -1,0 +1,118 @@
+
+<script type="text/javascript" src="js/myProfile.js"></script>
+<link rel="stylesheet" href="css/myProfile.css">
+ <div class="myAccountScreen">
+     <ul class="myAccountPage">
+       <li class="myAccountBlock1">
+         <div class="myAccountBlock1Info">
+            <p class="myAccountBlock1Text"> In your account you will find a list of your saved cars and offers. In addition, you simply change your information such as e-mail and password.</p>
+            <p class="myAccountBlock1Text">Have you already ordered or drive one or several company cars? Then you will find all the information and documents here and simply regulates all matters concerning your lease(s) such damage report or declaren.</p>
+         </div>
+         <div class="yourLeaseSection">
+           <div class="yourLeaseHeader">your lease </div>
+           <ul class="yourLeaseActionList">
+             <li><a href="#overview">Overview and applications documents</a></li>
+             <li><a href="#fines">Fines recognize and pay directly </a></li>
+             <li><a href="#file">File a declaration</a></li>
+             <li><a href="#report">Damage report or maintenance plans</a></li>
+             <li><a href="#order">order or return leased</a></li>
+           </ul>
+         </div>
+         <div class="helpSection">
+           <div class="helpSectionHeader">Can we help you? </div>
+           <ul class="callAppln">
+             <li class="callApplnImage"><img src="images/call-image.jpg"></li>
+             <li class="callApplnTextArea">
+              <a class="callApplnNo">036 - 527 28 82 </a>
+              <a class="callApplnText">We are now accessible</a>
+             </li>
+           </ul>
+           <ul class="chatAppln">
+             <li class="chatApplnImage"><img src="images/chat-image.jpg"></li>
+             <li class="chatApplnTextArea"><a class="chatApplnText">Start chat</a></li>
+           </ul>
+           <ul class="emailAppln">
+             <li class="emailApplnImage"><img src="images/mail-image.jpg"></li>
+             <li class="emailApplnTextArea">
+               <a class="emailApplnText1"> Send an email</a>
+               <a class="emailApplnText2"> We will repond within 48 hours on weekdays</a>
+             </li>
+           </ul>
+         </div>
+       </li>
+
+      <li class="myAccountBlock2">
+       <div class="tabControlBtn">
+         <ul class="tabControlBtnList">
+           <li><button type="button" class="editAccountBtn" id="myEditAccount" onclick="showEditSection()">Edit account</button></li>
+           <li><button type="button" class="savedCarsBtn" id="mySavedCars" onclick="showSavedCars()">Saved cars</button></li>
+           <li><button type="button" class="ordersBtn" id="myOrders" onclick="showOrders()">Orders</button></li>
+         </ul>
+       </div>
+       <div class="editAccountSection">
+         <p class="editAccountSectionText">You can set a new password using this feature.</p>
+         <button type="button" class="editAccountPwdBtn" onclick="showSetNewPwdSection()">Set new password</button>
+         <p class="editAccountSectionText">This feature allows you to change your current login email address used.</p>
+         <button type="button" class="editAccountEmailBtn" onclick="showChangeEmailSection()">Change e-mail address</button>
+         <p class="editAccountSectionText">You can complete the registration using this feature.</p>
+         <button type="button" class="editAccountRegisterBtn" onclick="navToRegistration2()">Complete Registration</button>
+       </div>
+ 
+    <!---- Set New Password Dialog starts ---->
+       <div class="setNewPwdSection" id="setNewPwdSection">
+       <div class="setNewPwdSection-content">
+         <div class="setNewPwdSectionHeader">Set new Password</div>
+     <!--    <div class="setNewPwd-text-fields">
+          <label for id="currentPwd">Current password</label>
+          <div class="show-hide-password">
+           <input type="password" id="pwd" name="password" class="setNewPwdSectionInput">
+           <button type="button" id="toogleBtn" class="toggleBtn" onclick="showPassword()">
+            <img src="images/eye-open.jpg" alt="eye" class="eye-open toggler-ico" id="toggler-ico">
+           </button>
+          </div>
+         </div>   -->
+         <div class="setNewPwd-text-fields">
+          <label for id="currentPwd">Current password</label>
+          <input type="password" id="pwd" name="password" class="setNewPwdSectionInput">
+          <span id="toggler-ico" class="toggler-ico"></span>
+         </div>
+         <div class="setNewPwd-text-fields">
+          <label for id="newPwd">New password</label>
+          <input type="password" id="newPwd" name="newPassword" class="setNewPwdSectionInput">
+         </div>
+         <div class="setNewPwd-text-fields">
+          <label for id="repeatPwd">Repeat your new password</label>
+          <input type="password" id="repeatPwd" name="repeatPassword" class="setNewPwdSectionInput">
+         </div>
+
+         <div class="setNewPwdBtnArea">
+            <button type="button" class="newPwdChangeBtn">Change</button>
+            <a href="javascript:navToEditAccount();" class="newPwdBackBtn">Back</a>
+         </div>
+       </div>
+      </div>
+    <!---- Set New Password Dialog Ends ---->
+
+    <!---- Change Email Dialog Starts ---->
+       <div class="changeEmailSection">
+       <div class="changeEmailSection-content">
+         <div class="changeEmailSectionHeader">change e-mail address</div>
+         <div class="changeEmail-text-fields">
+           <label for id="newEmailId">New email address</label>
+           <input type="text" id="newEmailId" name="newEmail" class="changeEmailSectionInput">
+         </div>
+         <div class="changeEmail-text-fields">        
+           <label for id="yourpassword">Your Password</label>
+           <input type="password" id="yourpassword" name="yourpassword"  class="changeEmailSectionInput">
+         </div>
+         <div class="emailBtnArea">
+            <button type="button" class="changeEmailBtn">Change</button>
+            <a href="javascript:navToEditAccount();" class="changeEmailBackBtn">Back</a>
+         </div> 
+       </div>
+      </div>
+    <!---- Change Email Dialog Ends ---->
+     </li>  
+    </ul>       
+   </div>         
+            
