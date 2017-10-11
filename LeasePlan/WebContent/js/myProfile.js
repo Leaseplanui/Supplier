@@ -3,7 +3,7 @@
 function showEditSection()
 {
 
-$(".editAccountSection").show();
+$("#editAccountSection").show();
 
  
 
@@ -81,3 +81,8 @@ $(".editAccountSection").show();
   
 
 }
+function navToRegistration2() {
+  $("#idContentDiv").load("RegisterPage2.html");
+
+}
+

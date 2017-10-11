@@ -13,3 +13,24 @@ Select#S01{
 width:100%;
 background:#F8F8FF;
 }
+
+#end{
+border:#FFFFFF;
+border-width:thin;
+border-style:solid;
+margin-left:0cm;
+margin-right:auto;
+padding-bottom: 1em;
+  
+}
+
+#end p{
+display-inline:block;
+float: left;
+padding:1em;
+  
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  width: 50%
+}

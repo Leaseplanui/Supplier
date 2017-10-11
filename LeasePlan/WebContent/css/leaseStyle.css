@@ -22,13 +22,7 @@
     margin-top: -17px;
     min-height: 50px;
 }
-.body {
-    font-family: "ff-meta-web-pro-n4","ff-meta-web-pro",sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
-}
+
 .searchbox-vertical {
     position: relative;
     float: left;
@@ -199,9 +193,7 @@ form {
   position: relative; 
   margin: 50px;
 }
-body {
-  padding: 20px;
-}
+
 
 #ex1Slider .slider-selection {
 	background: #BABABA;

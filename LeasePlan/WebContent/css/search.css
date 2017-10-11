@@ -8,14 +8,14 @@
 }
 
 .searchContainer {
-  width: 40%;
+  width: 32%;
   
   background: #F6F8FB;
   float: left;
   padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-bottom: 6%;
+  padding-left: 2%;
+  padding-right: 2%;
   display: table;
   text-align: left;
 }
@@ -24,7 +24,7 @@ svg.link--icon {
 }
 .searchContainerHeader {
       font-family: LeasePlan, Arial, Helvetica, sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.8em;
     float: left;
     margin-bottom: 10px;

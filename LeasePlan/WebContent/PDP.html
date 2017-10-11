@@ -1,15 +1,62 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/PDP.js"></script>
-  <link rel="stylesheet" href="css/PDP.css">
+  <link rel="stylesheet" href="css/style.css">
+` <script type="text/javascript" src="js/PDP.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/PDP.css">
 <script>
 $(function() {
-  document.getElementById("idContentDiv").appendChild(PDP.init());
+	
+
+	
+	
+	var laTab1ContentTopLeft = [{
+	      title: "Consumentenprijs",
+	      value: "&euro; 46.760,00"
+	    }, {
+	      title: "Fiscale waarde",
+	      value: "&euro; 46.760,37"
+	    }, {
+	      title: "Addition",
+	      value: "22 %"
+	    }, {
+	      title: "Own risk",
+	      value: "&euro; 300,00"
+	    }, {
+	      title: "Duration",
+	      value: "60 maanden"
+	    }, {
+		      title: "Kilometer",
+		      value: "10000 per year"
+		    }];
+	    var laTab1ContentTopRight = [{
+	    	 title: 'Power: 125 kW (168 hp) at 5500 rpm'}, {
+	    		 title: 'Max torque: 250 Nm at 2500 rpm'}, {
+	    		 title: 'Engine Contents: 1368 cc'}, {
+	    		 title: 'Drive: 2 wheels'}, {
+	    		 title: 'Weight: 1035 kg'}, {
+	    		 title: 'Wheelbase: 2310 mm'}, {
+	    		 title: 'Cylinders: 4 (4 valves per cil)'}, {
+	    		 title: 'Length: 4054 mm'}, {
+	    		 title: 'Width: 1740 mm'}, {
+	    		 title: 'Height: 1233 mm'}, {
+	    		 title: 'CO2 emissions: 148 gr / km'}, {
+	    		 title: 'Energy label: F'
+	    }];
+	    var laTab1ContentTopMiddle = [{
+	    	 title: 'Average consumption: 6.4 ltr / 100km'}, {
+	    		 title: 'Fuel gasoline'}, {
+	    		 title: 'Transmission: Manual'}, {
+	    		 title: 'Front tires: 205/45 / W / 17'}, {
+	    		 title: 'Rear tires: 205/45 / W / 17'}, {
+	    		 title: 'Package Contents: 140 ltr'}, {
+	    		 title: 'Tank contents: 45 ltr'}, {
+	    		 title: 'Charging capacity: 280 kg'}, {
+	    		 title: 'Maintenance: Every 15000 km'}, {
+	    		 title: 'Trailer brakes: 0 kg'}, {
+	    		 title: 'Trailer unrestrained: 0 kg'}];
+  document.getElementById("idContentDiv").appendChild(PDP.init(laTab1ContentTopLeft,laTab1ContentTopRight,laTab1ContentTopMiddle));
   $("#tabs" ).tabs();
 });
 </script>
-
-
-
-

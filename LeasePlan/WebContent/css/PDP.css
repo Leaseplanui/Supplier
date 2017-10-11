@@ -42,11 +42,17 @@
   width: 100%;
   text-align: left;
 }
-
+span.PDPTabContentHeaderText {
+    font-size: 3rem;
+    color: #004a5d;
+    font-family: LeasePlan;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 .PDPProductDescriptionWrapper {
   font-family: LeasePlan, Arial, Helvetica, sans-serif;
-  height: 400px;
-  padding-top: 48px;
+ 
+  padding-top: 10px;
   display: flex;
 }
 
@@ -72,7 +78,9 @@
 }
 
 .BreadcrumLi {
-  float: left;
+  float: left;    font-size: 1.5rem;
+    padding: 10px;
+    font-family: LeasePlan;
 }
 
 .BreadcrumLi::after {
@@ -88,7 +96,7 @@
 
 .PDPProductDetailsWrapper {
   width: 100%;
-  height: 200px;
+ 
   float: left;
 }
 
@@ -125,4 +133,266 @@
   padding: 35px 30px;
   background-color: #fff;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, .1);
+}
+
+.PDPTabUl {
+  background: none !important;
+  border: 0 !important;
+}
+
+.PDPTabLi {
+  /*background: none !important;
+  border: 0 !important;*/
+}
+
+.PDPTabLiActive::before {
+  /*content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 50%;
+  margin-left: -16px;
+  border: 16px solid transparent;
+  border-top-color: #F5821E;
+  z-index: 2;*/
+}
+
+.PDPTabContent_a {
+  /*font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  padding-left: 11px !important;
+  padding-right: 11px !important;
+  font-size: .875rem;*/
+}
+
+.PDPTabContent_aActive {
+  border: 2px solid #F5821E;
+  background-color: #F5821E;
+  color: #FFF !important;
+}
+
+.ui-widget.ui-widget-content {
+  border: 0px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: 2px solid #F5821E;
+  background-color: #F5821E;
+  color: #ffffff;
+}
+
+.ui-state-active::before, .ui-widget-content .ui-state-active::before, .ui-widget-header .ui-state-active::before, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 50%;
+  margin-left: -16px;
+  border: 16px solid transparent;
+  border-top-color: #00b1af;
+  z-index: 2;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  border: 2px solid #FFF;
+  color: #454545;
+  border-radius: 6px;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  outline: none !important;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: .8em 1em;
+}
+
+/*.ui-tabs .ui-tabs-nav li {
+  border: 1px solid;
+}
+
+.ui-tabs .ui-tabs-nav li:hover {
+  border: 1px solid;
+  border-color: #F5821E;
+}*/
+
+.ui-tabs .ui-tabs-panel {
+  margin-top: 25px;
+  border: 1px solid #DEDEDE;
+  padding: 1rem 2rem 2rem 2rem;
+  display: inline-block;
+}
+
+.PDPTabContentDiv {
+  font-family: LeasePlan, Arial, Helvetica, sans-serif;
+}
+
+.PDPTabContentHeader {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.PDPTab1ContentTop {
+  display: inline-flex;
+}
+
+.PDPTab1ContentTopLeft {
+  float: left;
+  width: 40%;
+  padding-right: 30px;
+}
+
+.PDPTabUlTab1ContentTopLeftUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.PDPTabUlTab1ContentTopLeftLi {
+  width: 100%;
+  float: left;padding-bottom: 10px;
+
+}
+
+.PDPTabUlTab1ContentTopLeftLiTitle {
+  float: left;
+}
+
+.PDPTabUlTab1ContentTopLeftLiValue {
+  float: right;
+  font-weight: 600;
+}
+
+.PDPTab1ContentTopRight {
+  float: right;
+  width: 30%;
+  padding-left: 10px;
+}
+
+.PDPTabUlTab1ContentTopRightUl {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+}
+
+.PDPTabUlTab1ContentTopRightLi {
+  width: 100%;padding-bottom: 10px;
+  float: left;
+}
+
+.PDPTabUlTab1ContentTopRightLiTitle {
+  float: left;
+}
+
+.PDPTabUlTab1ContentTopRightLiTitle::before {
+  top: 0;
+  left: 0;
+  display: block;
+  width: 22px;
+  content: url("data:image/svg+xml;charset=utf-8,%3Csvg width='15' height='12' viewBox='181 579 20 15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%2300b1af' fill-rule='evenodd' d='M198.63 579l-10.174 10.323-5.13-4.876-2.326 2.384 7.5 7.169 12.5-12.661z'/%3E%3C/svg%3E");
+  float: left;
+  padding-right: 5px;
+}
+
+.PDPTab1ContentTopMiddle {
+  float: right;
+  width: 30%;
+  padding-left: 10px;
+}
+
+.PDPTabUlTab1ContentTopMiddleUl {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+}
+
+.PDPTabUlTab1ContentTopMiddleLi {
+  width: 100%;
+  float: left;
+  height: 1.6rem;
+}
+
+.PDPTabUlTab1ContentTopMiddleLiTitle {
+  float: left;
+}
+
+.PDPTabUlTab1ContentTopMiddleLiTitle::before {
+  top: 0;
+  left: 0;
+  display: block;
+  width: 22px;
+  content: url('../images/greenMiddle.svg');
+  float: left;
+  padding-right: 5px;
+}
+
+.PDPTab1ContentBottom {
+  width: 100%;
+  display: inline-grid;
+}
+
+.PDPTab1ContentBottomHeader {
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.PDPTabUlTab1ContentBottomUl {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+}
+
+.PDPTabUlTab1ContentBottomLi {
+  width: 100%;
+  float: left;
+}
+
+.PDPTabUlTab1ContentBottomLiTitle {
+  float: left;
+}
+
+.PDPTabUlTab1ContentBottomLiTitle::before {
+  top: 0;
+  left: 0;
+  display: block;
+  width: 22px;
+  content: url('../images/greenRight.svg');
+  float: left;
+  padding-right: 5px;
+}
+li.PDPTabLi.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {
+    padding: 2px;
+    color: white;
+    background-color: red;
+    font-size: 1.5rem;
+    font-family: LeasePlan;
+    background-color: #00b1af;
+    color: #fff;
+    letter-spacing: 1px;
+}
+li.PDPTabLi.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
+    color: white;
+    background-color: red;
+    font-size: 1.5rem;
+    font-family: LeasePlan;
+    background-color: #ccefef;
+    color: white;
+    letter-spacing: 1px;
 }

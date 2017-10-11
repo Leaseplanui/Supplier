@@ -164,7 +164,6 @@ function displayCheckout4() {
 function displayCheckout5() {
 	$("#idContentDiv").load("Checkout5.html");
 }
-
 function showPassword() {
 
  var ele = document.getElementById('pwd');

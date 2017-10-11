@@ -3,13 +3,12 @@
 
 <head>
   <link rel="icon" type="image/png" href="images/logo.png">
-  <title>Title of the document</title>
+  <title>Corporate Portal</title>
   <script type="text/javascript" src="js/jquery.min.js"></script>
 
   <script type="text/javascript" src="js/loginDialog.js"></script>
   <link rel="stylesheet" href="css/ddMenu.css">
 
-  <!-- The Footer Ends -->
 
   <script src="js/bootstrap/js/bootstrap_main.min.js"></script>
   <link rel="stylesheet" href="js/bootstrap/css/bootstrap_main.min.css">
@@ -23,7 +22,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/select.css">
   <link rel="stylesheet" href="css/search.css">
-  
+    <link rel="stylesheet" href="css/cookieMsg.css">
 </head>
 
 <body>
@@ -55,8 +54,8 @@
       </div>
       <div class="headerBarTop">
         <ul class="headerBarTopMenu">
-          <li><a class="topMenuActive" href="#corporate-lease">Corporate Lease</a></li>
-          <li><a href="#about-us">About Us</a></li>
+        <!--  <li><a class="topMenuActive" href="#corporate-lease">Corporate Lease</a></li>
+          <li><a href="#about-us">About Us</a></li>-->
         </ul>
         <div class="headerBarTopRightMenuDiv">
           <ul class="headerBarTopRightMenu">
@@ -81,22 +80,8 @@
                 <a href="#">Link 3</a>
               </div>
             </li>
-            <li class="ddMenuLi ddMenuLiDropdown">
-              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Over ons</a>
-              <div class="dropdown-content">
-                <a href="#">Link 21</a>
-                <a href="#">Link 22</a>
-                <a href="#">Link 23</a>
-              </div>
-            </li>
-            <li class="ddMenuLi ddMenuLiDropdown">
-              <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Uw leaseauto</a>
-              <div class="dropdown-content">
-                <a href="#">Link 21</a>
-                <a href="#">Link 22</a>
-                <a href="#">Link 23</a>
-              </div>
-            </li>
+            
+            
             <li class="ddMenuLi ddMenuLiDropdown">
               <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Checkout</a>
               <div class="dropdown-content">
@@ -105,7 +90,8 @@
                 <a href="javascript:displayCheckout3();">Checkout3</a>
                 <a href="javascript:displayCheckout4();">Checkout4</a>
                 <a href="javascript:displayCheckout5();">Checkout5</a>
-            </div>
+                
+              </div>
             </li>
             <li class="ddMenuLi ddMenuLiDropdown">
               <a href="javascript:void(0)" class="ddMenuLiDropdownBtn">Fleet Manager</a>
@@ -229,9 +215,19 @@
         </div>
       </div>
     </div>
+ 
+<div id="loading" class="hide1">
+  <div id="loading-content">
+    <img src="images/loader.gif"/>
+  </div>
+</div>
     <!-- The Footer Starts -->
      <div id = "footerDiv1">
   </div>
+	  <script>$("#footerDiv1").load("Footer.html");</script>
+
+<div id="cookieMsg" class="cookie cookie--fixed" data-reactid="402"><div class="o-wrapper o-wrapper--relative" data-reactid="403"><button class="cookie__close" type="button" onclick="$('#cookieMsg').css('display', 'none');" data-reactid="404"><span class="cookie__close-label translation-label" data-reactid="405">Sluiten</span></button><p class="cookie__message" data-reactid="406"><span class="translation-label" data-reactid="407">Wij gebruiken cookies om onze website te verbeteren. Door op deze website te blijven ga je akkoord met het gebruik van cookies. Meer weten?</span></p><a data-tag-id="link-legal.cookiePolicy" class="link link--12 link--mid-orange" rel="follow" href="/nl-nl/cookiebeleid" data-reactid="408"><span class="translation-label" data-reactid="409">Alles over cookies.</span></a></div></div>
+
    </body>
 
 </html>

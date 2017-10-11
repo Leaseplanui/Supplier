@@ -23,6 +23,12 @@ $(function() {
       }
     }
   });
+$(document).ajaxStart(function(){
+    $("#loading").removeClass('hide');
+}).ajaxStop(function(){
+    $("#loading").addClass('hide');
+});
+
   $('#idModelNo').multiselect({
     buttonText: function(options, select) {
       if (options.length === 0) {
@@ -65,5 +71,7 @@ $(function() {
 function viewCars()
 {
 	  $("#idContentDiv").load("cards.html");
+
+
 }
 
