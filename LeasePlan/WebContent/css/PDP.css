@@ -51,7 +51,7 @@ span.PDPTabContentHeaderText {
 }
 .PDPProductDescriptionWrapper {
   font-family: LeasePlan, Arial, Helvetica, sans-serif;
- 
+
   padding-top: 10px;
   display: flex;
 }
@@ -96,7 +96,7 @@ span.PDPTabContentHeaderText {
 
 .PDPProductDetailsWrapper {
   width: 100%;
- 
+
   float: left;
 }
 
@@ -380,7 +380,6 @@ span.PDPTabContentHeaderText {
 li.PDPTabLi.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {
     padding: 2px;
     color: white;
-    background-color: red;
     font-size: 1.5rem;
     font-family: LeasePlan;
     background-color: #00b1af;
@@ -389,7 +388,6 @@ li.PDPTabLi.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-
 }
 li.PDPTabLi.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
     color: white;
-    background-color: red;
     font-size: 1.5rem;
     font-family: LeasePlan;
     background-color: #ccefef;
