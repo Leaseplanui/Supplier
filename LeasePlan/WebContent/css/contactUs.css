@@ -1,0 +1,135 @@
+.mailIconSection
+{
+width: 45%;
+float: left;
+font-size: 1.1rem;
+}
+.marginRight40px
+{
+margin-right: 40px;
+}
+.inputFieldBackground
+{
+margin-top: 5px;
+-moz-appearance: none;conta
+appearance: none;
+background: #E6E6E6;
+border: 0 none;
+color: #454545;
+display: block;
+font-size: 1.4rem;
+padding: .5em;
+width: calc(100% + 1px);
+border-radius: 0;
+box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.1);
+border: 1px solid white;
+margin-bottom: 10px;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+min-height: 30px;
+}
+.checkButton
+{
+width: 20px;
+height: 20px;
+margin: 0;
+margin-bottom: 20px;
+}
+.contactUsBorder
+{
+height: 40vh;
+margin-left: 40px;
+margin-right: 40px;
+font-family: sans-serif;
+border-top: none;
+border-left: none;
+margin-top: 10px;
+border-style: outset
+}
+.textAlignCentre
+{
+text-align: center;}
+.textAlignLeft
+{
+text-align: left;
+}
+.paddingTop10px{
+padding-top: 10px;
+}
+.paddingBottom10px{
+padding-bottom: 10px;
+}
+.centerImage
+{
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top: 40px;
+}
+.displayFex{
+display: flex;
+}
+.displayGrid
+{
+display: grid;
+font-weight: initial;
+}
+.height100
+{
+height:100%;
+font-size: 1.5rem;
+}
+.textSuugestionArea
+{
+font-size: 1.8rem !important;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+background: #E6E6E6;
+border: 0 none;
+color: #454545;
+display: block;
+font-size: .9rem;
+padding: .5em;
+width: calc(85% + 0px);;
+border-radius: 0;
+box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.1);
+border: 1px solid white;
+margin-bottom: 10px;
+margin-top: 0;
+outline: 0;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+margin-left: -0.5px;
+min-height: 29px;
+}
+.buttonClass
+{
+min-width: 120px;
+height: 39px;
+line-height: 35px;
+color: #FFF !important;
+font-size: 1.5rem;
+padding-right: 2.5rem;
+padding-left: 1.5rem;
+border-radius: 2px;
+background: linear-gradient(#454545 45%, #000 70%, #000 100%);
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
+margin-left: 1px;
+}
+.page-content-topimage {
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 2em;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+opacity: 1;
+transition: opacity 1.5s ease-in-out;
+}

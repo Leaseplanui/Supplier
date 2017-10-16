@@ -1,0 +1,605 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+<title>Title of the document</title> -->
+
+<!-- Start bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/popper.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/leaseScript.js" type="text/javascript"></script>
+<!-- End bootstrap  -->
+
+<!-- Include the plugin's CSS and JS: -->
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="css/bootstrap-multiselect.css"	type="text/css"/>
+<link href="css/leaseStyle.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/registerDialog.css"> -->
+
+<!-- </head> -->
+
+<!-- <div id="includeHeader">
+  Content will be inserted by jQuery from header.html
+</div> -->
+
+
+ <!-- Start Content -->
+<div class="bodyDiv">
+  <div class="contentDiv">
+  
+  <div class="container">
+ 
+  	<div class="row">
+  		<div class="col-2">
+  		
+  			
+  			<div class="row">
+  				<div class="searchPad">
+  				<div class="employee">
+  				Employee
+  				</div>
+  				
+  				<div class="employee-menu">
+  				
+  			    <a href="javascript:openNewEmployee();" class="" id="doemp">Employees</a>
+  			   <!--  <a href="javascript:openNewEmployee();">Employee</a> -->
+  			    
+  				</div>
+  				
+  				<!-- <div class="foot">
+  				<a href="javascript:void(0)" class="btnSearch"  id="doReset">Reset</a>
+  				</div> -->
+  								
+					<!-- <form id="searchForm" class="search-form">
+                        <label class="search-label" for="gebruikersnaam">Username</label>
+                        <input id="gebruikersnaam" name="username" tabindex="1" type="text">
+                        <label class="search-label" for="personname">Surname</label>
+                        <input id="personname" name="personName" tabindex="2" type="text">
+                        <label class="search-label" for="bedrijfsnummer">Company number</label>
+                        <input id="bedrijfsnummer" name="companyNumber" tabindex="3" data-mask="int" type="text">
+                        <label class="search-label" for="bedrijfsnaam">Company name</label>
+                        <input id="bedrijfsnaam" name="companyName" tabindex="4"  type="text">
+                        <label class="search-label" for="postcode">Postal code</label>
+                        <input id="postcode" name="companyAreaCode" tabindex="5"  type="text">
+                        <label class="search-label" for="plaats">Residency</label>
+                        <input id="plaats" name="companyCity" tabindex="6" type="text">
+                        <label class="search-label">Authorization Profile</label>
+                        <select name="authorisationProfileId" class="inputSelect">
+                            <option value="">All</option>
+                            
+                                <option value="1393">Basisprofiel Inleverregeling</option>
+                            
+                                <option value="1277">Basisprofiel Mijn Wagenpark *</option>
+                            
+                                <option value="1408">FleetPlan Basisprofiel</option>
+                            
+                                <option value="1422">FleetPlan Facturen</option>
+                            
+                                <option value="1425">FleetPlan Wagenparkbeheer</option>
+                            
+                                <option value="1451">LeasePlan Connect API</option>
+                            
+                                <option value="1424">Project Beheren Berijder (OCM) - team Service Excellence</option>
+                            
+                                <option value="1415">Project Mijn Wagenpark (MWP) - team Agility</option>
+                            
+                                <option value="1394">Uitgebreid profiel Inleverregeling</option>
+                            
+                                <option value="1266">Uitgebreid profiel Mijn Wagenpark</option>
+                            
+                                <option value="1454">Uitgebreid profiel Mijn Wagenpark (zonder autokeuze)</option>
+                            
+                                <option value="1275">WSE External Webservice</option>
+                            
+                                <option value="1276">e-invoicing</option>
+                            
+                        </select>
+                        <input type="submit" id="btnSearch" value="Search" class="offscreen">
+                    </form> -->
+					
+  				</div>
+  			</div>
+  						
+  			
+  			
+  </div>
+ 
+  <div class="col-9">
+  			<div class="row">
+					        
+					        <div class="result myResult">
+					      <!--   <div class="search-head"></div> -->
+					        <div class="result-Content" id="driver">
+					      <div class="headContentEmp">Add new Employee
+					      	
+					      	<!-- <span class="imgUser"> <input id="btnAdduser" id type="submit" value="Adduser"></span> -->
+					      </div>
+					       <div class="clear"></div>
+					       
+					       <form id="addEmployeeForm" class="page-form">
+					       <input type="hidden" id="companyId" name="companyId">
+                		   <input type="hidden" id="cooperationId" name="cooperationId">
+               		       <input type="hidden" id="fleetPlanCustomer" name="fleetPlanCustomer" value="false">
+                           <input type="hidden" name="_csrf" value="e13f7ecb-6950-4d21-b0e5-323475a08146">
+                           <fieldset>
+                           <div id="employeeSearchPanel" class="formPart">
+                        <ul class="formRow">
+                            <li class="w_100">
+                                <div class="form-partial-header">Personal data and address</div>
+                            </li>
+                        </ul>
+                        <ul class="formRow">
+                            <li class="li_10">
+                                <label for="gender" class="popup-label">Salutation</label>
+                                <select id="gender" name="gender" class="inputselectSalu">
+                                    <option value="MALE">Mr.</option>
+                                    <option value="FEMALE">Mrs.</option>
+                                </select>
+                            </li>
+                            <li class="li_10">
+                                <label for="initials" class="popup-label">Initials</label>
+                                <input id="initials" name="initials" type="text" class="upercase" style='text-transform:uppercase' maxlength="6" data-mask="initials">
+                            </li>
+                            <li class="li_15">
+                                <label for="infix" class="popup-label">Insertion</label>
+                                <input id="infix" name="infix" type="text" class="lowrcase"  maxlength="12" data-mask="alphaspacespecialchars">
+                            </li>
+                            <li class="li_40">
+                                <label for="familyName" class="popup-label">Surname</label>
+                                <input id="familyName" name="familyName" type="text" class="lowrcase" style="text-transform: capitalize;" maxlength="33" data-mask="alphaspacespecialchars">
+                            </li>
+                        </ul>
+                        <ul class="formRow">
+                            <li class="li_10">
+                                <label for="postalCode" class="popup-label">Postal code</label>
+                                <input id="postalCode" name="postalCode" type="text" class="upercase" maxlength="6">
+                            </li>
+                            <li class="li_10">
+                                <label for="houseNumber" class="popup-label">Number</label>
+                                <input id="houseNumber" name="houseNumber" type="number" class="lowrcase" maxlength="5" data-mask="int">
+                            </li>
+                            <li class="li_10">
+                                <label for="houseNumberAddition" class="popup-label">Addition</label>
+                                <input id="houseNumberAddition" name="houseNumberAddition" type="text" maxlength="8" class="lowrcase">
+                            </li>
+                            <li class="li_10">
+                                <label for="countryId" class="popup-label">Country</label>
+                                <select id="countryId" name="countryId" class="inputselectCoun"><option value="AND">Andorra</option><option value="AU">Australie</option><option value="BNR">Belarus</option><option value="B">België</option><option value="BIH">Bosnië-Herzegovina</option><option value="BRAZ">Brazilie</option><option value="BG">Bulgarije</option><option value="C">Canada</option><option value="CN">China</option><option value="CY">Cyprus</option><option value="DK">Denemarken</option><option value="DIV">Diversen</option><option value="D">Duitsland</option><option value="GB">Engeland</option><option value="EST">Estland</option><option value="PH">Filipijnen, de</option><option value="SF">Finland</option><option value="F">Frankrijk</option><option value="GR">Griekenland</option><option value="H">Hongarije</option><option value="IRL">Ierland</option><option value="IS">Ijsland</option><option value="IN">India</option><option value="INDO">Indonesie</option><option value="IL">Israël</option><option value="I">Italië</option><option value="YU">Joegoslavie</option><option value="KR">Kroatië</option><option value="LV">Letland</option><option value="FL">Liechtenstein</option><option value="LT">Litouwen</option><option value="L">Luxemburg</option><option value="MK">Macedonië</option><option value="MY">Maleisië</option><option value="M">Malta</option><option value="MA">Marokko</option><option value="MD">Moldavië</option><option value="MO">Monaco</option><option value="MNE">Montenegro</option><option value="NL">Nederland</option><option value="N">Noorwegen</option><option value="UA">Oekraine</option><option value="A">Oostenrijk</option><option value="PL">Polen</option><option value="P">Portugal</option><option value="R">Roemenië</option><option value="SU">Rusland</option><option value="UAE">Saoedi-Arabie</option><option value="SCG">Servie-Montenegro</option><option value="SRB">Servië</option><option value="SIN">Singapore</option><option value="SI">Slovenië</option><option value="SKK">Slowakije</option><option value="E">Spanje</option><option value="CZK">Tsjechie</option><option value="TN">Tunesië</option><option value="TR">Turkije</option><option value="USA">Verenigde staten</option><option value="BY">Wit-Rusland</option><option value="S">Zweden</option><option value="CH">Zwitserland</option></select>
+                            </li>
+                        </ul>
+
+                        <p id="unknownAddress" class="warning informative-warning" style="display:none;">
+                            Note: Unknown postal code and house number.
+                        </p>
+
+                        <ul class="formRow">
+                            <li class="li_40">
+                                <label for="street" class="popup-label">Address</label>
+                                <input id="street" name="street" type="text" readonly="readonly" class="disabled">
+                            </li>
+                            <li class="li_40">
+                                <label for="city" class="popup-label">Residence</label>
+                                <input id="city" name="city" type="text" readonly="readonly" class="disabled">
+                            </li>
+                            <li class="li_20">&nbsp;</li>
+                        </ul>
+
+                        <div class="popupButtonHolder" id="popupButtonHolderID">
+                            <!-- <a href="#formPartCompanySelect" id="openCompanySelect" class="grayBtn">Next ›</a> -->
+                        
+                        <button class="grayBtn btn-lg" data-toggle="modal" data-target="#myModal" id="modalId">
+   						Next
+						</button>
+                        </div>
+						
+						<!-- Modal -->
+							<div class ="modal fade ui-dialog" id = "myModal" tabindex = "-1" role = "dialog" 
+   										aria-labelledby = "myModalLabel" aria-hidden = "true" style="height: auto;width: 845px;top: 97.5px;left: 248px;"">
+   
+   							<div class = "modal-dialog modalDialog_width">
+   							
+<!--    							
+ -->      							<div class = "modal-content">
+         
+         						<div class = "modal-header dialog-title ui-draggable">
+         						<Span>Employees Found</Span>
+            					<button type = "button" class = "close" data-dismiss = "modal" aria-hidden = "true" style="float:right;">
+               						&times;
+           						</button>
+            
+            				
+         				</div>
+         
+         				<div class = "modal-body">
+            			<!-- Press ESC button to exit. -->
+            			<div class="resultPop resultPop_h">
+            			
+                    		Do you mean one of employees below? |
+                    	<a id="closeId" href="#" id="continueWithNew" data-dismiss="modal" style="color:#036;text-decoration:none;">
+                       		 <small>No, continue with a new employee</small>
+                    	</a>
+               			<br>
+               			<br>
+               			<div class="resultPop resultPop_h">
+                    			<span class="colFindModal coluserModal">Surname</span>
+                    			<span class="colFindModal colpostalModal">Postal code</span>
+                    			<span class="colFindModal colresidenceModal">Residence</span>
+               			 </div>
+               			 <div class="listholder small-listholder">
+                    <!-- <ul id="employeeList"><li class="listitem"><a class="companyAnchor" href="#"><span class="col35">A. Algemeen</span><span class="col15">1314CH</span><span class="col20">Almere</span></a></li></ul> -->
+                </div>
+                <br>
+            			</div>
+        				 </div>
+         
+        			 <!-- <div class = "modal-footer">
+            		<button type = "button" class = "btn btn-default" data-dismiss = "modal">
+             		  Close
+            		</button>
+            
+            		<button type = "button" class = "btn btn-primary">
+               		Submit changes
+            		</button>
+        			 </div> -->
+         
+     				 </div><!-- /.modal-content -->
+   					</div><!-- /.modal-dialog -->
+   
+					</div>
+					
+					<!-- /.modal -->
+						
+                        <hr class="popup-divider">
+                    </div>
+                    
+
+                    
+                    <div id="formPartCompanySelect" class="formPart" style="display:none;">
+                        <ul class="formRow">
+                            <li class="w_100">
+                                <h4 class="form-partial-header">Company</h4>
+                            </li>
+                        </ul>
+
+                        <!-- <div id="companySelectWrapper" style="position: relative;">
+                            
+                                
+                                
+                                    <ul class="formRow">
+                                        <li class="li_50">
+                                            <label for="selectCompany" class="popup-label">Available companies</label>
+                                            <select id="selectCompany" name="selectCompany" class="inputselectCoun""><option value="0">Selecteer een bedrijf</option></select>
+                                        </li>
+                                        <li class="li_50">&nbsp;</li>
+                                    </ul>
+                                
+                                
+                            
+                        </div> -->
+
+                        <ul class="formRow" id="selectedCompany" style="display: none;">
+                            <li class="li_100">
+                                <div id="selectedCompanyContainer">
+                                    <div class="detailsResult">
+                                        <address id="companyAddress"></address>
+                                    </div>
+                                    <div class="detailsResultAside">
+                                        <a href="#" id="otherCompanyButton" class="flatLightGrayBtn">Other company</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <hr class="popup-divider">
+
+                        
+                    </div>
+                    
+
+                    
+                    <div id="formPartAdministration" class="formPart highlight" style="display:none;">
+                        <ul class="formRow">
+                            <li class="w_100">
+                                <h4 class="form-partial-header">Business information</h4>
+                            </li>
+                        </ul>
+
+                        <ul class="formRow">
+                            <li class="li_30">
+                                <label for="personnelNumber" class="popup-label">Personnel code</label>
+                                <input id="personnelNumber" class="lowrcase" name="personnelNumber" type="text" maxlength="12" data-placeholder="Optional">
+                            </li>
+                            <li id="wrapSalaryNumber" class="li_30">
+                                <label for="personnelSalaryNumber" class="popup-label">Salary number</label>
+                                <input id="personnelSalaryNumber" class="lowrcase" name="personnelSalaryNumber" type="text" maxlength="12" data-placeholder="Optional">
+                            </li>
+                            <li class="li_30">
+                                <label class="popup-label">Function</label>
+                                <input id="jobName" class="lowrcase" name="jobName" type="text" maxlength="45" placeholder="Optional">
+                            </li>
+                        </ul>
+
+                        <ul class="formRow">
+                            <li class="li_40">
+                                <label class="popup-label">Department code</label>
+                                <input id="departmentCode" class="lowrcase" name="departmentCode" type="text" maxlength="7" placeholder="Optional">
+                            </li>
+                            <li class="li_40">
+                                <label class="popup-label">Department name</label>
+                                <input id="departmentName" class="lowrcase" name="departmentName" type="text" maxlength="45" placeholder="Optional">
+                            </li>
+
+                        </ul>
+
+                        <ul class="formRow">
+                            <li class="li_40">
+                                <label for="phoneNumber" class="popup-label">Phone number</label>
+                                <input id="phoneNumber" class="lowrcase" name="phoneNumber" type="text" maxlength="14" data-mask="int">
+                            </li>
+                            <li class="li_40">
+                                <label for="emailAddress" class="popup-label">E-mail address</label>
+                                <input id="emailAddress" class="lowrcase" name="emailAddress" type="email" class="email-input" maxlength="80" data-mask="email">
+                            </li>
+                            <li class="li_20">&nbsp;</li>
+                            </ul>
+                            <ul class="formRow">
+                            <li class="li_60">
+                                    <label class="popup-label">Preferred language</label>
+                                    <div id="LanguageOptions">
+                                        <span class="radio-container blocked">
+                                            <input type="radio" id="languageNL" name="correspondenceLang" value="NL" checked="checked">
+                                            <label for="languageNL" class="radiocss">Dutch</label>
+                                        </span>
+                                        <span class="radio-container blocked">
+                                            <input type="radio" id="languageEN" name="correspondenceLang" value="EN">
+                                            <label for="languageEN" class="radiocss">English</label>
+                                        </span>
+                                    </div>
+                                </li>
+                        </ul>
+
+                       <!--  <hr class="popup-divider">
+                        <a href="#formPartLeaseConditions" class="grayBtn flatGrayBtn shortBtn is_right" id="openLeaseConditions">Next ›</a> -->
+                    </div>
+                    
+
+                    
+                    <div id="formPartLeaseConditions" class="formPart" style="display:none;">
+
+                        <ul class="formRow">
+                            <li class="w_100">
+                                <h4 class="form-partial-header">Mobility</h4>
+                            </li>
+                        </ul>
+
+                        <ul class="formRow">
+                            <li class="li_40">
+                                <label for="selectMobility" class="popup-label">Choice of mobility</label>
+                                <select id="selectMobility" name="selectMobility" class="fancy-select">
+                                    <option value="NONE" selected="">No mobility</option>
+                                    <option value="LC">Right to new lease car</option>
+                                    <option value="RC">Right to new rental car</option>
+                                    <option value="PC">Right to new pool car</option>
+                                    <option value="SL">Right to new Shortlease car</option>
+                                    <option value="OL">Right to new Occasionlease car</option>
+                                    <option value="AD">Mobility advise LeasePlan</option>
+                                </select>
+                            </li>
+                            <li class="li_40">
+                                <div class="mobility-inputs mobility-selected" style="display:none;">
+                                    <label for="mobilityStartDate" class="popup-label">Right for mobility per</label>
+                                    <span class="datepicker-container full-width">
+                                        <input id="mobilityStartDate" name="mobilityStartDate" type="text" class="dater hasDatepicker">
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="li_20">
+                                &nbsp;
+                            </li>
+                        </ul>
+
+                        <div class="mobility-inputs mobility-selected" style="display:none;">
+                            <ul class="formRow">
+                                <li class="w_100">
+                                    <h4 class="form-partial-header">
+                                        <span class="mobility-inputs mob-LC">Right to new lease car</span>
+                                        <span class="mobility-inputs mob-RC" style="display:none;">Right to new rental car</span>
+                                        <span class="mobility-inputs mob-PC" style="display:none;">Right to new pool car</span>
+                                        <span class="mobility-inputs mob-SL" style="display:none;">Right to new Shortlease car</span>
+                                        <span class="mobility-inputs mob-OL" style="display:none;">Right to new Occasionlease car</span>
+                                        <span class="mobility-inputs mob-AD" style="display:none;">Mobility advise LeasePlan</span>
+                                    </h4>
+                                </li>
+                            </ul>
+                            <div id="leaseConditionsWrap">
+                                <ul class="formRow">
+                                    <li class="li_25" id="deploymentStartDateWrap">
+                                        <label for="deploymentStartDate" class="popup-label">Contract per</label>
+                                        <span class="datepicker-container full-width">
+                                            <input id="deploymentStartDate" name="deploymentStartDate" type="text" class="dater hasDatepicker">
+                                        </span>
+                                    </li>
+                                    <li class="li_45">
+                                        <label for="leaseCategory" class="popup-label">Lease Category</label>
+                                        <select id="leaseCategory" class="fancy-select" name="leaseCategory"></select>
+                                    </li>
+                                    <li class="li_39">
+                                        <label for="mileagePerYear" class="popup-label">Expected annual mileage</label>
+                                        <input id="mileagePerYear" name="mileagePerYear" type="text" data-mask="int" maxlength="5" size="5">
+                                    </li>
+                                </ul>
+                                <ul class="formRow">
+                                    <li class="li_30">
+                                        <label for="costCenter" class="popup-label">Cost Center</label>
+                                        <input type="text" id="costCenter" name="costCenter" maxlength="25" placeholder="Optional">
+                                    </li>
+                                    <li class="li_30 mobility-inputs mob-RC mob-PC mob-SL mob-OL mob-AD" style="display:none">
+                                        <label for="mobilityDuration" class="popup-label">Expected duration in months</label>
+                                        <input id="mobilityDuration" name="mobilityDuration" type="text" data-mask="int" maxlength="3" size="3">
+                                    </li>
+                                    <li class="li_25">
+                                        <label for="parttimePercentage" class="popup-label">Part-time Percentage</label>
+                                        <input id="parttimePercentage" name="parttimePercentage" type="text" data-mask="percentage" size="6" maxlength="6">
+                                    </li>
+                                    <li class="li_45" id="privateUseRadiosWrapper">
+                                        <label class="popup-label">Private use</label>
+                                        <div id="privateUseRadios">
+                                        <span class="radio-container blocked">
+                                            <input type="radio" id="isPrivateUse" name="privateUsage" value="true" class="privateUseRadio">
+                                            <label for="isPrivateUse" class="radiocss">Private</label>
+                                        </span>
+                                        <span class="radio-container blocked">
+                                            <input type="radio" id="noPrivateUse" name="privateUsage" value="false" class="privateUseRadio">
+                                            <label for="noPrivateUse" class="radiocss">Not private</label>
+                                        </span>
+                                        </div>
+                                    </li>
+                                    <li id="newCarAuthCheckboxWrap" class="li_30">
+                                        <div class="mobility-inputs mob-LC">
+                                            <label class="popup-label">Authorisation</label>
+                                            <input type="checkbox" id="newCarAuthorization" name="newCarAuthorization" value="true">
+                                            <label for="newCarAuthorization" class="checkboxLabel">Allowed to choose a new car</label>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                
+                                <div id="authorisation" class="mobility-inputs" style="display:none;">
+                                    <ul class="formRow">
+                                        <li class="li_30">
+                                            <label for="startDateNewCar" class="popup-label">Start date choosing  new car</label>
+                                        <span class="datepicker-container full-width">
+                                            <input id="startDateNewCar" name="startDateNewCar" type="text" class="dater hasDatepicker">
+                                        </span>
+                                        </li>
+                                        <li class="li_30">
+                                            <label for="endDateNewCar" class="popup-label">End date choosing  new car</label>
+                                        <span class="datepicker-container full-width">
+                                            <input id="endDateNewCar" name="endDateNewCar" type="text" class="dater hasDatepicker">
+                                        </span>
+                                        </li>
+                                        <li class="li_40" id="regulationWrap">
+                                            <label for="regulationId" class="popup-label">Contract type</label>
+                                            <select id="regulationId" name="regulationId" class="fancy-select"></select>
+                                        </li>
+                                    </ul>
+                                    <ul class="formRow" id="sendAuthorizationEmailWrap">
+                                        <li class="w_100">
+                                            <input type="checkbox" id="sendAuthorizationEmail" name="sendAuthorizationEmail" value="true" checked="checked">
+                                            <label for="sendAuthorizationEmail" class="checkboxLabel">Send authorisation e-mail</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="formRow">
+                                    <li class="li_30">
+                                        <label for="mobilityRemarks" class="popup-label">Comments</label>
+                                        <textarea id="mobilityRemarks" name="mobilityRemarks" type="text" maxlength="3000"></textarea>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr class="popup-divider">
+                        <a href="#formPartAccount" class="grayBtn flatGrayBtn shortBtn is_right" id="openAccount">Next ›</a>
+                    </div>
+                    
+
+                    
+                    <div id="formPartAccount" class="formPart" style="display:none;">
+                        <ul class="formRow">
+                            <li class="w_100">
+                                <h4>My LeasePlan account</h4>
+                            </li>
+                        </ul>
+
+                        <ul id="createAccountWrap" class="formRow">
+                            <li class="w_100">
+                                <input type="checkbox" id="createAccount" name="createAccount" value="true">
+                                <label for="createAccount" class="checkboxLabel">Create an account</label>
+                            </li>
+                        </ul>
+
+                        <div id="accountWrap" style="display:none">
+                            <ul class="formRow accountRow">
+                                <li class="li_40">
+                                    <label for="accountEmail" class="popup-label">E-mail address</label>
+                                    <input type="email" id="accountEmail" name="accountEmail" class="email-input" data-mask="email">
+                                </li>
+                                <li class="li_60">
+                                    <label class="popup-label">Preferred language</label>
+                                    <div id="LanguageOptions">
+                                        <span class="radio-container blocked">
+                                            <input type="radio" id="languageNL" name="correspondenceLang" value="NL" checked="checked">
+                                            <label for="languageNL" class="radiocss">Dutch</label>
+                                        </span>
+                                        <span class="radio-container blocked">
+                                            <input type="radio" id="languageEN" name="correspondenceLang" value="EN">
+                                            <label for="languageEN" class="radiocss">English</label>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="formRow"></ul>
+                            <ul class="formRow">
+                                <li class="w_100">
+                                    Directly after saving the new employee will receive:<br>
+                                    &nbsp;• An activation link for My LeasePlan so he/she can choose a password
+                                    <div id="noteNewCarMail" style="display: none;">
+                                        &nbsp;• An e-mail with instructions on how to order a new lease car. The employee can finalise a new car choice within the period you activated.
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="formRow">
+                                <li class="w_100">&nbsp;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div id="formPartSubmit" style="display: none;">
+                        <div class="popupButtonHolder padding-top-1">
+                            <a href="#" id="submitForm" class="orangeBtn">Create Employee</a>
+                            <a href="#" id="clearForm" class="grayBtn">Cancel</a>
+                        </div>
+                    </div>
+
+                    
+                    <span class="form-progress">
+                        <!-- <div class="progress-bar" style="width:10%;"></div> -->
+                        <div id="progressBar" class="progress-bar" name="progressBar"></div>
+                    </span>
+                           
+                           </fieldset>
+					       </form>
+					      
+					       
+					      <!--  <div class="listholder" id="rolling"></div> -->
+					        </div>
+					       <!-- <div class="result-Content" id="emp">  
+					       employee</div> -->
+					        </div>
+					        
+      			</div>
+      			
+  		</div>
+  
+  
+  
+ 
+  </div>
+  </div>
+
+ </div>
+ 	</div> 	
+ 	
+ 	
+  <!-- End Content -->
+
+
+
+<!-- <div class="bodyDiv" id="includeFooter">
+  Content will be inserted by jQuery from footer.html
+</div> -->
