@@ -2,7 +2,7 @@ var navigationJson={
                 1:{"page":"Checkout1.html","lineBorder":"#businessCheckOut"},
                 2:{"page":"Checkout2.html","lineBorder":"#contactCheckOut"},
                 3:{"page":"Checkout3.html","lineBorder":"#paymentCheckOut"},
-                4:{"page":"Checkout4.html","lineBorder":"#riderCheckOut"},
+                4:{"page":"Checkout4.html","lineBorder":"#DriverCheckOut"},
                 5:{"page":"Checkout5.html","lineBorder":"#overviewCheckOut"}
                                 
 }

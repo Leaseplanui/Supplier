@@ -107,11 +107,14 @@ span.PDPTabContentHeaderText {
 }
 
 .PDPStickyCardWrapper {
-  width: calc(35% - 20px);
+     position: relative;
+    padding: 35px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
   height: 100%;
   float: left;
   display: flex;
-  padding-left: 20px;
+ 
 }
 
 .PDPStickyOuterWrapper {

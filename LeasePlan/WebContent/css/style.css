@@ -8,6 +8,7 @@ body {
     text-align: center;
     margin: 0 auto;
     background: #F6F8FB;
+      font-family: "LeasePlan" !important;
 }
 
 .bodyDiv {
@@ -274,4 +275,34 @@ a:focus, a:hover {
 
 .hide{
   display: none;
+}
+/* input { */
+/*     height: 50px; */
+/*     text-size-adjust: 100%; */
+/*     width: 755px; */
+/*     perspective-origin: 377.5px 25px; */
+/*     transform-origin: 377.5px 25px; */
+/*     background: rgb(250, 255, 189) none repeat scroll 0% 0% / auto padding-box border-box; */
+/*     border: 1px solid rgb(152, 154, 154); */
+/*     border-radius: 2px 2px 2px 2px; */
+/*     font: normal normal normal normal 15px / 15px LeasePlan, Helvetica, Arial, sans-serif; */
+/*     padding: 1px 10px; */
+/* } */
+.form-Label{
+	 box-sizing: border-box;
+    color: rgb(0, 74, 93);
+    height: 20px;
+    max-width: 100%;
+    text-decoration: none solid rgb(0, 74, 93);
+    text-size-adjust: 100%;
+  
+    column-rule-color: rgb(0, 74, 93);
+    perspective-origin: 31.3929px 10px;
+    transform-origin: 31.3929px 10px;
+    caret-color: rgb(0, 74, 93);
+    border: 0px none rgb(0, 74, 93);
+    font: normal normal 800 normal 20px / 20px LeasePlan, Arial, Helvetica, sans-serif;
+    margin: 0px 0px 13.3333px;
+    outline: rgb(0, 74, 93) none 0px;
+    padding: 0px;
 }

@@ -1,584 +1,1067 @@
 <html>
 
 <head>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/PDP.css">
-  <link rel="stylesheet" href="css/PDPTab2.css">
-  <link rel="stylesheet" href="css/PDPTab3.css">
-  <link rel="stylesheet" href="css/PDPTab4.css">
-  <link rel="stylesheet" href="css/PDPTab5.css">
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/PDP.css"><link rel="stylesheet" href="css/popup.css">
+<link rel="stylesheet" href="css/PDPTab2.css">
+<link rel="stylesheet" href="css/PDPTab3.css">
+<link rel="stylesheet" href="css/PDPTab4.css">
+<link rel="stylesheet" href="css/PDPTab5.css">
+<link rel="stylesheet" href="css/PDPSticky.css">  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/roadmap.css">
+  
+   <script type="text/javascript" src="http://demos.inspirationalpixels.com/popup-modal/jquery.popup.js "></script>
+  <script type="text/javascript" src="js/roadmap.js"></script>
 </head>
 
 <body style="">
-  <script type="text/javascript" src="js/PDP.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="css/PDP.css">
-  <script>
-    $(function() {
-      $("#tabs").tabs();
-    });
-  </script>
-  <div id="idContentDiv">
-    <div class="PDP">
-      <div class="PDPSlideshow">
-        <img class="PDPCarMainImage" src="images/PDPCar1.jpg">
-        <div class="PDPSlideshowInformation"><span class="PDPSlideshowInformationHeader">Volkswagen Touran</span><span class="PDPSlideshowInformationDescription1">1.4 TSI 7-DSG Comfortline Executive, Automaat, Navigatie, Panoramadak</span><span class="PDPSlideshowInformationDescription2">Benzine | 72.444 | 2013</span></div>
+	<script type="text/javascript" src="js/PDP.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet"
+		href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/PDP.css">
+	<script>
+		$(function() {
+			$("#tabs").tabs();
+			 //----- OPEN
+		    $('[data-popup-open]').on('click', function(e)  {
+		    	
+		        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+		        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+		 
+		        e.preventDefault();
+		    });
+		 
+		    //----- CLOSE
+		    $('[data-popup-close]').on('click', function(e)  {
+		        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+		        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+		 
+		        e.preventDefault();
+		    });
+		});
+		
+	</script>
+	<div id="idContentDiv">
+		<div class="PDP">
+			<div class="PDPSlideshow">
+				<img class="PDPCarMainImage" src="images/PDPCar1.jpg">
+				<div class="PDPSlideshowInformation">
+					<span class="PDPSlideshowInformationHeader">Volkswagen
+						Touran</span><span class="PDPSlideshowInformationDescription1">1.4
+						TSI 7-DSG Comfortline Executive, Automaat, Navigatie, Panoramadak</span><span
+						class="PDPSlideshowInformationDescription2">Benzine |
+						72.444 | 2013</span>
+				</div>
+			</div>
+			<div class="PDPProductDescriptionWrapper">
+				<div class="PDPBreadcrumWrapper">
+					<div class="Breadcrum">
+						<ul class="BreadcrumUl">
+							<li class="BreadcrumLi"><a data-key="Occasions">Occasions</a></li>
+							<li class="BreadcrumLi"><a data-key="Zoeken">Zoeken</a></li>
+						</ul>
+					</div>
+					<div class="PDPProductDetailsWrapper">
+						<div class="PDPProductDetails">
+							<div id="tabs" class="PDPTabBar">
+								<ul class="PDPTabUl">
+									<li class="PDPTabLi"><a href="#PDPTab0">Standard
+											Equipments</a></li>
+									<li class="PDPTabLi"><a href="#PDPTab1">Lacquer &amp;
+											Coatings</a></li>
+									<li class="PDPTabLi"><a href="#PDPTab2">packages</a></li>
+									<li class="PDPTabLi"><a href="#PDPTab3">Options and
+											Accessories</a></li>
+									<li class="PDPTabLi"><a href="#PDPTab4">Leasepakket</a></li>
+								</ul>
+								<div class="PDPTabContentDiv" id="PDPTab0">
+									<div class="PDPTabContentHeader">
+										<span class="PDPTabContentHeaderText">Standard
+											Equipments</span>
+									</div>
+									<div class="PDPTabContent">
+										<div class="PDPTab1ContentTop">
+											<div class="PDPTab1ContentTopLeft">
+												<ul class="PDPTabUlTab1ContentTopLeftUl">
+													<li class="PDPTabUlTab1ContentTopLeftLi"><a
+														class="PDPTabUlTab1ContentTopLeftLiTitle">Consumentenprijs</a><a
+														class="PDPTabUlTab1ContentTopLeftLiValue">€ 46.760,00</a></li>
+													<li class="PDPTabUlTab1ContentTopLeftLi"><a
+														class="PDPTabUlTab1ContentTopLeftLiTitle">Fiscale
+															waarde</a><a class="PDPTabUlTab1ContentTopLeftLiValue">€
+															46.760,37</a></li>
+													<li class="PDPTabUlTab1ContentTopLeftLi"><a
+														class="PDPTabUlTab1ContentTopLeftLiTitle">Addition</a><a
+														class="PDPTabUlTab1ContentTopLeftLiValue">22 %</a></li>
+													<li class="PDPTabUlTab1ContentTopLeftLi"><a
+														class="PDPTabUlTab1ContentTopLeftLiTitle">Own risk</a><a
+														class="PDPTabUlTab1ContentTopLeftLiValue">€ 300,00</a></li>
+													<li class="PDPTabUlTab1ContentTopLeftLi"><a
+														class="PDPTabUlTab1ContentTopLeftLiTitle">Duration</a><a
+														class="PDPTabUlTab1ContentTopLeftLiValue">60 maanden</a></li>
+													<li class="PDPTabUlTab1ContentTopLeftLi"><a
+														class="PDPTabUlTab1ContentTopLeftLiTitle">Kilometer</a><a
+														class="PDPTabUlTab1ContentTopLeftLiValue">10000 per
+															year</a></li>
+												</ul>
+											</div>
+											<div class="PDPTab1ContentTopRight">
+												<ul class="PDPTabUlTab1ContentTopRightUl">
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Average
+															consumption: 6.4 ltr / 100km</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Fuel
+															gasoline</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Transmission:
+															Manual</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Front
+															tires: 205/45 / W / 17</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Rear tires:
+															205/45 / W / 17</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Package
+															Contents: 140 ltr</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Tank
+															contents: 45 ltr</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Charging
+															capacity: 280 kg</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Maintenance:
+															Every 15000 km</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Trailer
+															brakes: 0 kg</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Trailer
+															unrestrained: 0 kg</a></li>
+												</ul>
+											</div>
+											<div class="PDPTab1ContentTopRight">
+												<ul class="PDPTabUlTab1ContentTopRightUl">
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Power: 125
+															kW (168 hp) at 5500 rpm</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Max torque:
+															250 Nm at 2500 rpm</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Engine
+															Contents: 1368 cc</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Drive: 2
+															wheels</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Weight:
+															1035 kg</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Wheelbase:
+															2310 mm</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Cylinders:
+															4 (4 valves per cil)</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Length:
+															4054 mm</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Width: 1740
+															mm</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Height:
+															1233 mm</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">CO2
+															emissions: 148 gr / km</a></li>
+													<li class="PDPTabUlTab1ContentTopRightLi"><a
+														class="PDPTabUlTab1ContentTopRightLiTitle">Energy
+															label: F</a></li>
+												</ul>
+											</div>
+										</div>
+										<hr>
+										<div class="PDPTab1ContentBottom">
+											<div class="PDPTab1ContentBottomHeader">Standaard
+												uitrusting</div>
+											<ul class="PDPTabUlTab1ContentBottomUl">
+												<li class="PDPTabUlTab1ContentBottomLi"><a
+													class="PDPTabUlTab1ContentBottomLiTitle">Consumentenprijs</a></li>
+												<li class="PDPTabUlTab1ContentBottomLi"><a
+													class="PDPTabUlTab1ContentBottomLiTitle">Fiscale waarde</a></li>
+												<li class="PDPTabUlTab1ContentBottomLi"><a
+													class="PDPTabUlTab1ContentBottomLiTitle">Bijtelling</a></li>
+												<li class="PDPTabUlTab1ContentBottomLi"><a
+													class="PDPTabUlTab1ContentBottomLiTitle">Eigen risico</a></li>
+												<li class="PDPTabUlTab1ContentBottomLi"><a
+													class="PDPTabUlTab1ContentBottomLiTitle">Looptijd</a></li>
+												<li class="PDPTabUlTab1ContentBottomLi"><a
+													class="PDPTabUlTab1ContentBottomLiTitle">Eigen risico</a></li>
+												<li class="PDPTabUlTab1ContentBottomLi"><a
+													class="PDPTabUlTab1ContentBottomLiTitle">Looptijd</a></li>
+												<li class="PDPTabUlTab1ContentBottomLi"><a
+													class="PDPTabUlTab1ContentBottomLiTitle">Eigen risico</a></li>
+												<li class="PDPTabUlTab1ContentBottomLi"><a
+													class="PDPTabUlTab1ContentBottomLiTitle">Looptijd</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="PDPTabContentDiv" id="PDPTab1">
+									<div class="active" style="width: 886px;">
+										<div class="grid-unit-alpha">
+											<h3>
+												<b>Lak:</b> <span id="colorslabel"
+													data-selectedcolor="Metaallak Nero San Marino 1972 ( 0,00)">Metaallak
+													Nero San Marino 1972 ( 0,00)</span>
+											</h3>
+											<span class="color-notification">Kleuren kunnen
+												afwijken van de werkelijkheid.</span>
+											<ol class="list-color" id="colorslist">
+												<li><input type="radio" checked=""
+													data-option-desc="Metaallak Nero San Marino 1972"
+													data-color="rgb(0,0,0)" data-option-id="244-24159599"
+													id="colour0" name="color" data-color-type=""
+													data-price="0,00" data-option-state="enabled"> <label
+													for="colour0"
+													data-label="Metaallak Nero San Marino 1972 ( 0,00)"
+													class="color-chip"> <span
+														style="background: rgb(0, 0, 0)" class=""> </span></label></li>
+												<li class="disabled"><input type="radio"
+													data-option-desc="Pastelllak Bianco Turini 1975"
+													data-color="rgb(248,248,255)" data-option-id="163-24159609"
+													id="colour1" name="color" data-color-type=""
+													data-price="495,00" data-option-state="disabled"> <label
+													for="colour1"
+													data-label="Pastelllak Bianco Turini 1975 ( 495,00)"
+													class="color-chip"> <span
+														style="background: rgb(248, 248, 255)" class=""> </span></label></li>
+												<li class="disabled"><input type="radio"
+													data-option-desc="pastellak Rosso Costa Brava 1972"
+													data-color="rgb(176,23,31)" data-option-id="162-24159607"
+													id="colour2" name="color" data-color-type=""
+													data-price="495,00" data-option-state="disabled"> <label
+													for="colour2"
+													data-label="pastellak Rosso Costa Brava 1972 ( 495,00)"
+													class="color-chip"> <span
+														style="background: rgb(176, 23, 31)" class=""> </span></label></li>
+												<li class="disabled"><input type="radio"
+													data-option-desc="Metaallak Azzuro Isola d'Elba 1974"
+													data-color="rgb(0,0,205)" data-option-id="208-24159602"
+													id="colour3" name="color" data-color-type=""
+													data-price="795,00" data-option-state="disabled"> <label
+													for="colour3"
+													data-label="Metaallak Azzuro Isola d'Elba 1974 ( 795,00)"
+													class="color-chip"> <span
+														style="background: rgb(0, 0, 205)" class=""> </span></label></li>
+												<li class="disabled"><input type="radio"
+													data-option-desc="Metaallak Grigio Portogallo 1974"
+													data-color="rgb(192,192,192)" data-option-id="235-24159598"
+													id="colour4" name="color" data-color-type=""
+													data-price="795,00" data-option-state="disabled"> <label
+													for="colour4"
+													data-label="Metaallak Grigio Portogallo 1974 ( 795,00)"
+													class="color-chip"> <span
+														style="background: rgb(192, 192, 192)" class=""> </span></label></li>
+											</ol>
+										</div>
+										<div class="grid-unit-alpha">
+											<h3>Kies uw bekleding</h3>
+											<ol class="carcompose-radiolist" id="upholsterylist">
+												<li><input type="radio" checked=""
+													data-option-desc="Lederen bekleding (zwart)"
+													data-option-id="508-24159601" id="upholstery0"
+													name="upholstery" data-color-type="leder" data-price="0,00"
+													data-option-state="enabled"> <label
+													for="upholstery0" data-label="Lederen bekleding (zwart)">
+														Lederen bekleding (zwart) (<span class="price">
+															0,00</span>)
+												</label></li>
+												<li class="disabled"><input type="radio"
+													data-option-desc="Lederen bekleding (rood)"
+													data-option-id="515-24159600" id="upholstery1"
+													name="upholstery" data-color-type="leder" data-price="0,00"
+													data-option-state="disabled"> <label
+													for="upholstery1" data-label="Lederen bekleding (rood)">
+														Lederen bekleding (rood) (<span class="price">
+															0,00</span>)
+												</label></li>
+											</ol>
+										</div>
+									</div>
+								</div>
+								<div class="PDPTabContentDiv" id="PDPTab2">
+									<div class="active" style="width: 886px;">
+										<div class="grid-unit-alpha carcompose-contentitem-head">
+											<h3>Voeg pakketten toe</h3>
+											<a class="balloon-info balloon-info-right"
+												data-info="Toevoeging van pakketten verhoogt de fiscale waarde van de auto.">i</a>
+											<a class="accordeon-trigger-all listening"
+												id="accordeon-trigger-all-packages" data-status="closed"></a>
+										</div>
+										<div id="carcompose-checklist-packages">
+											<div class="grid-unit-alpha">
+												<ol
+													class="carcompose-checklist-packages odd accordeon-content-packages">
+													<li><input type="checkbox"
+														data-label="Bose Audio Systeem" data-price="800,00"
+														data-option-desc="Bose Audio Systeem"
+														data-option-id="24159603" id="pakket0" name="package"
+														data-option-state="enabled" data-cost-inc-vat=" 800,00">
+														<label for="pakket0"> <span id="label_24159603">Bose
+																Audio Systeem</span> <span class="price" id="price_24159603">
+																800,00</span>
+													</label>
+														<div
+															class="carcompose-checklist-packages-details accordeon-content accordeon-content-packages">
+															9 luidsprekers Bose en subwoofer<br>
+														</div> <a
+														class="accordeon-trigger accordeon-trigger-packages listening"
+														data-label-close="meer informatie"
+														data-label-open="minder informatie"></a></li>
+													<li><input type="checkbox"
+														data-label="Pack Radio Plus" data-price="1.890,00"
+														data-option-desc="Pack Radio Plus"
+														data-option-id="24159612" id="pakket1" name="package"
+														data-option-state="enabled" data-cost-inc-vat=" 1.890,00">
+														<label for="pakket1"> <span id="label_24159612">Pack
+																Radio Plus</span> <span class="price" id="price_24159612">
+																1.890,00</span>
+													</label>
+														<div
+															class="carcompose-checklist-packages-details accordeon-content accordeon-content-packages">
+															9 betere luidsprekers Bose en subwoofer<br>
+															Airconditioning met 1 zones<br> Draadloze verbinding
+															inclusief telefoon verbinding en inclusief muziek
+															streaming<br> Multifunctioneel scherm 7,0, Touch
+															Screen en 1<br> Navigatiesystemen met een
+															aanraakscherm Kleur en 7,0<br> Stem herkennings
+															systeem inclusief audio speler, inclusief telefoon en
+															inclusief navigatie systeem<br> Stereo audio
+															apparatuur met RDS en digitale radio Touch Screen en
+															Kleuren Scherm<br> Versterker <br> Wifi netwerk<br>
+														</div> <a
+														class="accordeon-trigger accordeon-trigger-packages listening"
+														data-label-close="meer informatie"
+														data-label-open="minder informatie"></a></li>
+													<li><input type="checkbox"
+														data-label="Pack Visibility" data-price="1.995,00"
+														data-option-desc="Pack Visibility"
+														data-option-id="24159605" id="pakket2" name="package"
+														data-option-state="enabled" data-cost-inc-vat=" 1.995,00">
+														<label for="pakket2"> <span id="label_24159605">Pack
+																Visibility</span> <span class="price" id="price_24159605">
+																1.995,00</span>
+													</label>
+														<div
+															class="carcompose-checklist-packages-details accordeon-content accordeon-content-packages">
+															Draaiverlichting/bermverlichting<br> Ellipsode
+															koplampen met LED LED<br> Koplampen met hoge
+															drukreiniging<br> Koplampen met lichtsensor en
+															automatische bediening van het grootlicht automaat<br>
+															LED lichten dimlicht, dagverlichting en grootlicht<br>
+															Parkeerinformatie achter dmv radar<br> Ruitenwisser
+															met een regensensor<br>
+														</div> <a
+														class="accordeon-trigger accordeon-trigger-packages listening"
+														data-label-close="meer informatie"
+														data-label-open="minder informatie"></a></li>
+												</ol>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="PDPTabContentDiv" id="PDPTab3">
+									<div style="width: 886px;" class="active">
+										<div class="grid-unit-alpha carcompose-contentitem-head">
+											<h3>Opties</h3>
+											<a class="balloon-info balloon-info-right"
+												data-info="Toevoeging van opties verhoogt de fiscale waarde van de auto.">i</a>
+											<a class="accordeon-trigger-all listening"
+												id="accordeon-trigger-all-options" data-status="closed"></a>
+										</div>
+										<div class="grid-unit-alpha">
+											<ol
+												class="carcompose-checklist-options accordeon-content-container"
+												id="carcompose-checklist-options">
+												<li>Alarm<span class="nr-selected">(1 optie(s)
+														geselecteerd)</span>
+													<div
+														class="carcompose-checklist-packages-details accordeon-content accordeon-content-options accordeon-content-isopen-js">
+														<ol id="recommendedAlarmAccessories"
+															class="optionCategory">
+															<span class="alarmIsMandatory" style="display: block;">
+																De verzekeraar eist op deze auto een alarmsysteem met
+																een bepaalde klassificatie voordat zij uw auto zullen
+																verzekeren. Daarom rusten wij uw auto standaard uit met
+																1 van de onderstaande gekwalificeerde systemen:<br>
+															<br>
+															</span>
+															<span class="alarmIsNotMandatory" style="display: none;">
+																Een alarmsysteem op deze auto is niet verplicht, wij
+																adviseren u om diefstal te voorkomen wel een
+																alarmsysteem af te nemen. Maak een keuze uit
+																onderstaande mogelijkheden:<br>
+															<br>
+															</span>
+															<li class=""><input type="checkbox" val="24159625"
+																data-option-desc="Alarm SCM klasse 3 inclusief certificaat"
+																data-option-cat="Alarm" data-option-id="24159625"
+																data-alarm-class="3" id="option24159625" name="option"
+																data-price="1.028,49" data-option-state="enabled"
+																data-cost-inc-vat=" 1.028,49"> <label
+																data-label="Alarm SCM klasse 3 inclusief certificaat"
+																for="option24159625" id="label_option_24159625">
+																	<span id="label_24159625"> Alarm SCM klasse 3
+																		inclusief certificaat
+																		<div class="alarm-cat">Accessoire</div>
+																</span> <span class="price" id="price_24159625">
+																		1.028,49</span>
+															</label></li>
+															<li class="disabled"><input type="checkbox"
+																val="24159626"
+																data-option-desc="Alarm SCM klasse 4 inclusief certificaat"
+																data-option-cat="Alarm" data-option-id="24159626"
+																data-alarm-class="4" id="option24159626" name="option"
+																data-price="1.304,37" data-option-state="disabled"
+																data-cost-inc-vat=" 1.304,37"> <label
+																data-label="Alarm SCM klasse 4 inclusief certificaat"
+																for="option24159626" id="label_option_24159626">
+																	<span id="label_24159626"> Alarm SCM klasse 4
+																		inclusief certificaat
+																		<div class="alarm-cat">Accessoire</div>
+																</span> <span class="price" id="price_24159626">
+																		1.304,37</span>
+															</label></li>
+														</ol>
+														<br>
+														<ol id="alarmAccessories">
+															<span>
+																<h6>
+																	<b>Overige alarmsystemen op deze auto:</b>
+																</h6> <span class="alarmIsMandatory" style="display: block;">Let
+																	op! Deze alternatieve alarmsystemen zijn niet vooraf
+																	beoordeeld door de verzekeraar. Een ongekwalificeerd
+																	systeem kan leiden tot een eigen risico bij diefstal. <a
+																	href="/contact/" target="_blank">Vraag LeasePlan nu
+																		om advies.</a><br>
+																<br>
+															</span> <span class="alarmIsNotMandatory" style="display: none;"></span>
+															</span>
+															<li class="no-alarm enabled disabled"><input
+																type="checkbox" val="24159630"
+																data-option-desc="Geen alarm" data-option-cat="Alarm"
+																data-option-id="24159630" id="option24159630"
+																name="option" data-price="0,00"
+																data-option-state="disabled" data-cost-inc-vat=" 0,00">
+																<label data-label="Geen alarm" for="option24159630"
+																id="label_option_24159630"> <span
+																	id="label_24159630"> Geen alarm
+																		<div class="alarm-cat">Accessoire</div>
+																</span> <span class="price" id="price_24159630"> 0,00</span>
+															</label></li>
+															<li class="disabled"><input type="checkbox"
+																val="24159624"
+																data-option-desc="Alarm SCM klasse B2 inclusief certificaat"
+																data-option-cat="Alarm" data-option-id="24159624"
+																id="option24159624" name="option" data-price="907,49"
+																data-option-state="disabled"
+																data-cost-inc-vat=" 907,49"> <label
+																data-label="Alarm SCM klasse B2 inclusief certificaat"
+																for="option24159624" id="label_option_24159624">
+																	<span id="label_24159624"> Alarm SCM klasse B2
+																		inclusief certificaat
+																		<div class="alarm-cat">Accessoire</div>
+																</span> <span class="price" id="price_24159624"> 907,49</span>
+															</label></li>
+														</ol>
+													</div> <a
+													class="accordeon-trigger accordeon-trigger-options accordeon-trigger-isopen-js listening"
+													data-label-close="toon opties"
+													data-label-open="verberg opties"></a>
+												</li>
+												<li style="display: none;">Lak<span class="nr-selected"></span>
+													<div
+														class="carcompose-checklist-packages-details accordeon-content accordeon-content-options accordeon-content-isopen-js">
+														<ol class="optionCategory">
+															<li class="disabled"><input type="checkbox"
+																val="24159606"
+																data-option-desc="Metaallak 208 Azzuro Isola d'Elba 1974"
+																data-option-cat="Lak" data-option-id="24159606"
+																id="option24159606" name="option" data-price="795,00"
+																data-option-state="disabled"
+																data-cost-inc-vat=" 795,00"> <label
+																data-label="Metaallak 208 Azzuro Isola d'Elba 1974"
+																for="option24159606" id="label_option_24159606">
+																	<span id="label_24159606">Metaallak 208 Azzuro
+																		Isola d'Elba 1974 (code fabrikant: 5CC)</span> <span
+																	class="price" id="price_24159606"> 795,00</span>
+															</label></li>
+															<li class="disabled"><input type="checkbox"
+																val="24159608"
+																data-option-desc="Metaallak 235 Grigio Portogallo 1974"
+																data-option-cat="Lak" data-option-id="24159608"
+																id="option24159608" name="option" data-price="795,00"
+																data-option-state="disabled"
+																data-cost-inc-vat=" 795,00"> <label
+																data-label="Metaallak 235 Grigio Portogallo 1974"
+																for="option24159608" id="label_option_24159608">
+																	<span id="label_24159608">Metaallak 235 Grigio
+																		Portogallo 1974 (code fabrikant: 5CD)</span> <span
+																	class="price" id="price_24159608"> 795,00</span>
+															</label></li>
+															<li class="disabled"><input type="checkbox"
+																val="24159604"
+																data-option-desc="Metaallak 244 Nero San Marino 1972"
+																data-option-cat="Lak" data-option-id="24159604"
+																id="option24159604" name="option" data-price="0,00"
+																data-option-state="disabled"> <label
+																data-label="Metaallak 244 Nero San Marino 1972"
+																for="option24159604" id="label_option_24159604">
+																	<span id="label_24159604">Metaallak 244 Nero San
+																		Marino 1972 (code fabrikant: 5DN)</span> <span class="price"
+																	id="price_24159604"> 0,00</span>
+															</label></li>
+															<li class="disabled"><input type="checkbox"
+																val="24159610"
+																data-option-desc="Pastellak 162 Rosso Costa Brava 1972"
+																data-option-cat="Lak" data-option-id="24159610"
+																id="option24159610" name="option" data-price="495,00"
+																data-option-state="disabled"
+																data-cost-inc-vat=" 495,00"> <label
+																data-label="Pastellak 162 Rosso Costa Brava 1972"
+																for="option24159610" id="label_option_24159610">
+																	<span id="label_24159610">Pastellak 162 Rosso
+																		Costa Brava 1972 (code fabrikant: 5CA)</span> <span
+																	class="price" id="price_24159610"> 495,00</span>
+															</label></li>
+															<li class="disabled"><input type="checkbox"
+																val="24159611"
+																data-option-desc="Pastellak 163 Bianco Turini 1975"
+																data-option-cat="Lak" data-option-id="24159611"
+																id="option24159611" name="option" data-price="495,00"
+																data-option-state="disabled"
+																data-cost-inc-vat=" 495,00"> <label
+																data-label="Pastellak 163 Bianco Turini 1975"
+																for="option24159611" id="label_option_24159611">
+																	<span id="label_24159611">Pastellak 163 Bianco
+																		Turini 1975 (code fabrikant: 5CB)</span> <span class="price"
+																	id="price_24159611"> 495,00</span>
+															</label></li>
+														</ol>
+													</div> <a
+													class="accordeon-trigger accordeon-trigger-options accordeon-trigger-isopen-js listening"
+													data-label-close="toon opties"
+													data-label-open="verberg opties"></a>
+												</li>
+												<li>Uiterlijk<span class="nr-selected"></span>
+													<div
+														class="carcompose-checklist-packages-details accordeon-content accordeon-content-options accordeon-content-isopen-js">
+														<ol class="optionCategory">
+															<li><input type="checkbox" val="24159597"
+																data-option-desc="Antiverblindings-kit (matzwarte motorkap en achterklep)"
+																data-option-cat="Uiterlijk" data-option-id="24159597"
+																id="option24159597" name="option" data-price="0,00"
+																data-option-state="enabled"> <label
+																data-label="Antiverblindings-kit (matzwarte motorkap en achterklep)"
+																for="option24159597" id="label_option_24159597">
+																	<span id="label_24159597">Antiverblindings-kit
+																		(matzwarte motorkap en achterklep) (code fabrikant:
+																		8SW / 8SX)</span> <span class="price" id="price_24159597">
+																		0,00</span>
+															</label></li>
+														</ol>
+													</div> <a
+													class="accordeon-trigger accordeon-trigger-options accordeon-trigger-isopen-js listening"
+													data-label-close="toon opties"
+													data-label-open="verberg opties"></a>
+												</li>
+											</ol>
+										</div>
+										<div class="grid-unit-alpha carcompose-contentitem-head">
+											<h3>Accessoires</h3>
+											<a class="balloon-info balloon-info-right"
+												data-info="Accessoires worden niet bij de fiscale waarde opgeteld. Hierdoor hebben deze geen effect op uw bijtelling">i</a>
+										</div>
+										<div class="grid-unit-alpha">
+											<ol
+												class="carcompose-checklist-options accordeon-content-container"
+												id="carcompose-checklist-accessories">
+												<li><input type="checkbox" val="24159628"
+													id="option24159628"
+													data-option-desc="0500N Black, lederen bekleding LeasePlan zwart"
+													data-option-cat="Accessoires" data-option-id="24159628"
+													name="option" data-price="1.728,98"
+													data-option-state="enabled" data-cost-inc-vat=" 1.728,98">
+													<label
+													data-label="0500N Black, lederen bekleding LeasePlan zwart"
+													for="option24159628" id="label_option_24159628"><span
+														id="label_24159628">0500N Black, lederen bekleding
+															LeasePlan zwart</span> <span class="price" id="price_24159628">
+															1.728,98</span> </label></li>
+												<li><input type="checkbox" val="24159618"
+													id="option24159618"
+													data-option-desc="3444 Sand Stone, lederen bekleding LeasePlan beige"
+													data-option-cat="Accessoires" data-option-id="24159618"
+													name="option" data-price="1.728,98"
+													data-option-state="enabled" data-cost-inc-vat=" 1.728,98">
+													<label
+													data-label="3444 Sand Stone, lederen bekleding LeasePlan beige"
+													for="option24159618" id="label_option_24159618"><span
+														id="label_24159618">3444 Sand Stone, lederen
+															bekleding LeasePlan beige</span> <span class="price"
+														id="price_24159618"> 1.728,98</span> </label></li>
+												<li><input type="checkbox" val="24159629"
+													id="option24159629"
+													data-option-desc="4797 Opal, lederen bekleding LeasePlan grijs"
+													data-option-cat="Accessoires" data-option-id="24159629"
+													name="option" data-price="1.728,98"
+													data-option-state="enabled" data-cost-inc-vat=" 1.728,98">
+													<label
+													data-label="4797 Opal, lederen bekleding LeasePlan grijs"
+													for="option24159629" id="label_option_24159629"><span
+														id="label_24159629">4797 Opal, lederen bekleding
+															LeasePlan grijs</span> <span class="price" id="price_24159629">
+															1.728,98</span> </label></li>
+												<li><input type="checkbox" val="24159620"
+													id="option24159620"
+													data-option-desc="4816 Mustang, lederen bekleding LeasePlan roodbruin"
+													data-option-cat="Accessoires" data-option-id="24159620"
+													name="option" data-price="1.728,98"
+													data-option-state="enabled" data-cost-inc-vat=" 1.728,98">
+													<label
+													data-label="4816 Mustang, lederen bekleding LeasePlan roodbruin"
+													for="option24159620" id="label_option_24159620"><span
+														id="label_24159620">4816 Mustang, lederen bekleding
+															LeasePlan roodbruin</span> <span class="price"
+														id="price_24159620"> 1.728,98</span> </label></li>
+												<li><input type="checkbox" val="24159615"
+													id="option24159615"
+													data-option-desc="4818 Chesnut, lederen bekleding LeasePlan bruin"
+													data-option-cat="Accessoires" data-option-id="24159615"
+													name="option" data-price="1.728,98"
+													data-option-state="enabled" data-cost-inc-vat=" 1.728,98">
+													<label
+													data-label="4818 Chesnut, lederen bekleding LeasePlan bruin"
+													for="option24159615" id="label_option_24159615"><span
+														id="label_24159615">4818 Chesnut, lederen bekleding
+															LeasePlan bruin</span> <span class="price" id="price_24159615">
+															1.728,98</span> </label></li>
+												<li><input type="checkbox" val="24159616"
+													id="option24159616"
+													data-option-desc="Brandblusser inhoud 1 kilo."
+													data-option-cat="Accessoires" data-option-id="24159616"
+													name="option" data-price="36,30"
+													data-option-state="enabled" data-cost-inc-vat=" 36,30">
+													<label data-label="Brandblusser inhoud 1 kilo."
+													for="option24159616" id="label_option_24159616"><span
+														id="label_24159616">Brandblusser inhoud 1 kilo.</span> <span
+														class="price" id="price_24159616"> 36,30</span> </label></li>
+												<li><input type="checkbox" val="24159613"
+													id="option24159613"
+													data-option-desc="Brandblusser inhoud 2 kilo."
+													data-option-cat="Accessoires" data-option-id="24159613"
+													name="option" data-price="66,55"
+													data-option-state="enabled" data-cost-inc-vat=" 66,55">
+													<label data-label="Brandblusser inhoud 2 kilo."
+													for="option24159613" id="label_option_24159613"><span
+														id="label_24159613">Brandblusser inhoud 2 kilo.</span> <span
+														class="price" id="price_24159613"> 66,55</span> </label></li>
+												<li><input type="checkbox" val="24159621"
+													id="option24159621" data-option-desc="Dakdragers"
+													data-option-cat="Accessoires" data-option-id="24159621"
+													name="option" data-price="301,29"
+													data-option-state="enabled" data-cost-inc-vat=" 301,29">
+													<label data-label="Dakdragers" for="option24159621"
+													id="label_option_24159621"><span
+														id="label_24159621">Dakdragers</span> <span class="price"
+														id="price_24159621"> 301,29</span> </label></li>
+												<li><input type="checkbox" val="24159619"
+													id="option24159619"
+													data-option-desc="Lederen bekleding (prijs conform opgave dealer)"
+													data-option-cat="Accessoires" data-option-id="24159619"
+													name="option" data-price="0,00" data-option-state="enabled"
+													data-cost-inc-vat=" 0,00"> <label
+													data-label="Lederen bekleding (prijs conform opgave dealer)"
+													for="option24159619" id="label_option_24159619"><span
+														id="label_24159619">Lederen bekleding (prijs
+															conform opgave dealer)</span> <span class="price"
+														id="price_24159619"> 0,00</span> </label></li>
+												<li><input type="checkbox" val="24159623"
+													id="option24159623" data-option-desc="Lifehammer"
+													data-option-cat="Accessoires" data-option-id="24159623"
+													name="option" data-price="14,52"
+													data-option-state="enabled" data-cost-inc-vat=" 14,52">
+													<label data-label="Lifehammer" for="option24159623"
+													id="label_option_24159623"><span
+														id="label_24159623">Lifehammer</span> <span class="price"
+														id="price_24159623"> 14,52</span> </label></li>
+												<li><input type="checkbox" val="24159627"
+													id="option24159627"
+													data-option-desc="Meerprijs 7-zits lederen bekleding LeasePlan"
+													data-option-cat="Accessoires" data-option-id="24159627"
+													name="option" data-price="299,99"
+													data-option-state="enabled" data-cost-inc-vat=" 299,99">
+													<label
+													data-label="Meerprijs 7-zits lederen bekleding LeasePlan"
+													for="option24159627" id="label_option_24159627"><span
+														id="label_24159627">Meerprijs 7-zits lederen
+															bekleding LeasePlan</span> <span class="price"
+														id="price_24159627"> 299,99</span> </label></li>
+												<li><input type="checkbox" val="24159614"
+													id="option24159614"
+													data-option-desc="Navigatiesysteem ( prijs n.t.b. opgave conform dealer)"
+													data-option-cat="Accessoires" data-option-id="24159614"
+													name="option" data-price="0,00" data-option-state="enabled"
+													data-cost-inc-vat=" 0,00"> <label
+													data-label="Navigatiesysteem ( prijs n.t.b. opgave conform dealer)"
+													for="option24159614" id="label_option_24159614"><span
+														id="label_24159614">Navigatiesysteem ( prijs n.t.b.
+															opgave conform dealer)</span> <span class="price"
+														id="price_24159614"> 0,00</span> </label></li>
+												<li><input type="checkbox" val="24159622"
+													id="option24159622" data-option-desc="Veiligheidsvest"
+													data-option-cat="Accessoires" data-option-id="24159622"
+													name="option" data-price="8,47" data-option-state="enabled"
+													data-cost-inc-vat=" 8,47"> <label
+													data-label="Veiligheidsvest" for="option24159622"
+													id="label_option_24159622"><span
+														id="label_24159622">Veiligheidsvest</span> <span
+														class="price" id="price_24159622"> 8,47</span> </label></li>
+												<li><input type="checkbox" val="24159617"
+													id="option24159617" data-option-desc="Verbanddoos"
+													data-option-cat="Accessoires" data-option-id="24159617"
+													name="option" data-price="18,15"
+													data-option-state="enabled" data-cost-inc-vat=" 18,15">
+													<label data-label="Verbanddoos" for="option24159617"
+													id="label_option_24159617"><span
+														id="label_24159617">Verbanddoos</span> <span class="price"
+														id="price_24159617"> 18,15</span> </label></li>
+											</ol>
+										</div>
+										<div class="grid-unit-alpha carcompose-contentitem-head">
+											<h3>Vrije optie of accessoire toevoegen</h3>
+											<a class="balloon-info balloon-info-right"
+												data-info="LeasePlan past onjuiste prijzen aan. Dit kan een effect hebben op de leaseprijs.">i</a>
+											<p>
+												Indien u een <strong>accessoire</strong> toevoegt, dient u
+												het bedrag incl. BTW in te voeren. In geval van een <strong>optie</strong>
+												dient u het bedrag incl. BTW en BPM in te geven.
+											</p>
+											<div id="custom-options" class="custom-options">
+												<ul class="added clearfix hidden">
+													<li>
+														<div>Type</div>
+														<div>Omschrijving</div>
+														<div>Bedrag</div>
+														<div></div>
+													</li>
+												</ul>
+												<div class="add-option form-split-container">
+													<form id="add-custom-option" name="add-custom-option"
+														method="POST" action="/">
+														<div class="form-select-field">
+															<select tabindex="10">
+																<option value="OPTION" selected="">Optie</option>
+																<option value="ACCESSORY">Accessoire</option>
+															</select>
+														</div>
+														<div class="form-text-field option-desc">
+															<label>Omschrijving</label> <input type="text"
+																class="custom-option-desc" id="name" name="name"
+																tabindex="11">
+														</div>
+														<div class="form-text-field option-price">
+															<label>Bedrag</label> <input type="text"
+																class="custom-option-price" id="price" name="price"
+																tabindex="12">
+														</div>
+														<div>
+															<a href="javascript:;" class="button" tabindex="13">Toevoegen</a>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="PDPTabContentDiv" id="PDPTab4">
+									<div style="width: 886px;" class="active">
+										<div class="grid-unit-alpha carcompose-contentitem-head">
+											<h3>BasicPlan standaard bij uw leasecontract inbegrepen</h3>
+										</div>
+										<div class="grid-unit-beta">
+											<ul class="list-product">
+												<li class="list-product-repair">Reparaties, onderhoud
+													en banden</li>
+												<li class="list-product-demage">Schadeherstel</li>
+												<li class="list-product-glas">Glasreparatie</li>
+												<li class="list-product-tax">Houderschapsbelasting</li>
+											</ul>
+										</div>
+										<div class="grid-unit-beta">
+											<ul class="list-product">
+												<li class="list-product-delifer">Aflevering op locatie</li>
+												<li class="list-product-ensurance">Verzekering WA- en
+													casco</li>
+												<li class="list-product-risk">Eigen risico  300</li>
+											</ul>
+										</div>
+										<div class="grid-unit-alpha carcompose-contentitem-head">
+											<h3>Kies aanvullende opties</h3>
+											<p>Kies voor het BasicPlan Plus pakket voor meer comfort
+												en veiligheid. Dit pakket bestaat uit het standaard pakket
+												uitgebreid met een schadeverzekering voor inzittenden,
+												hulpverlening in het buitenland en vervangend vervoer.</p>
+											<p>Winterbanden zijn in veel landen zoals Duitsland en
+												Oostenrijk verplicht. Een veilige en praktische keuze dus.
+												Bovendien wordt de opslag en bandwissel voor u geregeld. U
+												heeft er geen omkijken naar. Kies voor een tankpas voor
+												gemak en eenvoud bij betaling.</p>
+										</div>
+										<ol class="carcompose-leaseproduct-list"
+											id="carcompose-leaseproduct-list">
+											<li><input type="checkbox" id="product01"
+												name="product01"
+												data-option-desc="Voor uw eigen comfort en veiligheid"
+												data-cost-inc-vat=" 11,08 p/m"> <label
+												for="product01">
+													<div>
+														<h3>BasicPlan Plus voor uw eigen comfort</h3>
+														<ul>
+															<li>Schadeverzekering inzittenden</li>
+															<li>Hulpverlening binnen- en buitenland</li>
+															<li>Vervangend vervoer bij onderhoud- en
+																schadeherstel werkzaamheden na 24 uur</li>
+														</ul>
+													</div>
+													<div>
+														<div class="price-sidebar">
+															<span></span> <span> 11,08</span> <span>p/m</span>
+														</div>
+													</div>
+											</label></li>
+											<li><input type="checkbox" id="product02"
+												name="product02"
+												data-option-desc="Winterbanden voor uw veiligheid bij winterse omstandigheden">
+												<label for="product02">
+													<div>
+														<h3>Winterbanden voor uw veiligheid bij winterse
+															omstandigheden</h3>
+														<ul>
+															<li>Opslag en bandenwissel geregeld</li>
+															<li>Uw auto wordt op zomerbanden afgeleverd</li>
+															<li>Onder accessoires gekozen velgen kunnen de
+																hiernaast getoonde prijs beinvloeden</li>
+														</ul>
+													</div>
+													<div>
+														<div class="price-sidebar">
+															<span></span> <span class="winter-tires-price">
+																25,00</span> <span>p/m</span>
+														</div>
+													</div>
+											</label></li>
+											<li><input type="checkbox" id="product03"
+												name="product03"
+												data-option-desc="Gemak en voordeel met een nationale tankpas"
+												data-cost-inc-vat=" 2,52 p/m"> <label
+												for="product03">
+													<div>
+														<h3>Gemak en voordeel met een tankpas NL</h3>
+													</div>
+													<div>
+														<div class="price-sidebar">
+															<span></span> <span> 2,52</span> <span>p/m</span>
+														</div>
+													</div>
+											</label></li>
+											<li><input type="checkbox" id="product04"
+												name="product04"
+												data-option-desc="Gemak en voordeel met een europese tankpas"
+												data-cost-inc-vat=" 4,23 p/m"> <label
+												for="product04">
+													<div>
+														<h3>Gemak en voordeel met een tankpas EU</h3>
+													</div>
+													<div>
+														<div class="price-sidebar">
+															<span></span> <span> 4,23</span> <span>p/m</span>
+														</div>
+													</div>
+											</label></li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="PDPStickyCardWrapper">
+
+							<
+							<div id="DIV_1">
+								<p id="P_2">
+									<span id="SPAN_3">Quotation of your vehicle</span>
+								</p>
+								<b id="B_6"><span id="SPAN_7">1. Color:</span></b>
+								<div id="DIV_10">
+									<span id="SPAN_11">Mountain gray metallic</span>
+									<ol id="OL_14">
+										<li id="LI_15">
+											<button type="button" id="BUTTON_16">
+												<span id="SPAN_17"></span>
+											</button> 
+
+										</li>
+										<li id="LI_22">
+											<button type="button" id="BUTTON_23">
+												<span id="SPAN_24"></span>
+											</button> 
+
+										</li>
+									</ol>
+								</div>
+								<b id="B_29"><span id="SPAN_30">2. Estimated number
+										of kms per year</span></b>
+								<div id="DIV_33">
+									<label for="mileage" id="LABEL_34"> <span id="SPAN_35">Price
+											based on:</span>
+									</label>
+									<div id="DIV_38">
+										<select id="SELECT_39" name="mileage">
+											<option value="10000" id="OPTION_40">10,000 km /
+												year</option>
+											<option value="15000" id="OPTION_43">15,000 km /
+												year</option>
+											<option value="20000" id="OPTION_46">20,000 km /
+												year</option>
+											<option value="25000" id="OPTION_49">25,000 km /
+												year</option>
+											<option value="30000" id="OPTION_52">30,000 km /
+												year</option>
+										</select>
+									</div>
+								</div>
+								<b id="B_55"><span id="SPAN_56">3. Duration</span></b>
+								<div id="DIV_59">
+									<label for="contractLength" id="LABEL_60"> <span
+										id="SPAN_61">Contract Length</span>
+									</label>
+									<div id="DIV_64">
+										<select id="SELECT_65" name="contractLength">
+											<option value="24" id="OPTION_66">24 months</option>
+											<option value="36" id="OPTION_69">36 months</option>
+											<option value="48" id="OPTION_72">48 months</option>
+											<option value="60" id="OPTION_75">60 months</option>
+										</select>
+									</div>
+								</div>
+								<p id="P_78">
+									<span id="SPAN_79"></span>
+									<!-- : 1288 -->
+									Your monthly amount: <b id="B_82">€ 460</b> <b id="B_84">,
+										-</b> <b id="B_86"><span id="SPAN_87"><span
+											id="SPAN_88">excl. VAT</span></span></b>
+									<!-- / -->
+									<b id="B_90"></b>
+									<!-- : 1290 -->
+
+									<!-- / -->
+
+									<!-- : 1291 -->
+
+									<!-- / -->
+									<span id="SPAN_93"><span id="SPAN_94"></span></span>
+									<!-- : 1294 -->
+
+									<!-- / -->
+
+								</p>
+								<div id="DIV_96">
+									<section id="SECTION_97">
+										<div id="DIV_98">
+											<div id="DIV_99">
+												<!-- : 1299 -->
+
+												<!-- / -->
+
+												<div id="DIV_100">
+													<p id="P_101">
+														<!-- : 1302 -->
+														Price quoted
+														<!-- / -->
+
+														<button type="button" id="BUTTON_104"></button>
+														<!-- : 1304 -->
+														BasicPlan package
+														<!-- / -->
+
+														<!-- : 1305 -->
+														. Additional options such as emergency assistance, tank
+														passes or winter tires are possible in consultation (or
+														existing contracts).
+														<!-- / -->
+
+														<button type="button" id="BUTTON_110"></button>
+														<!-- : 1307 -->
+														More info
+														<!-- / -->
+
+													</p>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+								<a rel="nofollow"  data-popup-open="checkout-popup" onclick="javascript:navigate();"
+									href="#"
+									id="A_113"><span id="SPAN_114">Rent this car</span></a>
+								<button id="BUTTON_117">
+									<span id="SPAN_118">Email me the Quote</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<div class="popup" data-popup="checkout-popup">
+<div class="popup-inner">
+  <div class="checkout-panel">
+    <div class="panel-body">
+      <span class="popupTitle">Checkout</span>
+
+      <div class="checkout-progress-bar">
+        <div id ="businessCheckOut" class="step " style="background: #ED8B00;"></div>
+        <div id="contactCheckOut" class="step "></div>
+        <div id="paymentCheckOut" class="step "></div>
+        <div id="DriverCheckOut" class="step"></div>
+        <div id="overviewCheckOut" class="step"></div>
       </div>
-      <div class="PDPProductDescriptionWrapper">
-        <div class="PDPBreadcrumWrapper">
-          <div class="Breadcrum">
-            <ul class="BreadcrumUl">
-              <li class="BreadcrumLi"><a data-key="Occasions">Occasions</a></li>
-              <li class="BreadcrumLi"><a data-key="Zoeken">Zoeken</a></li>
-            </ul>
+
+      <div id="roadmapdiv">
+        
           </div>
-          <div class="PDPProductDetailsWrapper">
-            <div class="PDPProductDetails">
-              <div id="tabs" class="PDPTabBar">
-                <ul class="PDPTabUl">
-                  <li class="PDPTabLi"><a href="#PDPTab0">Standard Equipments</a></li>
-                  <li class="PDPTabLi"><a href="#PDPTab1">Lacquer &amp; Coatings</a></li>
-                  <li class="PDPTabLi"><a href="#PDPTab2">packages</a></li>
-                  <li class="PDPTabLi"><a href="#PDPTab3">Options and Accessories</a></li>
-                  <li class="PDPTabLi"><a href="#PDPTab4">Leasepakket</a></li>
-                </ul>
-                <div class="PDPTabContentDiv" id="PDPTab0">
-                  <div class="PDPTabContentHeader"><span class="PDPTabContentHeaderText">Standard Equipments</span></div>
-                  <div class="PDPTabContent">
-                    <div class="PDPTab1ContentTop">
-                      <div class="PDPTab1ContentTopLeft">
-                        <ul class="PDPTabUlTab1ContentTopLeftUl">
-                          <li class="PDPTabUlTab1ContentTopLeftLi"><a class="PDPTabUlTab1ContentTopLeftLiTitle">Consumentenprijs</a><a class="PDPTabUlTab1ContentTopLeftLiValue">€ 46.760,00</a></li>
-                          <li class="PDPTabUlTab1ContentTopLeftLi"><a class="PDPTabUlTab1ContentTopLeftLiTitle">Fiscale waarde</a><a class="PDPTabUlTab1ContentTopLeftLiValue">€ 46.760,37</a></li>
-                          <li class="PDPTabUlTab1ContentTopLeftLi"><a class="PDPTabUlTab1ContentTopLeftLiTitle">Addition</a><a class="PDPTabUlTab1ContentTopLeftLiValue">22 %</a></li>
-                          <li class="PDPTabUlTab1ContentTopLeftLi"><a class="PDPTabUlTab1ContentTopLeftLiTitle">Own risk</a><a class="PDPTabUlTab1ContentTopLeftLiValue">€ 300,00</a></li>
-                          <li class="PDPTabUlTab1ContentTopLeftLi"><a class="PDPTabUlTab1ContentTopLeftLiTitle">Duration</a><a class="PDPTabUlTab1ContentTopLeftLiValue">60 maanden</a></li>
-                          <li class="PDPTabUlTab1ContentTopLeftLi"><a class="PDPTabUlTab1ContentTopLeftLiTitle">Kilometer</a><a class="PDPTabUlTab1ContentTopLeftLiValue">10000 per year</a></li>
-                        </ul>
-                      </div>
-                      <div class="PDPTab1ContentTopRight">
-                        <ul class="PDPTabUlTab1ContentTopRightUl">
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Average consumption: 6.4 ltr / 100km</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Fuel gasoline</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Transmission: Manual</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Front tires: 205/45 / W / 17</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Rear tires: 205/45 / W / 17</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Package Contents: 140 ltr</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Tank contents: 45 ltr</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Charging capacity: 280 kg</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Maintenance: Every 15000 km</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Trailer brakes: 0 kg</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Trailer unrestrained: 0 kg</a></li>
-                        </ul>
-                      </div>
-                      <div class="PDPTab1ContentTopRight">
-                        <ul class="PDPTabUlTab1ContentTopRightUl">
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Power: 125 kW (168 hp) at 5500 rpm</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Max torque: 250 Nm at 2500 rpm</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Engine Contents: 1368 cc</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Drive: 2 wheels</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Weight: 1035 kg</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Wheelbase: 2310 mm</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Cylinders: 4 (4 valves per cil)</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Length: 4054 mm</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Width: 1740 mm</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Height: 1233 mm</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">CO2 emissions: 148 gr / km</a></li>
-                          <li class="PDPTabUlTab1ContentTopRightLi"><a class="PDPTabUlTab1ContentTopRightLiTitle">Energy label: F</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="PDPTab1ContentBottom">
-                      <div class="PDPTab1ContentBottomHeader">Standaard uitrusting</div>
-                      <ul class="PDPTabUlTab1ContentBottomUl">
-                        <li class="PDPTabUlTab1ContentBottomLi"><a class="PDPTabUlTab1ContentBottomLiTitle">Consumentenprijs</a></li>
-                        <li class="PDPTabUlTab1ContentBottomLi"><a class="PDPTabUlTab1ContentBottomLiTitle">Fiscale waarde</a></li>
-                        <li class="PDPTabUlTab1ContentBottomLi"><a class="PDPTabUlTab1ContentBottomLiTitle">Bijtelling</a></li>
-                        <li class="PDPTabUlTab1ContentBottomLi"><a class="PDPTabUlTab1ContentBottomLiTitle">Eigen risico</a></li>
-                        <li class="PDPTabUlTab1ContentBottomLi"><a class="PDPTabUlTab1ContentBottomLiTitle">Looptijd</a></li>
-                        <li class="PDPTabUlTab1ContentBottomLi"><a class="PDPTabUlTab1ContentBottomLiTitle">Eigen risico</a></li>
-                        <li class="PDPTabUlTab1ContentBottomLi"><a class="PDPTabUlTab1ContentBottomLiTitle">Looptijd</a></li>
-                        <li class="PDPTabUlTab1ContentBottomLi"><a class="PDPTabUlTab1ContentBottomLiTitle">Eigen risico</a></li>
-                        <li class="PDPTabUlTab1ContentBottomLi"><a class="PDPTabUlTab1ContentBottomLiTitle">Looptijd</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="PDPTabContentDiv" id="PDPTab1">
-                  <div class="active" style="width: 886px;">
-                    <div class="grid-unit-alpha">
-                      <h3><b>Lak:</b> <span id="colorslabel" data-selectedcolor="Metaallak Nero San Marino 1972 (� 0,00)">Metaallak Nero San Marino 1972 (� 0,00)</span></h3>
-                      <span class="color-notification">Kleuren kunnen afwijken van de werkelijkheid.</span>
-                      <ol class="list-color" id="colorslist">
-                        <li>
-                          <input type="radio" checked="" data-option-desc="Metaallak Nero San Marino 1972" data-color="rgb(0,0,0)" data-option-id="244-24159599" id="colour0" name="color" data-color-type="" data-price="0,00" data-option-state="enabled">
-                          <label for="colour0" data-label="Metaallak Nero San Marino 1972 (� 0,00)" class="color-chip">
-                              <span style="background: rgb(0,0,0)" class="">
-                              </span></label>
-                        </li>
-                        <li class="disabled">
-                          <input type="radio" data-option-desc="Pastelllak Bianco Turini 1975" data-color="rgb(248,248,255)" data-option-id="163-24159609" id="colour1" name="color" data-color-type="" data-price="495,00" data-option-state="disabled">
-                          <label for="colour1" data-label="Pastelllak Bianco Turini 1975 (� 495,00)" class="color-chip">
-                              <span style="background: rgb(248,248,255)" class="">
-                              </span></label>
-                        </li>
-                        <li class="disabled">
-                          <input type="radio" data-option-desc="pastellak Rosso Costa Brava 1972" data-color="rgb(176,23,31)" data-option-id="162-24159607" id="colour2" name="color" data-color-type="" data-price="495,00" data-option-state="disabled">
-                          <label for="colour2" data-label="pastellak Rosso Costa Brava 1972 (� 495,00)" class="color-chip">
-                              <span style="background: rgb(176,23,31)" class="">
-                              </span></label>
-                        </li>
-                        <li class="disabled">
-                          <input type="radio" data-option-desc="Metaallak Azzuro Isola d'Elba 1974" data-color="rgb(0,0,205)" data-option-id="208-24159602" id="colour3" name="color" data-color-type="" data-price="795,00" data-option-state="disabled">
-                          <label for="colour3" data-label="Metaallak Azzuro Isola d'Elba 1974 (� 795,00)" class="color-chip">
-                              <span style="background: rgb(0,0,205)" class="">
-                              </span></label>
-                        </li>
-                        <li class="disabled">
-                          <input type="radio" data-option-desc="Metaallak Grigio Portogallo 1974" data-color="rgb(192,192,192)" data-option-id="235-24159598" id="colour4" name="color" data-color-type="" data-price="795,00" data-option-state="disabled">
-                          <label for="colour4" data-label="Metaallak Grigio Portogallo 1974 (� 795,00)" class="color-chip">
-                              <span style="background: rgb(192,192,192)" class="">
-                              </span></label>
-                        </li>
-                      </ol>
-                    </div>
-                    <div class="grid-unit-alpha">
-                      <h3>Kies uw bekleding</h3>
-                      <ol class="carcompose-radiolist" id="upholsterylist">
-                        <li>
-                          <input type="radio" checked="" data-option-desc="Lederen bekleding (zwart)" data-option-id="508-24159601" id="upholstery0" name="upholstery" data-color-type="leder" data-price="0,00" data-option-state="enabled">
-                          <label for="upholstery0" data-label="Lederen bekleding (zwart)">
-                              Lederen bekleding (zwart) (<span class="price">� 0,00</span>)
-                              </label>
-                        </li>
-                        <li class="disabled">
-                          <input type="radio" data-option-desc="Lederen bekleding (rood)" data-option-id="515-24159600" id="upholstery1" name="upholstery" data-color-type="leder" data-price="0,00" data-option-state="disabled">
-                          <label for="upholstery1" data-label="Lederen bekleding (rood)">
-                              Lederen bekleding (rood) (<span class="price">� 0,00</span>)
-                              </label>
-                        </li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-                <div class="PDPTabContentDiv" id="PDPTab2">
-                  <div class="active" style="width: 886px;">
-                    <div class="grid-unit-alpha carcompose-contentitem-head">
-                      <h3>Voeg pakketten toe</h3>
-                      <a class="balloon-info balloon-info-right" data-info="Toevoeging van pakketten verhoogt de fiscale waarde van de auto.">i</a>
-                      <a class="accordeon-trigger-all listening" id="accordeon-trigger-all-packages" data-status="closed"></a>
-                    </div>
-                    <div id="carcompose-checklist-packages">
-                      <div class="grid-unit-alpha">
-                        <ol class="carcompose-checklist-packages odd accordeon-content-packages">
-                          <li>
-                            <input type="checkbox" data-label="Bose Audio Systeem" data-price="800,00" data-option-desc="Bose Audio Systeem" data-option-id="24159603" id="pakket0" name="package" data-option-state="enabled" data-cost-inc-vat="� 800,00">
-                            <label for="pakket0">
-                                 <span id="label_24159603">Bose Audio Systeem</span>
-                                 <span class="price" id="price_24159603">� 800,00</span>
-                                 </label>
-                            <div class="carcompose-checklist-packages-details accordeon-content accordeon-content-packages">
-                              9 luidsprekers Bose en subwoofer<br>
-                            </div>
-                            <a class="accordeon-trigger accordeon-trigger-packages listening" data-label-close="meer informatie" data-label-open="minder informatie"></a>
-                          </li>
-                          <li>
-                            <input type="checkbox" data-label="Pack Radio Plus" data-price="1.890,00" data-option-desc="Pack Radio Plus" data-option-id="24159612" id="pakket1" name="package" data-option-state="enabled" data-cost-inc-vat="� 1.890,00">
-                            <label for="pakket1">
-                                 <span id="label_24159612">Pack Radio Plus</span>
-                                 <span class="price" id="price_24159612">� 1.890,00</span>
-                                 </label>
-                            <div class="carcompose-checklist-packages-details accordeon-content accordeon-content-packages">
-                              9 betere luidsprekers Bose en subwoofer<br> Airconditioning met 1 zones<br> Draadloze verbinding inclusief telefoon verbinding en inclusief muziek streaming<br> Multifunctioneel scherm 7,0, Touch Screen en 1<br> Navigatiesystemen
-                              met een aanraakscherm Kleur en 7,0<br> Stem herkennings systeem inclusief audio speler, inclusief telefoon en inclusief navigatie systeem<br> Stereo audio apparatuur met RDS en digitale radio Touch Screen en Kleuren Scherm<br>                              Versterker
-                              <br> Wifi netwerk<br>
-                            </div>
-                            <a class="accordeon-trigger accordeon-trigger-packages listening" data-label-close="meer informatie" data-label-open="minder informatie"></a>
-                          </li>
-                          <li>
-                            <input type="checkbox" data-label="Pack Visibility" data-price="1.995,00" data-option-desc="Pack Visibility" data-option-id="24159605" id="pakket2" name="package" data-option-state="enabled" data-cost-inc-vat="� 1.995,00">
-                            <label for="pakket2">
-                                 <span id="label_24159605">Pack Visibility</span>
-                                 <span class="price" id="price_24159605">� 1.995,00</span>
-                                 </label>
-                            <div class="carcompose-checklist-packages-details accordeon-content accordeon-content-packages">
-                              Draaiverlichting/bermverlichting<br> Ellipso�de koplampen met LED LED<br> Koplampen met hoge drukreiniging<br> Koplampen met lichtsensor en automatische bediening van het grootlicht automaat<br> LED lichten dimlicht, dagverlichting
-                              en grootlicht<br> Parkeerinformatie achter dmv radar<br> Ruitenwisser met een regensensor<br>
-                            </div>
-                            <a class="accordeon-trigger accordeon-trigger-packages listening" data-label-close="meer informatie" data-label-open="minder informatie"></a>
-                          </li>
-                        </ol>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="PDPTabContentDiv" id="PDPTab3">
-                  <div style="width: 886px;" class="active">
-                    <div class="grid-unit-alpha carcompose-contentitem-head">
-                      <h3>Opties</h3>
-                      <a class="balloon-info balloon-info-right" data-info="Toevoeging van opties verhoogt de fiscale waarde van de auto.">i</a>
-                      <a class="accordeon-trigger-all listening" id="accordeon-trigger-all-options" data-status="closed"></a>
-                    </div>
-                    <div class="grid-unit-alpha">
-                      <ol class="carcompose-checklist-options accordeon-content-container" id="carcompose-checklist-options">
-                        <li>
-                          Alarm<span class="nr-selected">(1 optie(s) geselecteerd)</span>
-                          <div class="carcompose-checklist-packages-details accordeon-content accordeon-content-options accordeon-content-isopen-js">
-                            <ol id="recommendedAlarmAccessories" class="optionCategory">
-                              <span class="alarmIsMandatory" style="display: block;">
-                                    De verzekeraar eist op deze auto een alarmsysteem met een bepaalde klassificatie voordat zij uw auto zullen verzekeren. Daarom rusten wij uw auto standaard uit met 1 van de onderstaande gekwalificeerde systemen:<br><br></span>
-                              <span class="alarmIsNotMandatory" style="display: none;">
-                                    Een alarmsysteem op deze auto is niet verplicht, wij adviseren u om diefstal te voorkomen wel een alarmsysteem af te nemen.
-                                    Maak een keuze uit onderstaande mogelijkheden:<br><br>
-                                    </span>
-                              <li class="">
-                                <input type="checkbox" val="24159625" data-option-desc="Alarm SCM klasse 3 inclusief certificaat" data-option-cat="Alarm" data-option-id="24159625" data-alarm-class="3" id="option24159625" name="option" data-price="1.028,49" data-option-state="enabled"
-                                  data-cost-inc-vat="� 1.028,49">
-                                <label data-label="Alarm SCM klasse 3 inclusief certificaat" for="option24159625" id="label_option_24159625">
-                                          <span id="label_24159625">
-                                             Alarm SCM klasse 3 inclusief certificaat
-                                             <div class="alarm-cat"> Accessoire</div>
-                                          </span>
-                                          <span class="price" id="price_24159625">� 1.028,49</span>
-                                       </label>
-                              </li>
-                              <li class="disabled">
-                                <input type="checkbox" val="24159626" data-option-desc="Alarm SCM klasse 4 inclusief certificaat" data-option-cat="Alarm" data-option-id="24159626" data-alarm-class="4" id="option24159626" name="option" data-price="1.304,37" data-option-state="disabled"
-                                  data-cost-inc-vat="� 1.304,37">
-                                <label data-label="Alarm SCM klasse 4 inclusief certificaat" for="option24159626" id="label_option_24159626">
-                                          <span id="label_24159626">
-                                             Alarm SCM klasse 4 inclusief certificaat
-                                             <div class="alarm-cat"> Accessoire</div>
-                                          </span>
-                                          <span class="price" id="price_24159626">� 1.304,37</span>
-                                       </label>
-                              </li>
-                            </ol>
-                            <br>
-                            <ol id="alarmAccessories">
-                              <span>
-                                       <h6><b>Overige alarmsystemen op deze auto:</b></h6>
-                                       <span class="alarmIsMandatory" style="display: block;">Let op!  Deze alternatieve alarmsystemen zijn niet vooraf beoordeeld door de verzekeraar. Een ongekwalificeerd systeem kan leiden tot een eigen risico bij diefstal. <a href="/contact/" target="_blank">Vraag LeasePlan nu om advies.</a><br><br></span>
-                              <span class="alarmIsNotMandatory" style="display: none;"></span>
-                              </span>
-                              <li class="no-alarm enabled disabled">
-                                <input type="checkbox" val="24159630" data-option-desc="Geen alarm" data-option-cat="Alarm" data-option-id="24159630" id="option24159630" name="option" data-price="0,00" data-option-state="disabled" data-cost-inc-vat="� 0,00">
-                                <label data-label="Geen alarm" for="option24159630" id="label_option_24159630">
-                                          <span id="label_24159630">
-                                             Geen alarm
-                                             <div class="alarm-cat"> Accessoire</div>
-                                          </span>
-                                          <span class="price" id="price_24159630">� 0,00</span>
-                                       </label>
-                              </li>
-                              <li class="disabled">
-                                <input type="checkbox" val="24159624" data-option-desc="Alarm SCM klasse B2 inclusief certificaat" data-option-cat="Alarm" data-option-id="24159624" id="option24159624" name="option" data-price="907,49" data-option-state="disabled" data-cost-inc-vat="� 907,49">
-                                <label data-label="Alarm SCM klasse B2 inclusief certificaat" for="option24159624" id="label_option_24159624">
-                                          <span id="label_24159624">
-                                             Alarm SCM klasse B2 inclusief certificaat
-                                             <div class="alarm-cat"> Accessoire</div>
-                                          </span>
-                                          <span class="price" id="price_24159624">� 907,49</span>
-                                       </label>
-                              </li>
-                            </ol>
-                          </div>
-                          <a class="accordeon-trigger accordeon-trigger-options accordeon-trigger-isopen-js listening" data-label-close="toon opties" data-label-open="verberg opties"></a>
-                        </li>
-                        <li style="display: none;">
-                          Lak<span class="nr-selected"></span>
-                          <div class="carcompose-checklist-packages-details accordeon-content accordeon-content-options accordeon-content-isopen-js">
-                            <ol class="optionCategory">
-                              <li class="disabled">
-                                <input type="checkbox" val="24159606" data-option-desc="Metaallak 208 Azzuro Isola d'Elba 1974" data-option-cat="Lak" data-option-id="24159606" id="option24159606" name="option" data-price="795,00" data-option-state="disabled" data-cost-inc-vat="� 795,00">
-                                <label data-label="Metaallak 208 Azzuro Isola d'Elba 1974" for="option24159606" id="label_option_24159606">
-                                       <span id="label_24159606">Metaallak 208 Azzuro Isola d'Elba 1974 (code fabrikant: 5CC)</span>
-                                       <span class="price" id="price_24159606">� 795,00</span>
-                                       </label>
-                              </li>
-                              <li class="disabled">
-                                <input type="checkbox" val="24159608" data-option-desc="Metaallak 235 Grigio Portogallo 1974" data-option-cat="Lak" data-option-id="24159608" id="option24159608" name="option" data-price="795,00" data-option-state="disabled" data-cost-inc-vat="� 795,00">
-                                <label data-label="Metaallak 235 Grigio Portogallo 1974" for="option24159608" id="label_option_24159608">
-                                       <span id="label_24159608">Metaallak 235 Grigio Portogallo 1974 (code fabrikant: 5CD)</span>
-                                       <span class="price" id="price_24159608">� 795,00</span>
-                                       </label>
-                              </li>
-                              <li class="disabled">
-                                <input type="checkbox" val="24159604" data-option-desc="Metaallak 244 Nero San Marino 1972" data-option-cat="Lak" data-option-id="24159604" id="option24159604" name="option" data-price="0,00" data-option-state="disabled">
-                                <label data-label="Metaallak 244 Nero San Marino 1972" for="option24159604" id="label_option_24159604">
-                                       <span id="label_24159604">Metaallak 244 Nero San Marino 1972 (code fabrikant: 5DN)</span>
-                                       <span class="price" id="price_24159604">� 0,00</span>
-                                       </label>
-                              </li>
-                              <li class="disabled">
-                                <input type="checkbox" val="24159610" data-option-desc="Pastellak 162 Rosso Costa Brava 1972" data-option-cat="Lak" data-option-id="24159610" id="option24159610" name="option" data-price="495,00" data-option-state="disabled" data-cost-inc-vat="� 495,00">
-                                <label data-label="Pastellak 162 Rosso Costa Brava 1972" for="option24159610" id="label_option_24159610">
-                                       <span id="label_24159610">Pastellak 162 Rosso Costa Brava 1972 (code fabrikant: 5CA)</span>
-                                       <span class="price" id="price_24159610">� 495,00</span>
-                                       </label>
-                              </li>
-                              <li class="disabled">
-                                <input type="checkbox" val="24159611" data-option-desc="Pastellak 163 Bianco Turini 1975" data-option-cat="Lak" data-option-id="24159611" id="option24159611" name="option" data-price="495,00" data-option-state="disabled" data-cost-inc-vat="� 495,00">
-                                <label data-label="Pastellak 163 Bianco Turini 1975" for="option24159611" id="label_option_24159611">
-                                       <span id="label_24159611">Pastellak 163 Bianco Turini 1975 (code fabrikant: 5CB)</span>
-                                       <span class="price" id="price_24159611">� 495,00</span>
-                                       </label>
-                              </li>
-                            </ol>
-                          </div>
-                          <a class="accordeon-trigger accordeon-trigger-options accordeon-trigger-isopen-js listening" data-label-close="toon opties" data-label-open="verberg opties"></a>
-                        </li>
-                        <li>
-                          Uiterlijk<span class="nr-selected"></span>
-                          <div class="carcompose-checklist-packages-details accordeon-content accordeon-content-options accordeon-content-isopen-js">
-                            <ol class="optionCategory">
-                              <li>
-                                <input type="checkbox" val="24159597" data-option-desc="Antiverblindings-kit (matzwarte motorkap en achterklep)" data-option-cat="Uiterlijk" data-option-id="24159597" id="option24159597" name="option" data-price="0,00" data-option-state="enabled">
-                                <label data-label="Antiverblindings-kit (matzwarte motorkap en achterklep)" for="option24159597" id="label_option_24159597">
-                                       <span id="label_24159597">Antiverblindings-kit (matzwarte motorkap en achterklep) (code fabrikant: 8SW / 8SX)</span>
-                                       <span class="price" id="price_24159597">� 0,00</span>
-                                       </label>
-                              </li>
-                            </ol>
-                          </div>
-                          <a class="accordeon-trigger accordeon-trigger-options accordeon-trigger-isopen-js listening" data-label-close="toon opties" data-label-open="verberg opties"></a>
-                        </li>
-                      </ol>
-                    </div>
-                    <div class="grid-unit-alpha carcompose-contentitem-head">
-                      <h3>Accessoires</h3>
-                      <a class="balloon-info balloon-info-right" data-info="Accessoires worden niet bij de fiscale waarde opgeteld. Hierdoor hebben deze geen effect op uw bijtelling">i</a>
-                    </div>
-                    <div class="grid-unit-alpha">
-                      <ol class="carcompose-checklist-options accordeon-content-container" id="carcompose-checklist-accessories">
-                        <li>
-                          <input type="checkbox" val="24159628" id="option24159628" data-option-desc="0500N Black, lederen bekleding LeasePlan zwart" data-option-cat="Accessoires" data-option-id="24159628" name="option" data-price="1.728,98" data-option-state="enabled" data-cost-inc-vat="� 1.728,98">
-                          <label data-label="0500N Black, lederen bekleding LeasePlan zwart" for="option24159628" id="label_option_24159628"><span id="label_24159628">0500N Black, lederen bekleding LeasePlan zwart</span>
-                              <span class="price" id="price_24159628">� 1.728,98</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159618" id="option24159618" data-option-desc="3444 Sand Stone, lederen bekleding LeasePlan beige" data-option-cat="Accessoires" data-option-id="24159618" name="option" data-price="1.728,98" data-option-state="enabled" data-cost-inc-vat="� 1.728,98">
-                          <label data-label="3444 Sand Stone, lederen bekleding LeasePlan beige" for="option24159618" id="label_option_24159618"><span id="label_24159618">3444 Sand Stone, lederen bekleding LeasePlan beige</span>
-                              <span class="price" id="price_24159618">� 1.728,98</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159629" id="option24159629" data-option-desc="4797 Opal, lederen bekleding LeasePlan grijs" data-option-cat="Accessoires" data-option-id="24159629" name="option" data-price="1.728,98" data-option-state="enabled" data-cost-inc-vat="� 1.728,98">
-                          <label data-label="4797 Opal, lederen bekleding LeasePlan grijs" for="option24159629" id="label_option_24159629"><span id="label_24159629">4797 Opal, lederen bekleding LeasePlan grijs</span>
-                              <span class="price" id="price_24159629">� 1.728,98</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159620" id="option24159620" data-option-desc="4816 Mustang, lederen bekleding LeasePlan roodbruin" data-option-cat="Accessoires" data-option-id="24159620" name="option" data-price="1.728,98" data-option-state="enabled" data-cost-inc-vat="� 1.728,98">
-                          <label data-label="4816 Mustang, lederen bekleding LeasePlan roodbruin" for="option24159620" id="label_option_24159620"><span id="label_24159620">4816 Mustang, lederen bekleding LeasePlan roodbruin</span>
-                              <span class="price" id="price_24159620">� 1.728,98</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159615" id="option24159615" data-option-desc="4818 Chesnut, lederen bekleding LeasePlan bruin" data-option-cat="Accessoires" data-option-id="24159615" name="option" data-price="1.728,98" data-option-state="enabled" data-cost-inc-vat="� 1.728,98">
-                          <label data-label="4818 Chesnut, lederen bekleding LeasePlan bruin" for="option24159615" id="label_option_24159615"><span id="label_24159615">4818 Chesnut, lederen bekleding LeasePlan bruin</span>
-                              <span class="price" id="price_24159615">� 1.728,98</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159616" id="option24159616" data-option-desc="Brandblusser inhoud 1 kilo." data-option-cat="Accessoires" data-option-id="24159616" name="option" data-price="36,30" data-option-state="enabled" data-cost-inc-vat="� 36,30">
-                          <label data-label="Brandblusser inhoud 1 kilo." for="option24159616" id="label_option_24159616"><span id="label_24159616">Brandblusser inhoud 1 kilo.</span>
-                              <span class="price" id="price_24159616">� 36,30</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159613" id="option24159613" data-option-desc="Brandblusser inhoud 2 kilo." data-option-cat="Accessoires" data-option-id="24159613" name="option" data-price="66,55" data-option-state="enabled" data-cost-inc-vat="� 66,55">
-                          <label data-label="Brandblusser inhoud 2 kilo." for="option24159613" id="label_option_24159613"><span id="label_24159613">Brandblusser inhoud 2 kilo.</span>
-                              <span class="price" id="price_24159613">� 66,55</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159621" id="option24159621" data-option-desc="Dakdragers" data-option-cat="Accessoires" data-option-id="24159621" name="option" data-price="301,29" data-option-state="enabled" data-cost-inc-vat="� 301,29">
-                          <label data-label="Dakdragers" for="option24159621" id="label_option_24159621"><span id="label_24159621">Dakdragers</span>
-                              <span class="price" id="price_24159621">� 301,29</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159619" id="option24159619" data-option-desc="Lederen bekleding (prijs conform opgave dealer)" data-option-cat="Accessoires" data-option-id="24159619" name="option" data-price="0,00" data-option-state="enabled" data-cost-inc-vat="� 0,00">
-                          <label data-label="Lederen bekleding (prijs conform opgave dealer)" for="option24159619" id="label_option_24159619"><span id="label_24159619">Lederen bekleding (prijs conform opgave dealer)</span>
-                              <span class="price" id="price_24159619">� 0,00</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159623" id="option24159623" data-option-desc="Lifehammer" data-option-cat="Accessoires" data-option-id="24159623" name="option" data-price="14,52" data-option-state="enabled" data-cost-inc-vat="� 14,52">
-                          <label data-label="Lifehammer" for="option24159623" id="label_option_24159623"><span id="label_24159623">Lifehammer</span>
-                              <span class="price" id="price_24159623">� 14,52</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159627" id="option24159627" data-option-desc="Meerprijs 7-zits lederen bekleding LeasePlan" data-option-cat="Accessoires" data-option-id="24159627" name="option" data-price="299,99" data-option-state="enabled" data-cost-inc-vat="� 299,99">
-                          <label data-label="Meerprijs 7-zits lederen bekleding LeasePlan" for="option24159627" id="label_option_24159627"><span id="label_24159627">Meerprijs 7-zits lederen bekleding LeasePlan</span>
-                              <span class="price" id="price_24159627">� 299,99</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159614" id="option24159614" data-option-desc="Navigatiesysteem ( prijs n.t.b. opgave conform dealer)" data-option-cat="Accessoires" data-option-id="24159614" name="option" data-price="0,00" data-option-state="enabled" data-cost-inc-vat="� 0,00">
-                          <label data-label="Navigatiesysteem ( prijs n.t.b. opgave conform dealer)" for="option24159614" id="label_option_24159614"><span id="label_24159614">Navigatiesysteem ( prijs n.t.b. opgave conform dealer)</span>
-                              <span class="price" id="price_24159614">� 0,00</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159622" id="option24159622" data-option-desc="Veiligheidsvest" data-option-cat="Accessoires" data-option-id="24159622" name="option" data-price="8,47" data-option-state="enabled" data-cost-inc-vat="� 8,47">
-                          <label data-label="Veiligheidsvest" for="option24159622" id="label_option_24159622"><span id="label_24159622">Veiligheidsvest</span>
-                              <span class="price" id="price_24159622">� 8,47</span>
-                              </label>
-                        </li>
-                        <li>
-                          <input type="checkbox" val="24159617" id="option24159617" data-option-desc="Verbanddoos" data-option-cat="Accessoires" data-option-id="24159617" name="option" data-price="18,15" data-option-state="enabled" data-cost-inc-vat="� 18,15">
-                          <label data-label="Verbanddoos" for="option24159617" id="label_option_24159617"><span id="label_24159617">Verbanddoos</span>
-                              <span class="price" id="price_24159617">� 18,15</span>
-                              </label>
-                        </li>
-                      </ol>
-                    </div>
-                    <div class="grid-unit-alpha carcompose-contentitem-head">
-                      <h3>Vrije optie of accessoire toevoegen</h3>
-                      <a class="balloon-info balloon-info-right" data-info="LeasePlan past onjuiste prijzen aan. Dit kan een effect hebben op de leaseprijs.">i</a>
-                      <p>Indien u een <strong>accessoire</strong> toevoegt, dient u het bedrag incl. BTW in te voeren. In geval van een <strong>optie</strong> dient u het bedrag incl. BTW en BPM in te geven.</p>
-                      <div id="custom-options" class="custom-options">
-                        <ul class="added clearfix hidden">
-                          <li>
-                            <div>Type</div>
-                            <div>Omschrijving</div>
-                            <div>Bedrag</div>
-                            <div></div>
-                          </li>
-                        </ul>
-                        <div class="add-option form-split-container">
-                          <form id="add-custom-option" name="add-custom-option" method="POST" action="/">
-                            <div class="form-select-field">
-                              <select tabindex="10">
-                                       <option value="OPTION" selected="">Optie</option>
-                                       <option value="ACCESSORY">Accessoire</option>
-                                    </select>
-                            </div>
-                            <div class="form-text-field option-desc">
-                              <label>Omschrijving</label>
-                              <input type="text" class="custom-option-desc" id="name" name="name" tabindex="11">
-                            </div>
-                            <div class="form-text-field option-price">
-                              <label>Bedrag</label>
-                              <input type="text" class="custom-option-price" id="price" name="price" tabindex="12">
-                            </div>
-                            <div>
-                              <a href="javascript:;" class="button" tabindex="13">Toevoegen</a>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="PDPTabContentDiv" id="PDPTab4">
-                  <div style="width: 886px;" class="active">
-                    <div class="grid-unit-alpha carcompose-contentitem-head">
-                      <h3>BasicPlan standaard bij uw leasecontract inbegrepen</h3>
-                    </div>
-                    <div class="grid-unit-beta">
-                      <ul class="list-product">
-                        <li class="list-product-repair">Reparaties, onderhoud en banden</li>
-                        <li class="list-product-demage">Schadeherstel</li>
-                        <li class="list-product-glas">Glasreparatie</li>
-                        <li class="list-product-tax">Houderschapsbelasting</li>
-                      </ul>
-                    </div>
-                    <div class="grid-unit-beta">
-                      <ul class="list-product">
-                        <li class="list-product-delifer">Aflevering op locatie</li>
-                        <li class="list-product-ensurance">Verzekering WA- en casco</li>
-                        <li class="list-product-risk">Eigen risico � 300</li>
-                      </ul>
-                    </div>
-                    <div class="grid-unit-alpha carcompose-contentitem-head">
-                      <h3>Kies aanvullende opties</h3>
-                      <p>Kies voor het BasicPlan Plus pakket voor meer comfort en veiligheid. Dit pakket bestaat uit het standaard pakket uitgebreid met een schadeverzekering voor inzittenden, hulpverlening in het buitenland en vervangend vervoer.</p>
-                      <p>Winterbanden zijn in veel landen zoals Duitsland en Oostenrijk verplicht. Een veilige en praktische keuze dus. Bovendien wordt de opslag en bandwissel voor u geregeld. U heeft er geen omkijken naar. Kies voor een tankpas voor gemak
-                        en eenvoud bij betaling.</p>
-                    </div>
-                    <ol class="carcompose-leaseproduct-list" id="carcompose-leaseproduct-list">
-                      <li>
-                        <input type="checkbox" id="product01" name="product01" data-option-desc="Voor uw eigen comfort en veiligheid" data-cost-inc-vat="� 11,08 p/m">
-                        <label for="product01">
-                              <div>
-                                 <h3>BasicPlan Plus voor uw eigen comfort</h3>
-                                 <ul>
-                                    <li>Schadeverzekering inzittenden</li>
-                                    <li>Hulpverlening binnen- en buitenland</li>
-                                    <li>Vervangend vervoer bij onderhoud- en schadeherstel werkzaamheden na 24 uur</li>
-                                 </ul>
-                              </div>
-                              <div>
-                                 <div class="price-sidebar">
-                                    <span></span> <span>� 11,08</span> <span>p/m</span>
-                                 </div>
-                              </div>
-                           </label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="product02" name="product02" data-option-desc="Winterbanden voor uw veiligheid bij winterse omstandigheden">
-                        <label for="product02">
-                              <div>
-                                 <h3>Winterbanden voor uw veiligheid bij winterse omstandigheden </h3>
-                                 <ul>
-                                    <li>Opslag en bandenwissel geregeld</li>
-                                    <li>Uw auto wordt op zomerbanden afgeleverd</li>
-                                    <li>Onder accessoires gekozen velgen kunnen de hiernaast getoonde prijs beinvloeden</li>
-                                 </ul>
-                              </div>
-                              <div>
-                                 <div class="price-sidebar"><span></span> <span class="winter-tires-price">� 25,00</span> <span>p/m</span></div>
-                              </div>
-                           </label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="product03" name="product03" data-option-desc="Gemak en voordeel met een nationale tankpas" data-cost-inc-vat="� 2,52 p/m">
-                        <label for="product03">
-                              <div>
-                                 <h3>Gemak en voordeel met een tankpas NL</h3>
-                              </div>
-                              <div>
-                                 <div class="price-sidebar"><span></span> <span>� 2,52</span> <span>p/m</span></div>
-                              </div>
-                           </label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="product04" name="product04" data-option-desc="Gemak en voordeel met een europese tankpas" data-cost-inc-vat="� 4,23 p/m">
-                        <label for="product04">
-                              <div>
-                                 <h3>Gemak en voordeel met een tankpas EU</h3>
-                              </div>
-                              <div>
-                                 <div class="price-sidebar"><span></span> <span>� 4,23</span> <span>p/m</span></div>
-                              </div>
-                           </label>
-                      </li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="PDPStickyCardWrapper">
-              <div class="PDPStickyOuterWrapper">
-                <div class="PDPStickyInnerWrapper">
-                  <div class="PDPStickyCard"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+         
+
+    <div class="panel-footer">
+      <button class="rmapBtn back-btn" onclick="navigatebck();">Back</button>
+      <button class="rmapBtn next-btn" value=0 onclick="navigate();">Next Step</button>
     </div>
   </div>
+</div>
+<p data-popup-close="checkout-popup"><a href="#">Close</a></p>
+<a class="popup-close" data-popup-close="checkout-popup" href="#">x</a></div></div>
 </body>
 
 </html>

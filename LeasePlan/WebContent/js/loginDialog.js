@@ -65,6 +65,20 @@ if(span)
 	  $("#idContentDiv").load("Expiration.html");
   }
   
+  window.openMyEmployee = function() {
+	  $("#idContentDiv").load("Employee.html");
+  }
+  
+  window.openNewEmployee = function() {
+	  $("#idContentDiv").load("NewEmployee.html");
+  }
+  window.openDeduction = function() {
+	  $("#idContentDiv").load("Deduction.html");
+  }
+  
+  window.openOverview = function() {
+	  $("#idContentDiv").load("Overview.html");
+  }
   
   window.doRegister = function() {
 	  $("#idregisterDialog").load("RegistrationBasic.html");
@@ -171,12 +185,20 @@ function showPassword() {
  if(ele.type == "password")
  {
   ele.type="text";
-  icon.src="images/eye-close.JPG"; 
+  icon.src="images/eye-close.jpg"; 
  }
  else
  {
   ele.type="password";
-  icon.src="images/eye-open.JPG";
+  icon.src="images/eye-open.jpg";
   }
+
+}
+
+
+function loadContactus()
+{
+$("#idContentDiv").load("contactUs.html",function(){});	
+
 
 }

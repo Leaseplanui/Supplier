@@ -1,6 +1,7 @@
 
 <script type="text/javascript" src="js/myProfile.js"></script>
 <link rel="stylesheet" href="css/myProfile.css">
+
  <div class="myAccountScreen">
      <ul class="myAccountPage">
        <li class="myAccountBlock1">
@@ -49,7 +50,7 @@
            <li><button type="button" class="ordersBtn" id="myOrders" onclick="showOrders()">Orders</button></li>
          </ul>
        </div>
-       <div id="editAccountSection" class="editAccountSection">
+       <div class="editAccountSection">
          <p class="editAccountSectionText">You can set a new password using this feature.</p>
          <button type="button" class="editAccountPwdBtn" onclick="showSetNewPwdSection()">Set new password</button>
          <p class="editAccountSectionText">This feature allows you to change your current login email address used.</p>
@@ -62,29 +63,28 @@
        <div class="setNewPwdSection" id="setNewPwdSection">
        <div class="setNewPwdSection-content">
          <div class="setNewPwdSectionHeader">Set new Password</div>
-     <!--    <div class="setNewPwd-text-fields">
-          <label for id="currentPwd">Current password</label>
-          <div class="show-hide-password">
-           <input type="password" id="pwd" name="password" class="setNewPwdSectionInput">
-           <button type="button" id="toogleBtn" class="toggleBtn" onclick="showPassword()">
-            <img src="images/eye-open.jpg" alt="eye" class="eye-open toggler-ico" id="toggler-ico">
-           </button>
-          </div>
-         </div>   -->
          <div class="setNewPwd-text-fields">
-          <label for id="currentPwd">Current password</label>
-          <input type="password" id="pwd" name="password" class="setNewPwdSectionInput">
-          <span id="toggler-ico" class="toggler-ico"></span>
-         </div>
+           <label for id="currentPwd">Current password</label>
+           <div class="show-hide-password">
+            <input type="password" id="currentpwd" name="currentpassword" class="setNewPwdSectionInput">
+            <button type="button" id="toogleBtn" class="toggleBtn" onclick="showCurrentPassword()">
+             <img src="images/eye-open.jpg" alt="eye" class="eye-open toggler-ico" id="currentpwd-toggler-ico">
+            </button>
+           </div>
+         </div> 
          <div class="setNewPwd-text-fields">
           <label for id="newPwd">New password</label>
-          <input type="password" id="newPwd" name="newPassword" class="setNewPwdSectionInput">
+           <div class="show-hide-password">
+            <input type="password" id="newpwd" name="newpassword" class="setNewPwdSectionInput">
+            <button type="button" id="toogleBtn" class="toggleBtn" onclick="showNewPassword()">
+             <img src="images/eye-open.jpg" alt="eye" class="eye-open toggler-ico" id="newpwd-toggler-ico">
+            </button>
+           </div>
          </div>
          <div class="setNewPwd-text-fields">
           <label for id="repeatPwd">Repeat your new password</label>
-          <input type="password" id="repeatPwd" name="repeatPassword" class="setNewPwdSectionInput">
+          <input type="password" id="repeatpwd" name="repeatpassword" class="setNewPwdSectionInput">
          </div>
-
          <div class="setNewPwdBtnArea">
             <button type="button" class="newPwdChangeBtn">Change</button>
             <a href="javascript:navToEditAccount();" class="newPwdBackBtn">Back</a>
@@ -103,7 +103,12 @@
          </div>
          <div class="changeEmail-text-fields">        
            <label for id="yourpassword">Your Password</label>
-           <input type="password" id="yourpassword" name="yourpassword"  class="changeEmailSectionInput">
+           <div class="show-hide-password">
+            <input type="password" id="yourpwd" name="yourpassword" class="setNewPwdSectionInput">
+            <button type="button" id="toogleBtn" class="toggleBtn" onclick="showYourPassword()">
+             <img src="images/eye-open.jpg" alt="eye" class="eye-open toggler-ico" id="yourpwd-toggler-ico">
+            </button>
+           </div>
          </div>
          <div class="emailBtnArea">
             <button type="button" class="changeEmailBtn">Change</button>

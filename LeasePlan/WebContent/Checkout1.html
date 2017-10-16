@@ -2,39 +2,35 @@
 
 
 <fieldset>
-<h1>Congratulations with  your choice!</h1>
+Congratulations with  your choice!
 <p>We will now make the order together with you.For this we need some information from you.That goes very easy.<br>
 Below can automatically search your information with your company.</p><p>
 </p><p><a href="http://localhost:53674/Demo/demo/checkout1.html">Find your company data</a> in the CC Register</p><p>
 
-</p><form action="http://localhost:53674/action_page.php">
-Company Name:<br>
+</p><form class=roadmapForm action="http://localhost:53674/action_page.php">
+<div class=form-Label>Company Name:</div>
 <input id="In01" type="text" name="company name" value="Deloitte Financial Advisory Services B.V.">
-<br>
-<br>
-Legal form<br>
-<select id="S01">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
+
+<div class=form-Label>Legal form</div>
+<select id="checkout1.legalname">
+  <option value="FirmName">Firm Name</option>
+  <option value="bv">B.V</option>
+  <option value="partnership">Partnership</option>
+  <option value="foundation">Foundation</option>
 </select>
-<br>
-<br>
-<p><b>Location address(statutory)</b></p>
+
+<p><b><div class=form-Label>Location address(statutory)</div></b></p>
 
 
-Postcode:<input id="In02" type="text" name="company name" value="1081LA">
-House Number:<input id="In02" type="text" name="company name" value="2970">
-Addition:<input id="In02" type="text" name="company name" value="1081LA">
-<br>
-<br>
-Street:<input id="In02" style="align:left;" type="text" name="company name" value="Gustav Mahleriaan">
-Place Name:<input id="In02" style="align:Right;" type="text" name="company name" value="Amesterdam">
-<br>
-<br>
-Chamber of CommerceNunber:<br>
-<input id="In01" type="text" name="company name" value="24362849">
+<div style="display:left" class=form-Label>Postcode:</div><input id="checkout2.postcode" type="text" name="company name" value="1081LA">
+<div class=form-Label>House Number:</div><input id="checkout2.housenumber" type="text" name="company name" value="2970">
+<div class=form-Label>Addition:</div><input id="checkout2.addition" type="text" name="company name" value="1081LA">
+
+<div class=form-Label>Street:</div><input id="checkout2.street" style="align:left;" type="text" name="company name" value="Gustav Mahleriaan">
+<div class=form-Label>Place Name:</div><input id="checkout2.placename" style="align:Right;" type="text" name="company name" value="Amesterdam">
+
+<div class=form-Label>Chamber of CommerceNunber:</div><br>
+<input id="checkout2.chamber" type="text" name="company name" value="24362849">
 </form>
   
 </fieldset>
